@@ -1,0 +1,1063 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E1DB6FE1D184C8000F73FE6 /* libSocialQQ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E1DB6EB1D184C8000F73FE6 /* libSocialQQ.a */; };
+		2E1DB6FF1D184C8000F73FE6 /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E1DB6EC1D184C8000F73FE6 /* TencentOpenAPI.framework */; };
+		2E1DB7001D184C8000F73FE6 /* TencentOpenApi_IOS_Bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2E1DB6ED1D184C8000F73FE6 /* TencentOpenApi_IOS_Bundle.bundle */; };
+		2E1DB7011D184C8000F73FE6 /* ios-social-sdk-shake.html in Resources */ = {isa = PBXBuildFile; fileRef = 2E1DB6F01D184C8000F73FE6 /* ios-social-sdk-shake.html */; };
+		2E1DB7021D184C8000F73FE6 /* libUMSocial_Sdk_ScreenShot_1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E1DB6F11D184C8000F73FE6 /* libUMSocial_Sdk_ScreenShot_1.0.a */; };
+		2E1DB7031D184C8000F73FE6 /* ios-social-sdk-shake.html in Resources */ = {isa = PBXBuildFile; fileRef = 2E1DB6F41D184C8000F73FE6 /* ios-social-sdk-shake.html */; };
+		2E1DB7041D184C8000F73FE6 /* libUMSocial_Sdk_Shake_1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E1DB6F51D184C8000F73FE6 /* libUMSocial_Sdk_Shake_1.0.a */; };
+		2E1DB7051D184C8000F73FE6 /* libSocialWechat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E1DB6F81D184C8000F73FE6 /* libSocialWechat.a */; };
+		2E1DB7061D184C8000F73FE6 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E1DB6F91D184C8000F73FE6 /* libWeChatSDK.a */; };
+		2E2436B71D0C4EA300F33AC1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2436B61D0C4EA300F33AC1 /* main.m */; };
+		2E2436BA1D0C4EA300F33AC1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2436B91D0C4EA300F33AC1 /* AppDelegate.m */; };
+		2E2436C31D0C4EA300F33AC1 /* lifangti.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2E2436C11D0C4EA300F33AC1 /* lifangti.xcdatamodeld */; };
+		2E2436C51D0C4EA300F33AC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E2436C41D0C4EA300F33AC1 /* Assets.xcassets */; };
+		2E2436C81D0C4EA300F33AC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E2436C61D0C4EA300F33AC1 /* LaunchScreen.storyboard */; };
+		2E2436D31D0C4EA300F33AC1 /* lifangtiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2436D21D0C4EA300F33AC1 /* lifangtiTests.m */; };
+		2E2436DE1D0C4EA300F33AC1 /* lifangtiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2436DD1D0C4EA300F33AC1 /* lifangtiUITests.m */; };
+		2EA1E0D01D194DFB00378E8B /* VC2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1E0BA1D194DFB00378E8B /* VC2ViewController.m */; };
+		2EA1E0D11D194DFB00378E8B /* VC2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EA1E0BB1D194DFB00378E8B /* VC2ViewController.xib */; };
+		2EA1E0D21D194DFB00378E8B /* VC1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1E0BE1D194DFB00378E8B /* VC1ViewController.m */; };
+		2EA1E0D31D194DFB00378E8B /* VC1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EA1E0BF1D194DFB00378E8B /* VC1ViewController.xib */; };
+		2EA1E0D41D194DFB00378E8B /* VC3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1E0C21D194DFB00378E8B /* VC3ViewController.m */; };
+		2EA1E0D51D194DFB00378E8B /* VC4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1E0C51D194DFB00378E8B /* VC4ViewController.m */; };
+		2EA1E0D61D194DFB00378E8B /* VC4ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EA1E0C61D194DFB00378E8B /* VC4ViewController.xib */; };
+		2EA1E0D71D194DFB00378E8B /* someFountionTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1E0CA1D194DFB00378E8B /* someFountionTabbar.m */; };
+		2EA1E0D81D194DFB00378E8B /* ShowButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1E0CE1D194DFB00378E8B /* ShowButtonView.m */; };
+		2EA1E0D91D194DFB00378E8B /* ShowButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EA1E0CF1D194DFB00378E8B /* ShowButtonView.xib */; };
+		2EA1E0DC1D19511800378E8B /* UtilityPopManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1E0DB1D19511800378E8B /* UtilityPopManager.m */; };
+		2EA1E0DE1D1A8A6B00378E8B /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EA1E0DD1D1A8A6B00378E8B /* SceneKit.framework */; };
+		2EA1E12D1D1BCE0700378E8B /* ZzsAsiNetworkHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1E1241D1BCE0700378E8B /* ZzsAsiNetworkHandler.m */; };
+		2EA1E12E1D1BCE0700378E8B /* ZzsAsiNetworkItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1E1261D1BCE0700378E8B /* ZzsAsiNetworkItem.m */; };
+		2EA1E12F1D1BCE0700378E8B /* ZzsNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1E1291D1BCE0700378E8B /* ZzsNetworkManager.m */; };
+		2EA1E1301D1BCE0700378E8B /* ZzsUploadParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1E12C1D1BCE0700378E8B /* ZzsUploadParam.m */; };
+		2EA1E13A1D1BCF1D00378E8B /* MBProgressHUD+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1E1371D1BCF1D00378E8B /* MBProgressHUD+Add.m */; };
+		2EA1E13B1D1BCF1D00378E8B /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1E1391D1BCF1D00378E8B /* MBProgressHUD.m */; };
+		2EEE54781D17CAC40070B625 /* UtilityForUM.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEE54771D17CAC40070B625 /* UtilityForUM.m */; };
+		2EEE547B1D17CAE60070B625 /* UtilityForUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEE547A1D17CAE60070B625 /* UtilityForUI.m */; };
+		2EEE547E1D17CAEF0070B625 /* UtilityForClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEE547D1D17CAEF0070B625 /* UtilityForClass.m */; };
+		2EEE54811D17CB150070B625 /* UtilityForLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEE54801D17CB150070B625 /* UtilityForLocation.m */; };
+		2EEE54841D17CB250070B625 /* UtilityForString.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEE54831D17CB250070B625 /* UtilityForString.m */; };
+		2EEE54871D17CB3B0070B625 /* UtilityForValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEE54861D17CB3B0070B625 /* UtilityForValue.m */; };
+		2EEE548B1D17D46C0070B625 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEE548A1D17D46C0070B625 /* Utility.m */; };
+		2EEE54911D17D59F0070B625 /* UtilityForTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEE54901D17D59F0070B625 /* UtilityForTime.m */; };
+		2EEE54941D17D7960070B625 /* UtilityForData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEE54931D17D7960070B625 /* UtilityForData.m */; };
+		2EFDEA201D0DC0400088F25F /* Clound.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFDEA181D0DC0400088F25F /* Clound.m */; };
+		B97FDB276C22DFD7BF4B6950 /* Pods_lifangti.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D82261099910394FF02CF8E0 /* Pods_lifangti.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2E2436CF1D0C4EA300F33AC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E2436AA1D0C4EA300F33AC1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E2436B11D0C4EA300F33AC1;
+			remoteInfo = lifangti;
+		};
+		2E2436DA1D0C4EA300F33AC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E2436AA1D0C4EA300F33AC1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E2436B11D0C4EA300F33AC1;
+			remoteInfo = lifangti;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2E1DB6EB1D184C8000F73FE6 /* libSocialQQ.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialQQ.a; sourceTree = "<group>"; };
+		2E1DB6EC1D184C8000F73FE6 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
+		2E1DB6ED1D184C8000F73FE6 /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
+		2E1DB6EE1D184C8000F73FE6 /* UMSocialQQHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialQQHandler.h; sourceTree = "<group>"; };
+		2E1DB6F01D184C8000F73FE6 /* ios-social-sdk-shake.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "ios-social-sdk-shake.html"; sourceTree = "<group>"; };
+		2E1DB6F11D184C8000F73FE6 /* libUMSocial_Sdk_ScreenShot_1.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libUMSocial_Sdk_ScreenShot_1.0.a; sourceTree = "<group>"; };
+		2E1DB6F21D184C8000F73FE6 /* UMSocialScreenShoter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialScreenShoter.h; sourceTree = "<group>"; };
+		2E1DB6F41D184C8000F73FE6 /* ios-social-sdk-shake.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "ios-social-sdk-shake.html"; sourceTree = "<group>"; };
+		2E1DB6F51D184C8000F73FE6 /* libUMSocial_Sdk_Shake_1.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libUMSocial_Sdk_Shake_1.0.a; sourceTree = "<group>"; };
+		2E1DB6F61D184C8000F73FE6 /* UMSocialShakeService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialShakeService.h; sourceTree = "<group>"; };
+		2E1DB6F81D184C8000F73FE6 /* libSocialWechat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialWechat.a; sourceTree = "<group>"; };
+		2E1DB6F91D184C8000F73FE6 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		2E1DB6FA1D184C8000F73FE6 /* UMSocialWechatHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialWechatHandler.h; sourceTree = "<group>"; };
+		2E1DB6FB1D184C8000F73FE6 /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
+		2E1DB6FC1D184C8000F73FE6 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		2E1DB6FD1D184C8000F73FE6 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		2E1DB7071D18603D00F73FE6 /* AppDelegateHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegateHeader.h; path = ../../AppDelegateHeader.h; sourceTree = "<group>"; };
+		2E2436B21D0C4EA300F33AC1 /* lifangti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lifangti.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E2436B61D0C4EA300F33AC1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2E2436B81D0C4EA300F33AC1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
+		2E2436B91D0C4EA300F33AC1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../../AppDelegate.m; sourceTree = "<group>"; };
+		2E2436C21D0C4EA300F33AC1 /* lifangti.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = lifangti.xcdatamodel; sourceTree = "<group>"; };
+		2E2436C41D0C4EA300F33AC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2E2436C71D0C4EA300F33AC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2E2436C91D0C4EA300F33AC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E2436CE1D0C4EA300F33AC1 /* lifangtiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lifangtiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E2436D21D0C4EA300F33AC1 /* lifangtiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lifangtiTests.m; sourceTree = "<group>"; };
+		2E2436D41D0C4EA300F33AC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E2436D91D0C4EA300F33AC1 /* lifangtiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lifangtiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E2436DD1D0C4EA300F33AC1 /* lifangtiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lifangtiUITests.m; sourceTree = "<group>"; };
+		2E2436DF1D0C4EA300F33AC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EA1E0B91D194DFB00378E8B /* VC2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VC2ViewController.h; sourceTree = "<group>"; };
+		2EA1E0BA1D194DFB00378E8B /* VC2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VC2ViewController.m; sourceTree = "<group>"; };
+		2EA1E0BB1D194DFB00378E8B /* VC2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VC2ViewController.xib; sourceTree = "<group>"; };
+		2EA1E0BD1D194DFB00378E8B /* VC1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VC1ViewController.h; sourceTree = "<group>"; };
+		2EA1E0BE1D194DFB00378E8B /* VC1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VC1ViewController.m; sourceTree = "<group>"; };
+		2EA1E0BF1D194DFB00378E8B /* VC1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VC1ViewController.xib; sourceTree = "<group>"; };
+		2EA1E0C11D194DFB00378E8B /* VC3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VC3ViewController.h; sourceTree = "<group>"; };
+		2EA1E0C21D194DFB00378E8B /* VC3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VC3ViewController.m; sourceTree = "<group>"; };
+		2EA1E0C41D194DFB00378E8B /* VC4ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VC4ViewController.h; sourceTree = "<group>"; };
+		2EA1E0C51D194DFB00378E8B /* VC4ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VC4ViewController.m; sourceTree = "<group>"; };
+		2EA1E0C61D194DFB00378E8B /* VC4ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VC4ViewController.xib; sourceTree = "<group>"; };
+		2EA1E0C91D194DFB00378E8B /* someFountionTabbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = someFountionTabbar.h; sourceTree = "<group>"; };
+		2EA1E0CA1D194DFB00378E8B /* someFountionTabbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = someFountionTabbar.m; sourceTree = "<group>"; };
+		2EA1E0CD1D194DFB00378E8B /* ShowButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowButtonView.h; sourceTree = "<group>"; };
+		2EA1E0CE1D194DFB00378E8B /* ShowButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowButtonView.m; sourceTree = "<group>"; };
+		2EA1E0CF1D194DFB00378E8B /* ShowButtonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShowButtonView.xib; sourceTree = "<group>"; };
+		2EA1E0DA1D19511800378E8B /* UtilityPopManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityPopManager.h; sourceTree = "<group>"; };
+		2EA1E0DB1D19511800378E8B /* UtilityPopManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilityPopManager.m; sourceTree = "<group>"; };
+		2EA1E0DD1D1A8A6B00378E8B /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
+		2EA1E1211D1BCE0700378E8B /* ZzsAsiNetworkDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZzsAsiNetworkDefine.h; sourceTree = "<group>"; };
+		2EA1E1221D1BCE0700378E8B /* ZzsAsiNetworkDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZzsAsiNetworkDelegate.h; sourceTree = "<group>"; };
+		2EA1E1231D1BCE0700378E8B /* ZzsAsiNetworkHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZzsAsiNetworkHandler.h; sourceTree = "<group>"; };
+		2EA1E1241D1BCE0700378E8B /* ZzsAsiNetworkHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZzsAsiNetworkHandler.m; sourceTree = "<group>"; };
+		2EA1E1251D1BCE0700378E8B /* ZzsAsiNetworkItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZzsAsiNetworkItem.h; sourceTree = "<group>"; };
+		2EA1E1261D1BCE0700378E8B /* ZzsAsiNetworkItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZzsAsiNetworkItem.m; sourceTree = "<group>"; };
+		2EA1E1271D1BCE0700378E8B /* ZzsAsiNetworkUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZzsAsiNetworkUrl.h; sourceTree = "<group>"; };
+		2EA1E1281D1BCE0700378E8B /* ZzsNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZzsNetworkManager.h; sourceTree = "<group>"; };
+		2EA1E1291D1BCE0700378E8B /* ZzsNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZzsNetworkManager.m; sourceTree = "<group>"; };
+		2EA1E12A1D1BCE0700378E8B /* ZzsNetwrok.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZzsNetwrok.h; sourceTree = "<group>"; };
+		2EA1E12B1D1BCE0700378E8B /* ZzsUploadParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZzsUploadParam.h; sourceTree = "<group>"; };
+		2EA1E12C1D1BCE0700378E8B /* ZzsUploadParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZzsUploadParam.m; sourceTree = "<group>"; };
+		2EA1E1361D1BCF1D00378E8B /* MBProgressHUD+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Add.h"; sourceTree = "<group>"; };
+		2EA1E1371D1BCF1D00378E8B /* MBProgressHUD+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Add.m"; sourceTree = "<group>"; };
+		2EA1E1381D1BCF1D00378E8B /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		2EA1E1391D1BCF1D00378E8B /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		2EEE54761D17CAC40070B625 /* UtilityForUM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityForUM.h; sourceTree = "<group>"; };
+		2EEE54771D17CAC40070B625 /* UtilityForUM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilityForUM.m; sourceTree = "<group>"; };
+		2EEE54791D17CAE60070B625 /* UtilityForUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityForUI.h; sourceTree = "<group>"; };
+		2EEE547A1D17CAE60070B625 /* UtilityForUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilityForUI.m; sourceTree = "<group>"; };
+		2EEE547C1D17CAEF0070B625 /* UtilityForClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityForClass.h; sourceTree = "<group>"; };
+		2EEE547D1D17CAEF0070B625 /* UtilityForClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilityForClass.m; sourceTree = "<group>"; };
+		2EEE547F1D17CB150070B625 /* UtilityForLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityForLocation.h; sourceTree = "<group>"; };
+		2EEE54801D17CB150070B625 /* UtilityForLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilityForLocation.m; sourceTree = "<group>"; };
+		2EEE54821D17CB250070B625 /* UtilityForString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityForString.h; sourceTree = "<group>"; };
+		2EEE54831D17CB250070B625 /* UtilityForString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilityForString.m; sourceTree = "<group>"; };
+		2EEE54851D17CB3B0070B625 /* UtilityForValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityForValue.h; sourceTree = "<group>"; };
+		2EEE54861D17CB3B0070B625 /* UtilityForValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilityForValue.m; sourceTree = "<group>"; };
+		2EEE54881D17CBEE0070B625 /* Utility.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utility.pch; sourceTree = "<group>"; };
+		2EEE54891D17D46C0070B625 /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
+		2EEE548A1D17D46C0070B625 /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
+		2EEE548C1D17D4E10070B625 /* UtilityHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityHeader.h; sourceTree = "<group>"; };
+		2EEE548F1D17D59F0070B625 /* UtilityForTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityForTime.h; sourceTree = "<group>"; };
+		2EEE54901D17D59F0070B625 /* UtilityForTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilityForTime.m; sourceTree = "<group>"; };
+		2EEE54921D17D7960070B625 /* UtilityForData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityForData.h; sourceTree = "<group>"; };
+		2EEE54931D17D7960070B625 /* UtilityForData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilityForData.m; sourceTree = "<group>"; };
+		2EFDEA171D0DC0400088F25F /* Clound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Clound.h; sourceTree = "<group>"; };
+		2EFDEA181D0DC0400088F25F /* Clound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Clound.m; sourceTree = "<group>"; };
+		B06C6F065D288EC7D65576B8 /* Pods-lifangti.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lifangti.debug.xcconfig"; path = "Pods/Target Support Files/Pods-lifangti/Pods-lifangti.debug.xcconfig"; sourceTree = "<group>"; };
+		D82261099910394FF02CF8E0 /* Pods_lifangti.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lifangti.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBAB8ED2F453F78769A4B028 /* Pods-lifangti.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lifangti.release.xcconfig"; path = "Pods/Target Support Files/Pods-lifangti/Pods-lifangti.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E2436AF1D0C4EA300F33AC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EA1E0DE1D1A8A6B00378E8B /* SceneKit.framework in Frameworks */,
+				2E1DB7061D184C8000F73FE6 /* libWeChatSDK.a in Frameworks */,
+				2E1DB6FE1D184C8000F73FE6 /* libSocialQQ.a in Frameworks */,
+				2E1DB6FF1D184C8000F73FE6 /* TencentOpenAPI.framework in Frameworks */,
+				2E1DB7021D184C8000F73FE6 /* libUMSocial_Sdk_ScreenShot_1.0.a in Frameworks */,
+				B97FDB276C22DFD7BF4B6950 /* Pods_lifangti.framework in Frameworks */,
+				2E1DB7051D184C8000F73FE6 /* libSocialWechat.a in Frameworks */,
+				2E1DB7041D184C8000F73FE6 /* libUMSocial_Sdk_Shake_1.0.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E2436CB1D0C4EA300F33AC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E2436D61D0C4EA300F33AC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E1DB6E91D184C3200F73FE6 /* 3Party */ = {
+			isa = PBXGroup;
+			children = (
+				2EA1E1351D1BCF1D00378E8B /* MBProgressHUD */,
+				2E1DB6EA1D184C8000F73FE6 /* TencentOpenAPI */,
+				2E1DB6EF1D184C8000F73FE6 /* UMSocial_ScreenShot_Sdk */,
+				2E1DB6F31D184C8000F73FE6 /* UMSocial_Shake_Sdk */,
+				2E1DB6F71D184C8000F73FE6 /* Wechat */,
+			);
+			path = 3Party;
+			sourceTree = "<group>";
+		};
+		2E1DB6EA1D184C8000F73FE6 /* TencentOpenAPI */ = {
+			isa = PBXGroup;
+			children = (
+				2E1DB6EB1D184C8000F73FE6 /* libSocialQQ.a */,
+				2E1DB6EC1D184C8000F73FE6 /* TencentOpenAPI.framework */,
+				2E1DB6ED1D184C8000F73FE6 /* TencentOpenApi_IOS_Bundle.bundle */,
+				2E1DB6EE1D184C8000F73FE6 /* UMSocialQQHandler.h */,
+			);
+			path = TencentOpenAPI;
+			sourceTree = "<group>";
+		};
+		2E1DB6EF1D184C8000F73FE6 /* UMSocial_ScreenShot_Sdk */ = {
+			isa = PBXGroup;
+			children = (
+				2E1DB6F01D184C8000F73FE6 /* ios-social-sdk-shake.html */,
+				2E1DB6F11D184C8000F73FE6 /* libUMSocial_Sdk_ScreenShot_1.0.a */,
+				2E1DB6F21D184C8000F73FE6 /* UMSocialScreenShoter.h */,
+			);
+			path = UMSocial_ScreenShot_Sdk;
+			sourceTree = "<group>";
+		};
+		2E1DB6F31D184C8000F73FE6 /* UMSocial_Shake_Sdk */ = {
+			isa = PBXGroup;
+			children = (
+				2E1DB6F41D184C8000F73FE6 /* ios-social-sdk-shake.html */,
+				2E1DB6F51D184C8000F73FE6 /* libUMSocial_Sdk_Shake_1.0.a */,
+				2E1DB6F61D184C8000F73FE6 /* UMSocialShakeService.h */,
+			);
+			path = UMSocial_Shake_Sdk;
+			sourceTree = "<group>";
+		};
+		2E1DB6F71D184C8000F73FE6 /* Wechat */ = {
+			isa = PBXGroup;
+			children = (
+				2E1DB6F81D184C8000F73FE6 /* libSocialWechat.a */,
+				2E1DB6F91D184C8000F73FE6 /* libWeChatSDK.a */,
+				2E1DB6FA1D184C8000F73FE6 /* UMSocialWechatHandler.h */,
+				2E1DB6FB1D184C8000F73FE6 /* WechatAuthSDK.h */,
+				2E1DB6FC1D184C8000F73FE6 /* WXApi.h */,
+				2E1DB6FD1D184C8000F73FE6 /* WXApiObject.h */,
+			);
+			path = Wechat;
+			sourceTree = "<group>";
+		};
+		2E2436A91D0C4EA300F33AC1 = {
+			isa = PBXGroup;
+			children = (
+				2E2436B41D0C4EA300F33AC1 /* lifangti */,
+				2E2436D11D0C4EA300F33AC1 /* lifangtiTests */,
+				2E2436DC1D0C4EA300F33AC1 /* lifangtiUITests */,
+				2E2436B31D0C4EA300F33AC1 /* Products */,
+				C0C1AF6A5A9BC9E51FF92B34 /* Pods */,
+				3315DE298122009412A7C7CA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2E2436B31D0C4EA300F33AC1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E2436B21D0C4EA300F33AC1 /* lifangti.app */,
+				2E2436CE1D0C4EA300F33AC1 /* lifangtiTests.xctest */,
+				2E2436D91D0C4EA300F33AC1 /* lifangtiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2E2436B41D0C4EA300F33AC1 /* lifangti */ = {
+			isa = PBXGroup;
+			children = (
+				2EFDEA141D0DC0400088F25F /* main */,
+				2E2436C41D0C4EA300F33AC1 /* Assets.xcassets */,
+				2E2436C61D0C4EA300F33AC1 /* LaunchScreen.storyboard */,
+				2E2436C91D0C4EA300F33AC1 /* Info.plist */,
+				2E2436C11D0C4EA300F33AC1 /* lifangti.xcdatamodeld */,
+				2E2436B51D0C4EA300F33AC1 /* Supporting Files */,
+			);
+			path = lifangti;
+			sourceTree = "<group>";
+		};
+		2E2436B51D0C4EA300F33AC1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2E2436B61D0C4EA300F33AC1 /* main.m */,
+				2EEE54881D17CBEE0070B625 /* Utility.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2E2436D11D0C4EA300F33AC1 /* lifangtiTests */ = {
+			isa = PBXGroup;
+			children = (
+				2E2436D21D0C4EA300F33AC1 /* lifangtiTests.m */,
+				2E2436D41D0C4EA300F33AC1 /* Info.plist */,
+			);
+			path = lifangtiTests;
+			sourceTree = "<group>";
+		};
+		2E2436DC1D0C4EA300F33AC1 /* lifangtiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2E2436DD1D0C4EA300F33AC1 /* lifangtiUITests.m */,
+				2E2436DF1D0C4EA300F33AC1 /* Info.plist */,
+			);
+			path = lifangtiUITests;
+			sourceTree = "<group>";
+		};
+		2EA1E0B71D194DFB00378E8B /* CZMainFunctionalArea */ = {
+			isa = PBXGroup;
+			children = (
+				2EA1E0B81D194DFB00378E8B /* City-Wide */,
+				2EA1E0BC1D194DFB00378E8B /* CityBao */,
+				2EA1E0C01D194DFB00378E8B /* Message */,
+				2EA1E0C31D194DFB00378E8B /* PersonalCenter */,
+			);
+			path = CZMainFunctionalArea;
+			sourceTree = "<group>";
+		};
+		2EA1E0B81D194DFB00378E8B /* City-Wide */ = {
+			isa = PBXGroup;
+			children = (
+				2EA1E0B91D194DFB00378E8B /* VC2ViewController.h */,
+				2EA1E0BA1D194DFB00378E8B /* VC2ViewController.m */,
+				2EA1E0BB1D194DFB00378E8B /* VC2ViewController.xib */,
+			);
+			path = "City-Wide";
+			sourceTree = "<group>";
+		};
+		2EA1E0BC1D194DFB00378E8B /* CityBao */ = {
+			isa = PBXGroup;
+			children = (
+				2EA1E0BD1D194DFB00378E8B /* VC1ViewController.h */,
+				2EA1E0BE1D194DFB00378E8B /* VC1ViewController.m */,
+				2EA1E0BF1D194DFB00378E8B /* VC1ViewController.xib */,
+			);
+			path = CityBao;
+			sourceTree = "<group>";
+		};
+		2EA1E0C01D194DFB00378E8B /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				2EA1E0C11D194DFB00378E8B /* VC3ViewController.h */,
+				2EA1E0C21D194DFB00378E8B /* VC3ViewController.m */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		2EA1E0C31D194DFB00378E8B /* PersonalCenter */ = {
+			isa = PBXGroup;
+			children = (
+				2EA1E0C41D194DFB00378E8B /* VC4ViewController.h */,
+				2EA1E0C51D194DFB00378E8B /* VC4ViewController.m */,
+				2EA1E0C61D194DFB00378E8B /* VC4ViewController.xib */,
+			);
+			path = PersonalCenter;
+			sourceTree = "<group>";
+		};
+		2EA1E0C71D194DFB00378E8B /* CZNar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CZNar;
+			sourceTree = "<group>";
+		};
+		2EA1E0C81D194DFB00378E8B /* CZTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				2EA1E0C91D194DFB00378E8B /* someFountionTabbar.h */,
+				2EA1E0CA1D194DFB00378E8B /* someFountionTabbar.m */,
+			);
+			path = CZTabBar;
+			sourceTree = "<group>";
+		};
+		2EA1E0CB1D194DFB00378E8B /* CZView */ = {
+			isa = PBXGroup;
+			children = (
+				2EA1E0CC1D194DFB00378E8B /* CZPopuoView */,
+			);
+			path = CZView;
+			sourceTree = "<group>";
+		};
+		2EA1E0CC1D194DFB00378E8B /* CZPopuoView */ = {
+			isa = PBXGroup;
+			children = (
+				2EA1E0CD1D194DFB00378E8B /* ShowButtonView.h */,
+				2EA1E0CE1D194DFB00378E8B /* ShowButtonView.m */,
+				2EA1E0CF1D194DFB00378E8B /* ShowButtonView.xib */,
+			);
+			path = CZPopuoView;
+			sourceTree = "<group>";
+		};
+		2EA1E1201D1BCE0700378E8B /* NetwrokHandle */ = {
+			isa = PBXGroup;
+			children = (
+				2EA1E1211D1BCE0700378E8B /* ZzsAsiNetworkDefine.h */,
+				2EA1E1221D1BCE0700378E8B /* ZzsAsiNetworkDelegate.h */,
+				2EA1E1231D1BCE0700378E8B /* ZzsAsiNetworkHandler.h */,
+				2EA1E1241D1BCE0700378E8B /* ZzsAsiNetworkHandler.m */,
+				2EA1E1251D1BCE0700378E8B /* ZzsAsiNetworkItem.h */,
+				2EA1E1261D1BCE0700378E8B /* ZzsAsiNetworkItem.m */,
+				2EA1E1271D1BCE0700378E8B /* ZzsAsiNetworkUrl.h */,
+				2EA1E1281D1BCE0700378E8B /* ZzsNetworkManager.h */,
+				2EA1E1291D1BCE0700378E8B /* ZzsNetworkManager.m */,
+				2EA1E12A1D1BCE0700378E8B /* ZzsNetwrok.h */,
+				2EA1E12B1D1BCE0700378E8B /* ZzsUploadParam.h */,
+				2EA1E12C1D1BCE0700378E8B /* ZzsUploadParam.m */,
+			);
+			path = NetwrokHandle;
+			sourceTree = "<group>";
+		};
+		2EA1E1351D1BCF1D00378E8B /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				2EA1E1361D1BCF1D00378E8B /* MBProgressHUD+Add.h */,
+				2EA1E1371D1BCF1D00378E8B /* MBProgressHUD+Add.m */,
+				2EA1E1381D1BCF1D00378E8B /* MBProgressHUD.h */,
+				2EA1E1391D1BCF1D00378E8B /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		2EFDEA141D0DC0400088F25F /* main */ = {
+			isa = PBXGroup;
+			children = (
+				2E1DB6E91D184C3200F73FE6 /* 3Party */,
+				2EFDEA151D0DC0400088F25F /* AppDelegate */,
+				2EFDEA1A1D0DC0400088F25F /* Src */,
+				2EFDEA1E1D0DC0400088F25F /* Tools */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		2EFDEA151D0DC0400088F25F /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				2E2436B81D0C4EA300F33AC1 /* AppDelegate.h */,
+				2E2436B91D0C4EA300F33AC1 /* AppDelegate.m */,
+				2E1DB7071D18603D00F73FE6 /* AppDelegateHeader.h */,
+				2EFDEA161D0DC0400088F25F /* leanClound */,
+				2EFDEA191D0DC0400088F25F /* rongyun */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		2EFDEA161D0DC0400088F25F /* leanClound */ = {
+			isa = PBXGroup;
+			children = (
+				2EFDEA171D0DC0400088F25F /* Clound.h */,
+				2EFDEA181D0DC0400088F25F /* Clound.m */,
+			);
+			path = leanClound;
+			sourceTree = "<group>";
+		};
+		2EFDEA191D0DC0400088F25F /* rongyun */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = rongyun;
+			sourceTree = "<group>";
+		};
+		2EFDEA1A1D0DC0400088F25F /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				2EFDEA1B1D0DC0400088F25F /* C */,
+				2EFDEA1C1D0DC0400088F25F /* m */,
+				2EFDEA1D1D0DC0400088F25F /* v */,
+			);
+			path = Src;
+			sourceTree = "<group>";
+		};
+		2EFDEA1B1D0DC0400088F25F /* C */ = {
+			isa = PBXGroup;
+			children = (
+				2EA1E0B71D194DFB00378E8B /* CZMainFunctionalArea */,
+				2EA1E0C71D194DFB00378E8B /* CZNar */,
+				2EA1E0C81D194DFB00378E8B /* CZTabBar */,
+				2EA1E0CB1D194DFB00378E8B /* CZView */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		2EFDEA1C1D0DC0400088F25F /* m */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = m;
+			sourceTree = "<group>";
+		};
+		2EFDEA1D1D0DC0400088F25F /* v */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = v;
+			sourceTree = "<group>";
+		};
+		2EFDEA1E1D0DC0400088F25F /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				2EA1E1201D1BCE0700378E8B /* NetwrokHandle */,
+				2EFDEA1F1D0DC0400088F25F /* Utility */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		2EFDEA1F1D0DC0400088F25F /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				2EEE548C1D17D4E10070B625 /* UtilityHeader.h */,
+				2EEE54891D17D46C0070B625 /* Utility.h */,
+				2EEE548A1D17D46C0070B625 /* Utility.m */,
+				2EEE54851D17CB3B0070B625 /* UtilityForValue.h */,
+				2EEE54861D17CB3B0070B625 /* UtilityForValue.m */,
+				2EEE54761D17CAC40070B625 /* UtilityForUM.h */,
+				2EEE54771D17CAC40070B625 /* UtilityForUM.m */,
+				2EEE54791D17CAE60070B625 /* UtilityForUI.h */,
+				2EEE547A1D17CAE60070B625 /* UtilityForUI.m */,
+				2EEE547C1D17CAEF0070B625 /* UtilityForClass.h */,
+				2EEE547D1D17CAEF0070B625 /* UtilityForClass.m */,
+				2EEE547F1D17CB150070B625 /* UtilityForLocation.h */,
+				2EEE54801D17CB150070B625 /* UtilityForLocation.m */,
+				2EEE54821D17CB250070B625 /* UtilityForString.h */,
+				2EEE54831D17CB250070B625 /* UtilityForString.m */,
+				2EEE548F1D17D59F0070B625 /* UtilityForTime.h */,
+				2EEE54901D17D59F0070B625 /* UtilityForTime.m */,
+				2EEE54921D17D7960070B625 /* UtilityForData.h */,
+				2EEE54931D17D7960070B625 /* UtilityForData.m */,
+				2EA1E0DA1D19511800378E8B /* UtilityPopManager.h */,
+				2EA1E0DB1D19511800378E8B /* UtilityPopManager.m */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		3315DE298122009412A7C7CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2EA1E0DD1D1A8A6B00378E8B /* SceneKit.framework */,
+				D82261099910394FF02CF8E0 /* Pods_lifangti.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C0C1AF6A5A9BC9E51FF92B34 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B06C6F065D288EC7D65576B8 /* Pods-lifangti.debug.xcconfig */,
+				FBAB8ED2F453F78769A4B028 /* Pods-lifangti.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2E2436B11D0C4EA300F33AC1 /* lifangti */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E2436E21D0C4EA300F33AC1 /* Build configuration list for PBXNativeTarget "lifangti" */;
+			buildPhases = (
+				6A61CD519C66426CB2DA12D6 /* [CP] Check Pods Manifest.lock */,
+				2E2436AE1D0C4EA300F33AC1 /* Sources */,
+				2E2436AF1D0C4EA300F33AC1 /* Frameworks */,
+				2E2436B01D0C4EA300F33AC1 /* Resources */,
+				673BD30F457FE2605615BBC3 /* [CP] Embed Pods Frameworks */,
+				0D4F02B38A0CACCB4A4123C8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = lifangti;
+			productName = lifangti;
+			productReference = 2E2436B21D0C4EA300F33AC1 /* lifangti.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2E2436CD1D0C4EA300F33AC1 /* lifangtiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E2436E51D0C4EA300F33AC1 /* Build configuration list for PBXNativeTarget "lifangtiTests" */;
+			buildPhases = (
+				2E2436CA1D0C4EA300F33AC1 /* Sources */,
+				2E2436CB1D0C4EA300F33AC1 /* Frameworks */,
+				2E2436CC1D0C4EA300F33AC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E2436D01D0C4EA300F33AC1 /* PBXTargetDependency */,
+			);
+			name = lifangtiTests;
+			productName = lifangtiTests;
+			productReference = 2E2436CE1D0C4EA300F33AC1 /* lifangtiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2E2436D81D0C4EA300F33AC1 /* lifangtiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E2436E81D0C4EA300F33AC1 /* Build configuration list for PBXNativeTarget "lifangtiUITests" */;
+			buildPhases = (
+				2E2436D51D0C4EA300F33AC1 /* Sources */,
+				2E2436D61D0C4EA300F33AC1 /* Frameworks */,
+				2E2436D71D0C4EA300F33AC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E2436DB1D0C4EA300F33AC1 /* PBXTargetDependency */,
+			);
+			name = lifangtiUITests;
+			productName = lifangtiUITests;
+			productReference = 2E2436D91D0C4EA300F33AC1 /* lifangtiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2E2436AA1D0C4EA300F33AC1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = xthink;
+				TargetAttributes = {
+					2E2436B11D0C4EA300F33AC1 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = AGJBE62522;
+					};
+					2E2436CD1D0C4EA300F33AC1 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 2E2436B11D0C4EA300F33AC1;
+					};
+					2E2436D81D0C4EA300F33AC1 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 2E2436B11D0C4EA300F33AC1;
+					};
+				};
+			};
+			buildConfigurationList = 2E2436AD1D0C4EA300F33AC1 /* Build configuration list for PBXProject "lifangti" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2E2436A91D0C4EA300F33AC1;
+			productRefGroup = 2E2436B31D0C4EA300F33AC1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2E2436B11D0C4EA300F33AC1 /* lifangti */,
+				2E2436CD1D0C4EA300F33AC1 /* lifangtiTests */,
+				2E2436D81D0C4EA300F33AC1 /* lifangtiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2E2436B01D0C4EA300F33AC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EA1E0D31D194DFB00378E8B /* VC1ViewController.xib in Resources */,
+				2E1DB7001D184C8000F73FE6 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
+				2EA1E0D91D194DFB00378E8B /* ShowButtonView.xib in Resources */,
+				2EA1E0D61D194DFB00378E8B /* VC4ViewController.xib in Resources */,
+				2E2436C81D0C4EA300F33AC1 /* LaunchScreen.storyboard in Resources */,
+				2E2436C51D0C4EA300F33AC1 /* Assets.xcassets in Resources */,
+				2E1DB7011D184C8000F73FE6 /* ios-social-sdk-shake.html in Resources */,
+				2EA1E0D11D194DFB00378E8B /* VC2ViewController.xib in Resources */,
+				2E1DB7031D184C8000F73FE6 /* ios-social-sdk-shake.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E2436CC1D0C4EA300F33AC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E2436D71D0C4EA300F33AC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D4F02B38A0CACCB4A4123C8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-lifangti/Pods-lifangti-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		673BD30F457FE2605615BBC3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-lifangti/Pods-lifangti-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A61CD519C66426CB2DA12D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E2436AE1D0C4EA300F33AC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EEE54781D17CAC40070B625 /* UtilityForUM.m in Sources */,
+				2EA1E0D71D194DFB00378E8B /* someFountionTabbar.m in Sources */,
+				2EFDEA201D0DC0400088F25F /* Clound.m in Sources */,
+				2EA1E12E1D1BCE0700378E8B /* ZzsAsiNetworkItem.m in Sources */,
+				2EEE54941D17D7960070B625 /* UtilityForData.m in Sources */,
+				2EEE547B1D17CAE60070B625 /* UtilityForUI.m in Sources */,
+				2EA1E0D81D194DFB00378E8B /* ShowButtonView.m in Sources */,
+				2EA1E0D21D194DFB00378E8B /* VC1ViewController.m in Sources */,
+				2EEE54841D17CB250070B625 /* UtilityForString.m in Sources */,
+				2EA1E13B1D1BCF1D00378E8B /* MBProgressHUD.m in Sources */,
+				2EEE54871D17CB3B0070B625 /* UtilityForValue.m in Sources */,
+				2EA1E0D51D194DFB00378E8B /* VC4ViewController.m in Sources */,
+				2EEE54911D17D59F0070B625 /* UtilityForTime.m in Sources */,
+				2EA1E13A1D1BCF1D00378E8B /* MBProgressHUD+Add.m in Sources */,
+				2EEE54811D17CB150070B625 /* UtilityForLocation.m in Sources */,
+				2EA1E0D41D194DFB00378E8B /* VC3ViewController.m in Sources */,
+				2EA1E0D01D194DFB00378E8B /* VC2ViewController.m in Sources */,
+				2E2436BA1D0C4EA300F33AC1 /* AppDelegate.m in Sources */,
+				2EA1E1301D1BCE0700378E8B /* ZzsUploadParam.m in Sources */,
+				2EEE548B1D17D46C0070B625 /* Utility.m in Sources */,
+				2EA1E12D1D1BCE0700378E8B /* ZzsAsiNetworkHandler.m in Sources */,
+				2EA1E0DC1D19511800378E8B /* UtilityPopManager.m in Sources */,
+				2EEE547E1D17CAEF0070B625 /* UtilityForClass.m in Sources */,
+				2E2436B71D0C4EA300F33AC1 /* main.m in Sources */,
+				2EA1E12F1D1BCE0700378E8B /* ZzsNetworkManager.m in Sources */,
+				2E2436C31D0C4EA300F33AC1 /* lifangti.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E2436CA1D0C4EA300F33AC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E2436D31D0C4EA300F33AC1 /* lifangtiTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E2436D51D0C4EA300F33AC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E2436DE1D0C4EA300F33AC1 /* lifangtiUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2E2436D01D0C4EA300F33AC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E2436B11D0C4EA300F33AC1 /* lifangti */;
+			targetProxy = 2E2436CF1D0C4EA300F33AC1 /* PBXContainerItemProxy */;
+		};
+		2E2436DB1D0C4EA300F33AC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E2436B11D0C4EA300F33AC1 /* lifangti */;
+			targetProxy = 2E2436DA1D0C4EA300F33AC1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2E2436C61D0C4EA300F33AC1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E2436C71D0C4EA300F33AC1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2E2436E01D0C4EA300F33AC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2E2436E11D0C4EA300F33AC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2E2436E31D0C4EA300F33AC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B06C6F065D288EC7D65576B8 /* Pods-lifangti.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lifangti/main/3Party/TencentOpenAPI",
+				);
+				GCC_PREFIX_HEADER = lifangti/Utility.pch;
+				INFOPLIST_FILE = lifangti/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lifangti/main/3Party/TencentOpenAPI",
+					"$(PROJECT_DIR)/lifangti/main/3Party/UMSocial_ScreenShot_Sdk",
+					"$(PROJECT_DIR)/lifangti/main/3Party/UMSocial_Shake_Sdk",
+					"$(PROJECT_DIR)/lifangti/main/3Party/Wechat",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shangshu.lifangti;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		2E2436E41D0C4EA300F33AC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBAB8ED2F453F78769A4B028 /* Pods-lifangti.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lifangti/main/3Party/TencentOpenAPI",
+				);
+				GCC_PREFIX_HEADER = lifangti/Utility.pch;
+				INFOPLIST_FILE = lifangti/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lifangti/main/3Party/TencentOpenAPI",
+					"$(PROJECT_DIR)/lifangti/main/3Party/UMSocial_ScreenShot_Sdk",
+					"$(PROJECT_DIR)/lifangti/main/3Party/UMSocial_Shake_Sdk",
+					"$(PROJECT_DIR)/lifangti/main/3Party/Wechat",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shangshu.lifangti;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		2E2436E61D0C4EA300F33AC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = lifangtiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.citybao.lifangtiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lifangti.app/lifangti";
+			};
+			name = Debug;
+		};
+		2E2436E71D0C4EA300F33AC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = lifangtiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.citybao.lifangtiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lifangti.app/lifangti";
+			};
+			name = Release;
+		};
+		2E2436E91D0C4EA300F33AC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = lifangtiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.citybao.lifangtiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = lifangti;
+			};
+			name = Debug;
+		};
+		2E2436EA1D0C4EA300F33AC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = lifangtiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.citybao.lifangtiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = lifangti;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E2436AD1D0C4EA300F33AC1 /* Build configuration list for PBXProject "lifangti" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E2436E01D0C4EA300F33AC1 /* Debug */,
+				2E2436E11D0C4EA300F33AC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E2436E21D0C4EA300F33AC1 /* Build configuration list for PBXNativeTarget "lifangti" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E2436E31D0C4EA300F33AC1 /* Debug */,
+				2E2436E41D0C4EA300F33AC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E2436E51D0C4EA300F33AC1 /* Build configuration list for PBXNativeTarget "lifangtiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E2436E61D0C4EA300F33AC1 /* Debug */,
+				2E2436E71D0C4EA300F33AC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E2436E81D0C4EA300F33AC1 /* Build configuration list for PBXNativeTarget "lifangtiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E2436E91D0C4EA300F33AC1 /* Debug */,
+				2E2436EA1D0C4EA300F33AC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2E2436C11D0C4EA300F33AC1 /* lifangti.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2E2436C21D0C4EA300F33AC1 /* lifangti.xcdatamodel */,
+			);
+			currentVersion = 2E2436C21D0C4EA300F33AC1 /* lifangti.xcdatamodel */;
+			path = lifangti.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2E2436AA1D0C4EA300F33AC1 /* Project object */;
+}
