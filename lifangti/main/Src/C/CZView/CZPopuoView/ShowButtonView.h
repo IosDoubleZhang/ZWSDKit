@@ -20,10 +20,18 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *post_Lab_album;
 @property (weak, nonatomic) IBOutlet UILabel *post_Lab_nest;
+typedef void (^ActionBlock1)();
+@property (nonatomic, copy) ActionBlock1 ActionBlock;
+typedef void (^ActionBlock2)();
+@property (nonatomic, copy) ActionBlock2 Action2Block;
+typedef void (^ActionBlock3)();
+@property (nonatomic, copy) ActionBlock3 Action3Block;
+
 
 - (IBAction)postTakePhotoAction:(UIButton *)sender;
 
 - (IBAction)postChosePhotoAction:(UIButton *)sender;
 - (IBAction)postNestAction:(UIButton *)sender;
-+(void)showView;
++(void)showView:(ShowButtonView *)buttonView;
++(ShowButtonView*)SetButtonView;
 @end

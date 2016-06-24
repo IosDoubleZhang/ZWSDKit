@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "UMSocial.h"   
+#import <UMSocial.h>
 #define UMkey       @"576914d3e0f55aa891000ec1"
 
 #define WXKey       @"wx23a8767d318ea2f3"
@@ -24,5 +24,7 @@
 ///配置友盟的key 还有启动的服务
 +(void)StartUm;
 ///基本分享形式
-+(void)CommonShare:(NSString *)title Url:(NSString *)Url Img:(UIImage *)img;
++(void)CommonShareTitle:(NSString *)title Info:(NSString *)info Url:(NSString *)Url Img:(UIImage *)img idSelf:(id)Class;
+///分享到微信 tag 1朋友圈 其他 微信好友 kind=1纯图片 k=2 纯文字 k=3 app  InfoKindTag1 音乐 2视频
++(void)WxShareTitle:(NSString *)title Info:(NSString *)info Url:(NSString *)Url Img:(UIImage *)img Location:(CLLocation*)location  InfoKindTag:(NSUInteger)InfoKindTag  Kind:(NSInteger )Kind  Tag:(NSInteger)tag  idSelf:(id)Class;
 @end
