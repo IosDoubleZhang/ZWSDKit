@@ -19,12 +19,12 @@
     CGRect _fram3;
 }
 /*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-
-*/
+ // Only override drawRect: if you perform custom drawing.
+ // An empty implementation adversely affects performance during animation.
+ 
+ */
 - (void)drawRect:(CGRect)rect {
-//
+    //
     //进行动画展示
     
     [self showButtonsAnimation];
@@ -36,33 +36,33 @@
 
 
 - (IBAction)postTakePhotoAction:(UIButton *)sender {
-//    [self removeFromSuperview];
+    //    [self removeFromSuperview];
 }
 
 - (IBAction)postChosePhotoAction:(UIButton *)sender {
-//    [self removeFromSuperview];
+    //    [self removeFromSuperview];
 }
 
 - (IBAction)postNestAction:(UIButton *)sender {
-//    [self removeFromSuperview];
+    //    [self removeFromSuperview];
 }
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {//
-
+    
     [self RestoreView];
-
+    
 }
 //- (IBAction)DismissAction:(UITapGestureRecognizer *)sender {
 //}
 +(void)showView
 {
-//     __weak typeof(self) wself = self;
+    //     __weak typeof(self) wself = self;
     NSArray* nibView =  [[NSBundle mainBundle] loadNibNamed:@"ShowButtonView" owner:nil options:nil];
-   
+    
     ShowButtonView *buttonView=[nibView lastObject];
-        buttonView.layer.zPosition=100;
+    buttonView.layer.zPosition=100;
     buttonView.frame=CGRectMake(0, 0, _S_Width, _S_Height);
-//
+    //
     AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
     NSLog(@"%lf",buttonView.post_nest.frame.size.width);
     
@@ -71,9 +71,9 @@
     
     
     [UtilityPopManager rotateLayer:buttonView.post_AddButton.layer to:M_PI_2/2];
-  
-
-  
+    
+    
+    
 }
 
 -(void)RestoreView
@@ -107,12 +107,12 @@
     [UtilityPopManager initailzerAnimationWithToPostion:_fram1 formPostion:fram atView:_post_TakePhoto beginTime:0.1];
     [UtilityPopManager initailzerAnimationWithToPostion:_fram2 formPostion:fram atView:_post_album beginTime:0.2];
     [UtilityPopManager initailzerAnimationWithToPostion:_fram3 formPostion:fram atView:_post_nest beginTime:0.3];
-
+    
 }
 -(void)dismissButtonsAnimation
 {
-  
-
+    
+    
     CGRect fram=CGRectMake(_S_Width/2, _S_Height-45, 0, 0);
     [UtilityPopManager initailzerAnimationWithToPostion:fram formPostion:_fram1 atView:_post_TakePhoto beginTime:0.1];
     [UtilityPopManager initailzerAnimationWithToPostion:fram formPostion:_fram2 atView:_post_album beginTime:0.2];
@@ -120,8 +120,8 @@
     _post_TakePhoto.layer.zPosition=0;
     _post_album.layer.zPosition=0;
     _post_nest.layer.zPosition=0;
-
-
+    
+    
 }
 
 

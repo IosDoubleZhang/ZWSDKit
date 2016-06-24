@@ -59,7 +59,7 @@
     //    iv.image = [[UIImage imageNamed:@"2222"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     self.tabBar.barTintColor=[UIColor colorWithRed:1 green:1 blue:1 alpha:0];
     self.tabBar.superview.backgroundColor = [UIColor clearColor];
-    //让imageView接收点击事件
+//    让imageView接收点击事件
     iv.userInteractionEnabled = YES;
     //删除现有的tabBar
     CGRect rect = self.tabBar.frame;

@@ -59,4 +59,9 @@
 }
 
 
+- (void)testString
+{
+    DTLog(@"%d",[UtilityForString checkUserIdCard:@"http"]);
+}
+
 @end
