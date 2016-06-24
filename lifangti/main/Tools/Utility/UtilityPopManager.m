@@ -21,7 +21,6 @@
         anim.dynamicsTension = 800;
         
         anim.toValue = @(toValue);
-        anim.toValue =1;
         anim.name = @"rotationToState";
         [layer pop_addAnimation:anim forKey:@"springRotation"];
     }
