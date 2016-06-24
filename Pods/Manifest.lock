@@ -14,14 +14,14 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - AMap3DMap (4.0.1):
+  - AMap3DMap (4.0.3):
     - AMapFoundation (~> 1.0)
-  - AMapFoundation (1.0.0)
-  - AMapSearch (4.0.0):
-    - AMapFoundation (= 1.0.0)
-  - AVOSCloud (3.3.1)
+  - AMapFoundation (1.1.0)
+  - AMapSearch (4.1.0):
+    - AMapFoundation (~> 1.0)
+  - AVOSCloud (3.3.3)
   - pop (1.0.9)
-  - RongCloudIMKit (2.6.1)
+  - RongCloudIMKit (2.6.3)
   - UMengSocialCOM (5.2.1)
 
 DEPENDENCIES:
@@ -35,14 +35,14 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  AMap3DMap: 30442fb7ed717e6da2803592d9a07532a091bd29
-  AMapFoundation: af861f5d299a4f17a1a8b50fd91242933bb352f3
-  AMapSearch: 867e89123c927436713372803156ac9848d9868a
-  AVOSCloud: ce999e21da976f78c4eda53243699b634891d42d
+  AMap3DMap: 8619d67fe7b3bbe45abf74b3434eb9ab20220507
+  AMapFoundation: 15db20567e6512422a086a01b42a88b145bc2500
+  AMapSearch: cb4722480d2d4331a032d43bd1070ed0fa55dac9
+  AVOSCloud: dcd8a24c219971400146fe09638d218cfc8bb7f1
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
-  RongCloudIMKit: 36f00d9e54ef3650da894740b636b311a7ab4f4f
+  RongCloudIMKit: bf16a77298dcc52d6e7c8a41ac7ecc394e552abc
   UMengSocialCOM: 074c135ce349aa4c8848d3fb8458757bcb6ffb67
 
 PODFILE CHECKSUM: 2e1f5ce9217771d7955b0cf4cf7b0c9d8845359b
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.0.0

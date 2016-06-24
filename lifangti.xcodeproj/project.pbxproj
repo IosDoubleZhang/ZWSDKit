@@ -571,12 +571,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E2436E21D0C4EA300F33AC1 /* Build configuration list for PBXNativeTarget "lifangti" */;
 			buildPhases = (
+				66909D1684B90625E587FD63 /* 📦 Check Pods Manifest.lock */,
 				6A61CD519C66426CB2DA12D6 /* [CP] Check Pods Manifest.lock */,
 				2E2436AE1D0C4EA300F33AC1 /* Sources */,
 				2E2436AF1D0C4EA300F33AC1 /* Frameworks */,
 				2E2436B01D0C4EA300F33AC1 /* Resources */,
 				673BD30F457FE2605615BBC3 /* [CP] Embed Pods Frameworks */,
 				0D4F02B38A0CACCB4A4123C8 /* [CP] Copy Pods Resources */,
+				E8F693D2897B1A661DCD3C86 /* 📦 Embed Pods Frameworks */,
+				84E32636C5B75FBE3B3CAB26 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -715,6 +718,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-lifangti/Pods-lifangti-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		66909D1684B90625E587FD63 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		673BD30F457FE2605615BBC3 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -743,6 +761,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		84E32636C5B75FBE3B3CAB26 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-lifangti/Pods-lifangti-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8F693D2897B1A661DCD3C86 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-lifangti/Pods-lifangti-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

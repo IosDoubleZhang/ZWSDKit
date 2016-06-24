@@ -277,7 +277,7 @@ extern "C" {
      *  @param polygon 多边形
      *  @param count   多边形点的数量
      *
-     *  @return <#return value description#>
+     *  @return 判断结果
      */
     extern BOOL MAPolygonContainsCoordinate(CLLocationCoordinate2D point, CLLocationCoordinate2D *polygon, NSUInteger count);
     
