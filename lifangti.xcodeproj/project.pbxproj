@@ -42,6 +42,7 @@
 		2EA1E13A1D1BCF1D00378E8B /* MBProgressHUD+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1E1371D1BCF1D00378E8B /* MBProgressHUD+Add.m */; };
 		2EA1E13B1D1BCF1D00378E8B /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1E1391D1BCF1D00378E8B /* MBProgressHUD.m */; };
 		2EA1E13E1D1BE7CC00378E8B /* UtilityLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1E13D1D1BE7CC00378E8B /* UtilityLanguage.m */; };
+		2EA1E1401D1CEB8E00378E8B /* pop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EA1E13F1D1CEB8E00378E8B /* pop.framework */; };
 		2EEE54781D17CAC40070B625 /* UtilityForUM.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEE54771D17CAC40070B625 /* UtilityForUM.m */; };
 		2EEE547B1D17CAE60070B625 /* UtilityForUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEE547A1D17CAE60070B625 /* UtilityForUI.m */; };
 		2EEE547E1D17CAEF0070B625 /* UtilityForClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEE547D1D17CAEF0070B625 /* UtilityForClass.m */; };
@@ -141,6 +142,7 @@
 		2EA1E1391D1BCF1D00378E8B /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		2EA1E13C1D1BE7CC00378E8B /* UtilityLanguage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityLanguage.h; sourceTree = "<group>"; };
 		2EA1E13D1D1BE7CC00378E8B /* UtilityLanguage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilityLanguage.m; sourceTree = "<group>"; };
+		2EA1E13F1D1CEB8E00378E8B /* pop.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = pop.framework; path = "../Library/Developer/Xcode/DerivedData/lifangti-ewniunirtgffzghhcpebqkcveetz/Build/Products/Debug-iphonesimulator/pop/pop.framework"; sourceTree = "<group>"; };
 		2EEE54761D17CAC40070B625 /* UtilityForUM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityForUM.h; sourceTree = "<group>"; };
 		2EEE54771D17CAC40070B625 /* UtilityForUM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilityForUM.m; sourceTree = "<group>"; };
 		2EEE54791D17CAE60070B625 /* UtilityForUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityForUI.h; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EA1E1401D1CEB8E00378E8B /* pop.framework in Frameworks */,
 				2EA1E0DE1D1A8A6B00378E8B /* SceneKit.framework in Frameworks */,
 				2E1DB7061D184C8000F73FE6 /* libWeChatSDK.a in Frameworks */,
 				2E1DB6FE1D184C8000F73FE6 /* libSocialQQ.a in Frameworks */,
@@ -549,6 +552,7 @@
 		3315DE298122009412A7C7CA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2EA1E13F1D1CEB8E00378E8B /* pop.framework */,
 				2EA1E0DD1D1A8A6B00378E8B /* SceneKit.framework */,
 				D82261099910394FF02CF8E0 /* Pods_lifangti.framework */,
 			);

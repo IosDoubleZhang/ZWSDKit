@@ -46,4 +46,56 @@ static NSBundle *bundle = nil;
     [def setValue:language forKey:@"userLanguage"];
     [def synchronize];
 }
++(NSString *)NSloca:(NSString *)str
+{
+    
+    
+    if ([[[UtilityLanguage bundle]localizedStringForKey:str value:nil table:@"Localizable"] isEqualToString:@""]||[[UtilityLanguage bundle]localizedStringForKey:str value:nil table:@"Localizable"]==nil) {
+        return NSLocalizedString(str, @"");
+        
+    }
+    else
+    {
+        return  [[UtilityLanguage bundle]localizedStringForKey:str value:nil table:@"Localizable"];
+        
+    }
+    
+    
+    
+}
++(NSString*)NSNewloca
+{
+    
+    
+    NSArray *languages = [NSLocale preferredLanguages];
+    NSString *currentLanguage = [languages objectAtIndex:0];
+    NSLog(@"%@",currentLanguage);
+    //[LanguageChooseController userLanguage]
+    if ([currentLanguage isEqualToString:@"zh-Hans-CN"]) {
+        [Utility sharedUtility].NowUsedLanguage=[UtilityLanguage NSloca:@"中文"];
+        return [Utility sharedUtility].NowUsedLanguage;
+    }
+    else{
+        [Utility sharedUtility].NowUsedLanguage=[UtilityLanguage NSloca:@"英文"];
+        return [Utility sharedUtility].NowUsedLanguage;
+        
+    }
+    
+}
+
++(NSString*)NSUserloca
+{
+    
+    
+    
+    if ([[Utility sharedUtility].NowUsedLanguage isEqualToString:[UtilityLanguage NSloca:@"中文"]]) {
+        return [UtilityLanguage NSloca:@"中文"];
+    }
+    else{
+        return [UtilityLanguage NSloca:@"英文"];
+        
+    }
+    
+}
+
 @end
