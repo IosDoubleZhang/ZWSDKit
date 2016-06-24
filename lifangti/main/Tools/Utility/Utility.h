@@ -13,5 +13,7 @@
 + (Utility *)sharedUtility;
 ///用户当前位置
 @property(nonatomic,retain)CLLocation *Userlocation;
+///当前语言
+@property(nonatomic,strong)NSString * NowUsedLanguage;
 
 @end
