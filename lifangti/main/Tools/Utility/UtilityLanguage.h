@@ -11,13 +11,16 @@
 @interface UtilityLanguage : Utility
 ///获取当前资源文件
 +(NSBundle *)bundle;
-+(void)initUserLanguage;//初始化语言文件
-+(NSString *)userLanguage;//获取应用当前语言
-+(void)setUserlanguage:(NSString *)language;//设置当前语言
+///初始化语言文件
++(void)initUserLanguage;
+///获取应用当前语言
++(NSString *)userLanguage;
+///设置当前语言
++(void)setUserlanguage:(NSString *)language;
 ///国际 化键值匹配
 +(NSString *)NSloca:(NSString *)str;
 ///系统当前语言版本
 +(NSString *)NSNewloca;
-
+///用户当前语言
 +(NSString*)NSUserloca;
 @end

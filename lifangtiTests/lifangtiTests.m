@@ -26,6 +26,7 @@
 }
 
 - (void)testExample {
+  
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
 
@@ -42,7 +43,7 @@
 }
 -(void)testNumber
 {
-
+    
     if ([UtilityForString isValidateMobile:@"13322282909"]) {
         NSLog(@"Yes____________________________Mobile");
     }
@@ -50,5 +51,11 @@
         NSLog(@"No_____________________________Mobile");
     }
 }
+-(void)testla
+{
+    
+    NSLog(@"%@",[UtilityLanguage NSNewloca]);
+}
+
 
 @end
