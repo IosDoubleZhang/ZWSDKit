@@ -23,6 +23,8 @@
 		2E2436C81D0C4EA300F33AC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E2436C61D0C4EA300F33AC1 /* LaunchScreen.storyboard */; };
 		2E2436D31D0C4EA300F33AC1 /* lifangtiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2436D21D0C4EA300F33AC1 /* lifangtiTests.m */; };
 		2E2436DE1D0C4EA300F33AC1 /* lifangtiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2436DD1D0C4EA300F33AC1 /* lifangtiUITests.m */; };
+		2E55B4881D219836006B28D6 /* myPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E55B4871D219836006B28D6 /* myPoint.m */; };
+		2E55B48C1D219BFC006B28D6 /* LeanNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E55B48B1D219BFC006B28D6 /* LeanNetWork.m */; };
 		2EA1E0D01D194DFB00378E8B /* VC2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1E0BA1D194DFB00378E8B /* VC2ViewController.m */; };
 		2EA1E0D11D194DFB00378E8B /* VC2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EA1E0BB1D194DFB00378E8B /* VC2ViewController.xib */; };
 		2EA1E0D21D194DFB00378E8B /* VC1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1E0BE1D194DFB00378E8B /* VC1ViewController.m */; };
@@ -105,6 +107,11 @@
 		2E2436D91D0C4EA300F33AC1 /* lifangtiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lifangtiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E2436DD1D0C4EA300F33AC1 /* lifangtiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lifangtiUITests.m; sourceTree = "<group>"; };
 		2E2436DF1D0C4EA300F33AC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E55B4861D219836006B28D6 /* myPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myPoint.h; sourceTree = "<group>"; };
+		2E55B4871D219836006B28D6 /* myPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myPoint.m; sourceTree = "<group>"; };
+		2E55B48A1D219BFC006B28D6 /* LeanNetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeanNetWork.h; sourceTree = "<group>"; };
+		2E55B48B1D219BFC006B28D6 /* LeanNetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeanNetWork.m; sourceTree = "<group>"; };
+		2E55B48D1D219FA4006B28D6 /* LeanClounModelHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeanClounModelHeader.h; sourceTree = "<group>"; };
 		2EA1E0B91D194DFB00378E8B /* VC2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VC2ViewController.h; sourceTree = "<group>"; };
 		2EA1E0BA1D194DFB00378E8B /* VC2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VC2ViewController.m; sourceTree = "<group>"; };
 		2EA1E0BB1D194DFB00378E8B /* VC2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VC2ViewController.xib; sourceTree = "<group>"; };
@@ -322,6 +329,25 @@
 			path = lifangtiUITests;
 			sourceTree = "<group>";
 		};
+		2E55B4851D219836006B28D6 /* LeanCloundModel */ = {
+			isa = PBXGroup;
+			children = (
+				2E55B48D1D219FA4006B28D6 /* LeanClounModelHeader.h */,
+				2E55B4861D219836006B28D6 /* myPoint.h */,
+				2E55B4871D219836006B28D6 /* myPoint.m */,
+			);
+			path = LeanCloundModel;
+			sourceTree = "<group>";
+		};
+		2E55B4891D219896006B28D6 /* LeanNetWork */ = {
+			isa = PBXGroup;
+			children = (
+				2E55B48A1D219BFC006B28D6 /* LeanNetWork.h */,
+				2E55B48B1D219BFC006B28D6 /* LeanNetWork.m */,
+			);
+			path = LeanNetWork;
+			sourceTree = "<group>";
+		};
 		2EA1E0B71D194DFB00378E8B /* CZMainFunctionalArea */ = {
 			isa = PBXGroup;
 			children = (
@@ -499,6 +525,7 @@
 		2EFDEA1C1D0DC0400088F25F /* m */ = {
 			isa = PBXGroup;
 			children = (
+				2E55B4851D219836006B28D6 /* LeanCloundModel */,
 			);
 			path = m;
 			sourceTree = "<group>";
@@ -513,6 +540,7 @@
 		2EFDEA1E1D0DC0400088F25F /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				2E55B4891D219896006B28D6 /* LeanNetWork */,
 				2EA1E1201D1BCE0700378E8B /* NetwrokHandle */,
 				2EFDEA1F1D0DC0400088F25F /* Utility */,
 			);
@@ -808,11 +836,13 @@
 				2EA1E0D71D194DFB00378E8B /* someFountionTabbar.m in Sources */,
 				2EFDEA201D0DC0400088F25F /* Clound.m in Sources */,
 				2EA1E12E1D1BCE0700378E8B /* ZzsAsiNetworkItem.m in Sources */,
+				2E55B48C1D219BFC006B28D6 /* LeanNetWork.m in Sources */,
 				2EEE54941D17D7960070B625 /* UtilityForData.m in Sources */,
 				2EEE547B1D17CAE60070B625 /* UtilityForUI.m in Sources */,
 				2EA1E0D81D194DFB00378E8B /* ShowButtonView.m in Sources */,
 				2EA1E0D21D194DFB00378E8B /* VC1ViewController.m in Sources */,
 				2EEE54841D17CB250070B625 /* UtilityForString.m in Sources */,
+				2E55B4881D219836006B28D6 /* myPoint.m in Sources */,
 				2EA1E13B1D1BCF1D00378E8B /* MBProgressHUD.m in Sources */,
 				2EEE54871D17CB3B0070B625 /* UtilityForValue.m in Sources */,
 				2EA1E0D51D194DFB00378E8B /* VC4ViewController.m in Sources */,
