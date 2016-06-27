@@ -7,11 +7,14 @@
 //
 
 #import "Clound.h"
-#import <AVOSCloud/AVOSCloud.h>
+#import "myPoint.h"
 @implementation Clound
 +(void)StartClound{
-    [AVOSCloud setApplicationId:@"V9WHedqbLB4kNXsunQ25EmEl-gzGzoHsz"
-                      clientKey:@"FOXd55dzrkh9wipaJ9WDtNoF"];
+    [AVOSCloud setApplicationId:@"e4CoV3hV13lSwblThKUKH9v8-gzGzoHsz"
+                      clientKey:@"FOUGkRwMjdu1JwPKFI4uSytA"];
+    ///注册到leanClound上
+//   
+    [myPoint registerSubclass];
 }
 
 @end

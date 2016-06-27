@@ -10,6 +10,7 @@
 //#import "UtilityHeader.h"
 #import "UtilityForString.h"
 #import "UtilityLanguage.h"
+
 @interface lifangtiTests : XCTestCase
 
 @end
@@ -63,7 +64,10 @@
 
 - (void)testString
 {
-    DTLog(@"%d",[UtilityForString checkUserIdCard:@"http"]);
+//    DTLog(@"%d",[UtilityForString checkUserIdCard:@"http"]);
 }
+-(void)save{
 
+    
+}
 @end
