@@ -22,17 +22,18 @@
     //打开新浪微博的SSO开关，设置新浪微博回调地址，这里必须要和你在新浪微博后台设置的回调地址一致。需要 #import "UMSocialSinaSSOHandler.h"
     [UMSocialSinaSSOHandler openNewSinaSSOWithAppKey:SinaKey secret:SinaAppKey RedirectURL:ShareUrl];
 }
-//+(void)CommonShare:(NSString *)title Url:(NSString *)Url Img:(UIImage *)img
-//{
-//    [UMSocialData defaultData].extConfig.title = title;
-////    [UMSocialData defaultData].extConfig.qqData.url = @"http://baidu.com";
-//    [UMSocialSnsService presentSnsIconSheetView:self
-//                                         appKey:UMkey
-//                                      shareText:@"友盟社会化分享让您快速实现分享等社会化功能，http://umeng.com/social"
-//                                     shareImage:img
-//                                shareToSnsNames:@[UMShareToWechatSession,UMShareToWechatTimeline,UMShareToSina,UMShareToQQ,UMShareToQzone]
-//                                       delegate:self];
-//}
++(void)CommonShareTitle:(NSString *)title Info:(NSString *)info Url:(NSString *)Url Img:(UIImage *)img idSelf:(id)Class
+{
+    [[UMSocialData defaultData].urlResource setResourceType:UMSocialUrlResourceTypeImage url:Url];
+    [UMSocialData defaultData].extConfig.title = title;
+    [UMSocialData defaultData].extConfig.qqData.url = Url;
+    [UMSocialSnsService presentSnsIconSheetView:Class
+                                         appKey:UMkey
+                                      shareText:info
+                                     shareImage:img
+                                shareToSnsNames:@[UMShareToWechatSession,UMShareToWechatTimeline,UMShareToSina,UMShareToQQ,UMShareToQzone]
+                                       delegate:Class];
+}
 -(void)didFinishGetUMSocialDataInViewController:(UMSocialResponseEntity *)response
 {
     //根据`responseCode`得到发送结果,如果分享成功
@@ -42,8 +43,60 @@
         NSLog(@"share to sns name is %@",[[response.data allKeys] objectAtIndex:0]);
     }
 }
-+(void)UmShare:(NSString *)title Url:(NSString *)Url Img:(UIImage *)img
++(void)WxShareTitle:(NSString *)title Info:(NSString *)info Url:(NSString *)Url Img:(UIImage *)img Location:(CLLocation*)location InfoKindTag:(NSUInteger)InfoKindTag  Kind:(NSInteger )Kind Tag:(NSInteger)tag idSelf:(id)Class
 {
+    NSArray *tys;
+    if (tag==1) {
+     
+        //调用快速分享接口
+        [UMSocialData defaultData].extConfig.wechatTimelineData.title = title;
+        [UMSocialData defaultData].extConfig.wechatTimelineData.url= Url;
+        tys=@[UMShareToWechatTimeline];
+    }
+    else{
 
+        [UMSocialData defaultData].extConfig.wechatSessionData.title = title;
+        [UMSocialData defaultData].extConfig.wechatSessionData.url = Url;
+        tys=@[UMShareToWechatSession];
+    }
+    
+    
+    if (Kind==1) {
+    [UMSocialData defaultData].extConfig.wxMessageType = UMSocialWXMessageTypeImage;
+    }
+    else if (Kind==2)
+    {
+    [UMSocialData defaultData].extConfig.wxMessageType = UMSocialWXMessageTypeText;
+
+    }
+    else if (Kind==3)
+    {
+    [UMSocialData defaultData].extConfig.wxMessageType = UMSocialWXMessageTypeApp;
+
+    }
+    else{
+        if(InfoKindTag==1)
+        {
+            
+            [[UMSocialData defaultData].urlResource setResourceType:UMSocialUrlResourceTypeMusic url:Url];
+        }
+        else if (InfoKindTag==2)
+        {
+        [[UMSocialData defaultData].urlResource setResourceType:UMSocialUrlResourceTypeVideo url:Url];
+        }
+        else
+        {
+            
+        }
+    }
+
+    UMSocialUrlResource *urlResource = [[UMSocialUrlResource alloc] initWithSnsResourceType:UMSocialUrlResourceTypeImage url:
+                                        Url];
+    [[UMSocialDataService defaultDataService]  postSNSWithTypes:tys content:info image:img location:location urlResource:urlResource presentedController:Class completion:^(UMSocialResponseEntity *shareResponse){
+        if (shareResponse.responseCode == UMSResponseCodeSuccess) {
+            NSLog(@"分享成功！");
+        }
+    }];
 }
+
 @end

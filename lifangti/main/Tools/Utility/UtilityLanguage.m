@@ -86,7 +86,7 @@ static NSBundle *bundle = nil;
 +(NSString*)NSUserloca
 {
     
-    
+  
     
     if ([[Utility sharedUtility].NowUsedLanguage isEqualToString:[UtilityLanguage NSloca:@"中文"]]) {
         return [UtilityLanguage NSloca:@"中文"];

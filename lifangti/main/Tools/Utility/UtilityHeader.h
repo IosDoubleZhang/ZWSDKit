@@ -10,7 +10,7 @@
 #import "UtilityForValue.h"
 #import "UtilityForUI.h"
 //没有配置好
-//#import "UtilityForUM.h"
+#import "UtilityForUM.h"
 #import "UtilityForClass.h"
 #import "UtilityForString.h"
 #import "UtilityForTime.h"

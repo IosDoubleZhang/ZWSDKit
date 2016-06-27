@@ -7,7 +7,9 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "UtilityHeader.h"
+//#import "UtilityHeader.h"
+#import "UtilityForString.h"
+#import "UtilityLanguage.h"
 @interface lifangtiTests : XCTestCase
 
 @end

@@ -40,12 +40,6 @@
        self.viewControllers = ncArr;
 
     [self createItem];
-        
-       
-        
-        
- 
-
 
     // Do any additional setup after loading the view.
 }
@@ -58,12 +52,13 @@
     iv.backgroundColor=[UIColor whiteColor];
     //    iv.image = [[UIImage imageNamed:@"2222"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     self.tabBar.barTintColor=[UIColor colorWithRed:1 green:1 blue:1 alpha:0];
-    self.tabBar.superview.backgroundColor = [UIColor clearColor];
-//    让imageView接收点击事件
+//    self.tabBar.superview.backgroundColor = [UIColor yellowColor];
+    //让imageView接收点击事件
     iv.userInteractionEnabled = YES;
     //删除现有的tabBar
     CGRect rect = self.tabBar.frame;
-    [self.tabBar removeFromSuperview];  //移除TabBarController自带的下部的条
+    [self.tabBar removeFromSuperview];
+    //移除TabBarController自带的下部的条
     
     //测试添加自己的视图
     UIView *myView = [[UIView alloc] init];
@@ -145,8 +140,19 @@
     }
     else if (sender.tag-1000==2)
     {
+        ShowButtonView *view=[ShowButtonView SetButtonView];
+        view.ActionBlock=^{
+            [UtilityForUM CommonShareTitle:@"dsdasda" Info:@"sdasdasda" Url:@"www.baidu.com" Img:[UIImage imageNamed:@"account_highlight"] idSelf:self];
+        };
+        view.Action2Block=^{
+            [UtilityForUM WxShareTitle:@"aaaa" Info:@"SSSSSS" Url:@"http://music.huoxing.com/upload/20130330/1364651263157_1085.mp3" Img:[UIImage imageNamed:@"account_highlight"] Location:nil InfoKindTag:1 Kind :0 Tag:0 idSelf:self];
+        };
+        view.Action3Block=^{
         
-        [ShowButtonView showView];
+            
+        };
+        [ShowButtonView showView:view];
+        
         
     }
     else{
