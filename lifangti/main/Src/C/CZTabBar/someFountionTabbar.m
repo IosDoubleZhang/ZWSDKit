@@ -144,8 +144,9 @@
         view.ActionBlock=^{
             [UtilityForUM CommonShareTitle:@"dsdasda" Info:@"sdasdasda" Url:@"www.baidu.com" Img:[UIImage imageNamed:@"account_highlight"] idSelf:self];
         };
+        CLLocation *l=[[CLLocation alloc]initWithLatitude:111.2 longitude:1.82];
         view.Action2Block=^{
-            [UtilityForUM WxShareTitle:@"aaaa" Info:@"SSSSSS" Url:@"http://music.huoxing.com/upload/20130330/1364651263157_1085.mp3" Img:[UIImage imageNamed:@"account_highlight"] Location:nil InfoKindTag:1 Kind :0 Tag:0 idSelf:self];
+            [UtilityForUM WxShareTitle:@"aaaa" Info:@"SSSSSS" Url:Nil Img:[UIImage imageNamed:@"account_highlight"] Location:l InfoKindTag:0 Kind:0 Tag:0 idSelf:self];
         };
         view.Action3Block=^{
         

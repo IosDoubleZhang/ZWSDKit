@@ -24,6 +24,7 @@
 }
 +(void)CommonShareTitle:(NSString *)title Info:(NSString *)info Url:(NSString *)Url Img:(UIImage *)img idSelf:(id)Class
 {
+    
     [[UMSocialData defaultData].urlResource setResourceType:UMSocialUrlResourceTypeImage url:Url];
     [UMSocialData defaultData].extConfig.title = title;
     [UMSocialData defaultData].extConfig.qqData.url = Url;
@@ -45,58 +46,67 @@
 }
 +(void)WxShareTitle:(NSString *)title Info:(NSString *)info Url:(NSString *)Url Img:(UIImage *)img Location:(CLLocation*)location InfoKindTag:(NSUInteger)InfoKindTag  Kind:(NSInteger )Kind Tag:(NSInteger)tag idSelf:(id)Class
 {
-    NSArray *tys;
-    if (tag==1) {
-     
-        //调用快速分享接口
-        [UMSocialData defaultData].extConfig.wechatTimelineData.title = title;
-        [UMSocialData defaultData].extConfig.wechatTimelineData.url= Url;
-        tys=@[UMShareToWechatTimeline];
-    }
-    else{
-
-        [UMSocialData defaultData].extConfig.wechatSessionData.title = title;
-        [UMSocialData defaultData].extConfig.wechatSessionData.url = Url;
-        tys=@[UMShareToWechatSession];
-    }
-    
-    
-    if (Kind==1) {
-    [UMSocialData defaultData].extConfig.wxMessageType = UMSocialWXMessageTypeImage;
-    }
-    else if (Kind==2)
-    {
-    [UMSocialData defaultData].extConfig.wxMessageType = UMSocialWXMessageTypeText;
-
-    }
-    else if (Kind==3)
-    {
-    [UMSocialData defaultData].extConfig.wxMessageType = UMSocialWXMessageTypeApp;
-
-    }
-    else{
-        if(InfoKindTag==1)
-        {
+ 
+        
+        NSArray *tys;
+        if (tag==1) {
             
-            [[UMSocialData defaultData].urlResource setResourceType:UMSocialUrlResourceTypeMusic url:Url];
+            //调用快速分享接口
+            [UMSocialData defaultData].extConfig.wechatTimelineData.title = title;
+            [UMSocialData defaultData].extConfig.wechatTimelineData.url= Url;
+            tys=@[UMShareToWechatTimeline];
         }
-        else if (InfoKindTag==2)
-        {
-        [[UMSocialData defaultData].urlResource setResourceType:UMSocialUrlResourceTypeVideo url:Url];
+        else{
+            
+            [UMSocialData defaultData].extConfig.wechatSessionData.title = title;
+            [UMSocialData defaultData].extConfig.wechatSessionData.url = Url;
+            tys=@[UMShareToWechatSession];
         }
-        else
+        
+        
+        if (Kind==1) {
+            [UMSocialData defaultData].extConfig.wxMessageType = UMSocialWXMessageTypeImage;
+        }
+        else if (Kind==2)
         {
+            [UMSocialData defaultData].extConfig.wxMessageType = UMSocialWXMessageTypeText;
             
         }
-    }
-
-    UMSocialUrlResource *urlResource = [[UMSocialUrlResource alloc] initWithSnsResourceType:UMSocialUrlResourceTypeImage url:
-                                        Url];
-    [[UMSocialDataService defaultDataService]  postSNSWithTypes:tys content:info image:img location:location urlResource:urlResource presentedController:Class completion:^(UMSocialResponseEntity *shareResponse){
-        if (shareResponse.responseCode == UMSResponseCodeSuccess) {
-            NSLog(@"分享成功！");
+        else if (Kind==3)
+        {
+            [UMSocialData defaultData].extConfig.wxMessageType = UMSocialWXMessageTypeApp;
+            
         }
-    }];
+        else{
+            if(InfoKindTag==1)
+            {
+                
+                [[UMSocialData defaultData].urlResource setResourceType:UMSocialUrlResourceTypeMusic url:Url];
+            }
+            else if (InfoKindTag==2)
+            {
+                [[UMSocialData defaultData].urlResource setResourceType:UMSocialUrlResourceTypeVideo url:Url];
+            }
+            else
+            {
+                
+            }
+        }
+    
+ 
+        UMSocialUrlResource *urlResource = [[UMSocialUrlResource alloc] initWithSnsResourceType:UMSocialUrlResourceTypeImage url:
+                                            Url];
+      dispatch_async(dispatch_get_global_queue(0, 0), ^{      
+        
+        [[UMSocialDataService defaultDataService]  postSNSWithTypes:tys content:info image:img location:location urlResource:urlResource presentedController:Class completion:^(UMSocialResponseEntity *shareResponse){
+            if (shareResponse.responseCode == UMSResponseCodeSuccess) {
+                NSLog(@"分享成功！");
+            }
+        }];
+        
+        //something
+    });
+    
 }
 
 @end
