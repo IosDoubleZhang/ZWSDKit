@@ -27,8 +27,6 @@
     {
         return NO;
     }
-    
-    
 }
 + (NSDictionary *)readLocalFilewith:(NSString *)key
 {
@@ -40,7 +38,7 @@
     NSDictionary *dict = [unarchiver decodeObjectForKey:key];
     
     
-    NSLog(@"dict = %@", dict);
+    DTLog(@"dict = %@", dict);
     return dict;
     
 }
