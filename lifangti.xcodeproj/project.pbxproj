@@ -48,6 +48,9 @@
 		2ED0BF431D23A56D0078BEFE /* TheCube.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED0BF421D23A56D0078BEFE /* TheCube.m */; };
 		2ED0BF461D23A9C90078BEFE /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED0BF451D23A9C90078BEFE /* Comment.m */; };
 		2ED0BF491D23B8D10078BEFE /* CubeStar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED0BF481D23B8D10078BEFE /* CubeStar.m */; };
+		2ED0BF4C1D23DA670078BEFE /* LeanNetBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED0BF4B1D23DA670078BEFE /* LeanNetBase.m */; };
+		2ED0BF501D23E1BE0078BEFE /* LogAndRegViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED0BF4E1D23E1BE0078BEFE /* LogAndRegViewController.m */; };
+		2ED0BF511D23E1BE0078BEFE /* LogAndRegViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ED0BF4F1D23E1BE0078BEFE /* LogAndRegViewController.xib */; };
 		2EEE54781D17CAC40070B625 /* UtilityForUM.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEE54771D17CAC40070B625 /* UtilityForUM.m */; };
 		2EEE547B1D17CAE60070B625 /* UtilityForUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEE547A1D17CAE60070B625 /* UtilityForUI.m */; };
 		2EEE547E1D17CAEF0070B625 /* UtilityForClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEE547D1D17CAEF0070B625 /* UtilityForClass.m */; };
@@ -159,6 +162,11 @@
 		2ED0BF451D23A9C90078BEFE /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comment.m; sourceTree = "<group>"; };
 		2ED0BF471D23B8D10078BEFE /* CubeStar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CubeStar.h; sourceTree = "<group>"; };
 		2ED0BF481D23B8D10078BEFE /* CubeStar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CubeStar.m; sourceTree = "<group>"; };
+		2ED0BF4A1D23DA670078BEFE /* LeanNetBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeanNetBase.h; sourceTree = "<group>"; };
+		2ED0BF4B1D23DA670078BEFE /* LeanNetBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeanNetBase.m; sourceTree = "<group>"; };
+		2ED0BF4D1D23E1BE0078BEFE /* LogAndRegViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogAndRegViewController.h; sourceTree = "<group>"; };
+		2ED0BF4E1D23E1BE0078BEFE /* LogAndRegViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogAndRegViewController.m; sourceTree = "<group>"; };
+		2ED0BF4F1D23E1BE0078BEFE /* LogAndRegViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogAndRegViewController.xib; sourceTree = "<group>"; };
 		2EEE54761D17CAC40070B625 /* UtilityForUM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityForUM.h; sourceTree = "<group>"; };
 		2EEE54771D17CAC40070B625 /* UtilityForUM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilityForUM.m; sourceTree = "<group>"; };
 		2EEE54791D17CAE60070B625 /* UtilityForUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityForUI.h; sourceTree = "<group>"; };
@@ -359,6 +367,8 @@
 			children = (
 				2E55B48A1D219BFC006B28D6 /* LeanNetWork.h */,
 				2E55B48B1D219BFC006B28D6 /* LeanNetWork.m */,
+				2ED0BF4A1D23DA670078BEFE /* LeanNetBase.h */,
+				2ED0BF4B1D23DA670078BEFE /* LeanNetBase.m */,
 			);
 			path = LeanNetWork;
 			sourceTree = "<group>";
@@ -370,6 +380,9 @@
 				2EA1E0BC1D194DFB00378E8B /* CityBao */,
 				2EA1E0C01D194DFB00378E8B /* Message */,
 				2EA1E0C31D194DFB00378E8B /* PersonalCenter */,
+				2ED0BF4D1D23E1BE0078BEFE /* LogAndRegViewController.h */,
+				2ED0BF4E1D23E1BE0078BEFE /* LogAndRegViewController.m */,
+				2ED0BF4F1D23E1BE0078BEFE /* LogAndRegViewController.xib */,
 			);
 			path = CZMainFunctionalArea;
 			sourceTree = "<group>";
@@ -721,6 +734,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ED0BF511D23E1BE0078BEFE /* LogAndRegViewController.xib in Resources */,
 				2EA1E0D31D194DFB00378E8B /* VC1ViewController.xib in Resources */,
 				2E1DB7001D184C8000F73FE6 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 				2EA1E0D91D194DFB00378E8B /* ShowButtonView.xib in Resources */,
@@ -876,8 +890,10 @@
 				2EA1E0DC1D19511800378E8B /* UtilityPopManager.m in Sources */,
 				2ED0BF491D23B8D10078BEFE /* CubeStar.m in Sources */,
 				2EEE547E1D17CAEF0070B625 /* UtilityForClass.m in Sources */,
+				2ED0BF4C1D23DA670078BEFE /* LeanNetBase.m in Sources */,
 				2E2436B71D0C4EA300F33AC1 /* main.m in Sources */,
 				2EA1E12F1D1BCE0700378E8B /* ZzsNetworkManager.m in Sources */,
+				2ED0BF501D23E1BE0078BEFE /* LogAndRegViewController.m in Sources */,
 				2E2436C31D0C4EA300F33AC1 /* lifangti.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
