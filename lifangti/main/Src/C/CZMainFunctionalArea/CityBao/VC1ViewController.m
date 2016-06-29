@@ -19,18 +19,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-//    dispatch_async(dispatch_get_global_queue(0, 0), ^{ //something
-//            [LeanNetWork testV];
-//    });
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [LeanNetWork getObjc];
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{ //something
+
     });
-<<<<<<< 944db02c79af8b5198b083bb0d91b9b6c0ec3e88
-    
-    [LeanNetWork GetAVobjectBackground:^(NSArray *parse) {
-        _parse=[parse firstObject];
-        NSLog(@"%@",_parse.dist);
-=======
 //    [LeanNetWork GetAVobjectBackground:^(NSArray *parse) {
 //        _parse=[parse firstObject];
 //        NSLog(@"%@",_parse.dist);
@@ -70,7 +61,6 @@
         } faliue:^(NSString *errorMessage) {
             
         } WithObjc:@[cube,aComment,bComment]];
->>>>>>> 关系结构模型
     } faliue:^(NSString *errorMessage) {
         
     } WithObjc:cube];
