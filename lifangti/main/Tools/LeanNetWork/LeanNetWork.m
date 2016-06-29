@@ -32,6 +32,20 @@
         }
     }];
 }
++(void)GetAVobjectBackground:(void (^)(NSArray*parse))success faliue:(void (^)(NSString *errorMessage))faliure WithObjc:(NSString*)objcClassName AndObjcID:(NSString *)ObjcID;
+{
+    AVQuery *query = [AVQuery queryWithClassName:objcClassName];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (error) {
+            faliure(error.localizedDescription);
+        }
+        else{
+        success([NSArray arrayWithArray:objects]);
+        }
+        
+    }];
+}
+
 +(void)testV
 {
     for (int i=0; i<50; i++) {
