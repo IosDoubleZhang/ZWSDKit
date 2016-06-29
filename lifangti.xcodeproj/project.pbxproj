@@ -45,6 +45,9 @@
 		2EA1E13B1D1BCF1D00378E8B /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1E1391D1BCF1D00378E8B /* MBProgressHUD.m */; };
 		2EA1E13E1D1BE7CC00378E8B /* UtilityLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1E13D1D1BE7CC00378E8B /* UtilityLanguage.m */; };
 		2EA1E1401D1CEB8E00378E8B /* pop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EA1E13F1D1CEB8E00378E8B /* pop.framework */; };
+		2ED0BF431D23A56D0078BEFE /* TheCube.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED0BF421D23A56D0078BEFE /* TheCube.m */; };
+		2ED0BF461D23A9C90078BEFE /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED0BF451D23A9C90078BEFE /* Comment.m */; };
+		2ED0BF491D23B8D10078BEFE /* CubeStar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED0BF481D23B8D10078BEFE /* CubeStar.m */; };
 		2EEE54781D17CAC40070B625 /* UtilityForUM.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEE54771D17CAC40070B625 /* UtilityForUM.m */; };
 		2EEE547B1D17CAE60070B625 /* UtilityForUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEE547A1D17CAE60070B625 /* UtilityForUI.m */; };
 		2EEE547E1D17CAEF0070B625 /* UtilityForClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEE547D1D17CAEF0070B625 /* UtilityForClass.m */; };
@@ -150,6 +153,12 @@
 		2EA1E13C1D1BE7CC00378E8B /* UtilityLanguage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityLanguage.h; sourceTree = "<group>"; };
 		2EA1E13D1D1BE7CC00378E8B /* UtilityLanguage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilityLanguage.m; sourceTree = "<group>"; };
 		2EA1E13F1D1CEB8E00378E8B /* pop.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = pop.framework; path = "../Library/Developer/Xcode/DerivedData/lifangti-ewniunirtgffzghhcpebqkcveetz/Build/Products/Debug-iphonesimulator/pop/pop.framework"; sourceTree = "<group>"; };
+		2ED0BF411D23A56D0078BEFE /* TheCube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheCube.h; sourceTree = "<group>"; };
+		2ED0BF421D23A56D0078BEFE /* TheCube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheCube.m; sourceTree = "<group>"; };
+		2ED0BF441D23A9C90078BEFE /* Comment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comment.h; sourceTree = "<group>"; };
+		2ED0BF451D23A9C90078BEFE /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comment.m; sourceTree = "<group>"; };
+		2ED0BF471D23B8D10078BEFE /* CubeStar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CubeStar.h; sourceTree = "<group>"; };
+		2ED0BF481D23B8D10078BEFE /* CubeStar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CubeStar.m; sourceTree = "<group>"; };
 		2EEE54761D17CAC40070B625 /* UtilityForUM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityForUM.h; sourceTree = "<group>"; };
 		2EEE54771D17CAC40070B625 /* UtilityForUM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilityForUM.m; sourceTree = "<group>"; };
 		2EEE54791D17CAE60070B625 /* UtilityForUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityForUI.h; sourceTree = "<group>"; };
@@ -335,6 +344,12 @@
 				2E55B48D1D219FA4006B28D6 /* LeanClounModelHeader.h */,
 				2E55B4861D219836006B28D6 /* myPoint.h */,
 				2E55B4871D219836006B28D6 /* myPoint.m */,
+				2ED0BF411D23A56D0078BEFE /* TheCube.h */,
+				2ED0BF421D23A56D0078BEFE /* TheCube.m */,
+				2ED0BF441D23A9C90078BEFE /* Comment.h */,
+				2ED0BF451D23A9C90078BEFE /* Comment.m */,
+				2ED0BF471D23B8D10078BEFE /* CubeStar.h */,
+				2ED0BF481D23B8D10078BEFE /* CubeStar.m */,
 			);
 			path = LeanCloundModel;
 			sourceTree = "<group>";
@@ -847,6 +862,7 @@
 				2EEE54871D17CB3B0070B625 /* UtilityForValue.m in Sources */,
 				2EA1E0D51D194DFB00378E8B /* VC4ViewController.m in Sources */,
 				2EEE54911D17D59F0070B625 /* UtilityForTime.m in Sources */,
+				2ED0BF461D23A9C90078BEFE /* Comment.m in Sources */,
 				2EA1E13A1D1BCF1D00378E8B /* MBProgressHUD+Add.m in Sources */,
 				2EEE54811D17CB150070B625 /* UtilityForLocation.m in Sources */,
 				2EA1E0D41D194DFB00378E8B /* VC3ViewController.m in Sources */,
@@ -856,7 +872,9 @@
 				2EA1E13E1D1BE7CC00378E8B /* UtilityLanguage.m in Sources */,
 				2EEE548B1D17D46C0070B625 /* Utility.m in Sources */,
 				2EA1E12D1D1BCE0700378E8B /* ZzsAsiNetworkHandler.m in Sources */,
+				2ED0BF431D23A56D0078BEFE /* TheCube.m in Sources */,
 				2EA1E0DC1D19511800378E8B /* UtilityPopManager.m in Sources */,
+				2ED0BF491D23B8D10078BEFE /* CubeStar.m in Sources */,
 				2EEE547E1D17CAEF0070B625 /* UtilityForClass.m in Sources */,
 				2E2436B71D0C4EA300F33AC1 /* main.m in Sources */,
 				2EA1E12F1D1BCE0700378E8B /* ZzsNetworkManager.m in Sources */,

@@ -9,5 +9,9 @@
 #import "TheCube.h"
 
 @implementation TheCube
+@dynamic title,content,user,images,species,loaction,comment;
 
++ (NSString *)parseClassName {
+    return @"TheCube";
+}
 @end

@@ -6,8 +6,9 @@
 //  Copyright © 2016年 xthink. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
-@interface Star : NSObject
-
+#import <AVOSCloud/AVOSCloud.h>
+#import "TheCube.h"
+@interface CubeStar : AVObject<AVSubclassing>
+@property (nonatomic,copy)  AVUser *        user;
+@property (nonatomic,copy)  TheCube *       cube;
 @end

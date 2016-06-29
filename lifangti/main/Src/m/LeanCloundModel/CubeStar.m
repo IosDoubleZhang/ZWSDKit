@@ -6,8 +6,12 @@
 //  Copyright © 2016年 xthink. All rights reserved.
 //
 
-#import "Star.h"
+#import "CubeStar.h"
 
-@implementation Star
+@implementation CubeStar
+@dynamic user,cube;
 
++ (NSString *)parseClassName {
+    return @"CubeStar";
+}
 @end

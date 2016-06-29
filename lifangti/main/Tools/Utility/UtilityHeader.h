@@ -35,6 +35,19 @@
 #define SHOW_ALERT(_msg_)  UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:_msg_ delegate:nil cancelButtonTitle:nil otherButtonTitles:@"确定", nil];\
 [alert show];
 
+///block
+typedef void (^ArrayBlock)      (NSArray *parse);
+typedef void (^StringBlock)     (NSString *parse);
+typedef void (^VoidBlock)       ();
+typedef void (^DictionaryBlock) (NSDictionary *parse);
+typedef void (^DataBlock)       (NSData *parse);
+typedef void (^IdObjcBlock)     (id parse);
+typedef void (^ImageBlock)      (UIImage *parse);
+typedef void (^BoolBlock)       (BOOL parse);
+
+
+
+
 
 @interface UtilityHeader : NSObject
 

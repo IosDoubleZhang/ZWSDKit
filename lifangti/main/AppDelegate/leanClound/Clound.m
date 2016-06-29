@@ -7,7 +7,7 @@
 //
 
 #import "Clound.h"
-#import "myPoint.h"
+#import "LeanClounModelHeader.h"
 @implementation Clound
 +(void)StartClound{
     [AVOSCloud setApplicationId:@"e4CoV3hV13lSwblThKUKH9v8-gzGzoHsz"
@@ -15,6 +15,9 @@
     ///注册到leanClound上
 //   
     [myPoint registerSubclass];
+    [TheCube registerSubclass];
+    [Comment registerSubclass];
+    [CubeStar registerSubclass];
 }
 
 @end

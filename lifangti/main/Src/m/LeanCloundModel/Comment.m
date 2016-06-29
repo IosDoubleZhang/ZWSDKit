@@ -6,12 +6,12 @@
 //  Copyright © 2016年 xthink. All rights reserved.
 //
 
-#import "Comments.h"
+#import "Comment.h"
 
-@implementation Comments
-@dynamic pushUser,Cube,Comments;
+@implementation Comment
+@dynamic user,cube,content;
 
 + (NSString *)parseClassName {
-    return @"Comments";
+    return @"Comment";
 }
 @end
