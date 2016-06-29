@@ -37,11 +37,13 @@
 //    } faliue:^(NSString *errorMessage) {
 //        
 //    } WithObjc:@"myPoint" AndObjcID:@"57724f8c7db2a20054128a71"];
-    TheCube *cube=[TheCube objectWithClassName:@"TheCube"];
-    [cube setObject:@"title" forKey:@"title"];
+    TheCube *cube=[TheCube object];
+    cube.title=@"好无聊";
+    cube.content=@"一个无聊的宝宝👶宝宝";
+
 
   
-    CubeStar *astar=[CubeStar objectWithClassName:@"CubeStar"];
+    CubeStar *astar=[CubeStar object];
     [astar setObject:cube forKey:@"cube"];
     [LeanNetWork ObjcSaveInBackground:^{
         Comment *aComment=[Comment objectWithClassName:@"Comment"];

@@ -16,5 +16,6 @@
 @property (nonatomic,strong)NSString *      species;
 @property (nonatomic,strong)AVGeoPoint*     loaction;
 @property (nonatomic,strong)AVRelation *    comment;
+@property (nonatomic,strong)AVRelation *    star;
 
 @end
