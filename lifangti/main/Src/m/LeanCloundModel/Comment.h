@@ -8,8 +8,8 @@
 
 #import <AVOSCloud/AVOSCloud.h>
 @class TheCube;
-@interface Comments : AVObject<AVSubclassing>
-@property (nonatomic,copy)  AVUser *        pushUser;
-@property (nonatomic,copy)  TheCube *       Cube;
-@property (nonatomic,copy)  NSString *      Comments;
+@interface Comment : AVObject<AVSubclassing>
+@property (nonatomic,copy)  AVUser *        user;
+@property (nonatomic,copy)  TheCube *       cube;
+@property (nonatomic,copy)  NSString *      content;
 @end

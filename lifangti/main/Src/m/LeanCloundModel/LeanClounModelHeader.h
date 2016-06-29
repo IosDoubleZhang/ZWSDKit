@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import "myPoint.h"
+#import "TheCube.h"
+#import "Comment.h"
+#import "CubeStar.h"
 @interface LeanClounModelHeader : NSObject
 
 @end
