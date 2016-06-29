@@ -7,13 +7,15 @@
 //
 
 #import "VC1ViewController.h"
-
+#import "myPoint.h"
 @interface VC1ViewController ()
 
 @end
 
 @implementation VC1ViewController
-
+{
+    myPoint *_parse;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
 
@@ -24,6 +26,12 @@
         [LeanNetWork getObjc];
     });
     
+    [LeanNetWork GetAVobjectBackground:^(NSArray *parse) {
+        _parse=[parse firstObject];
+        NSLog(@"%@",_parse.dist);
+    } faliue:^(NSString *errorMessage) {
+        
+    } WithObjc:@"myPoint" AndObjcID:@"57724f8c7db2a20054128a71"];
     self.view.backgroundColor=[UIColor greenColor];
     // Do any additional setup after loading the view from its nib.
 }
