@@ -10,7 +10,7 @@
 
 @implementation LeanNetWork
 +(void)ObjcSaveInBackground:(void (^)())success faliue:(void (^)(NSString *errorMessage))faliure WithObjc:(AVObject*)objc{
-
+    
     [objc saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (succeeded) {
             // 存储成功
@@ -34,20 +34,36 @@
 }
 +(void)testV
 {
-    for (int i=0; i<50; i++) {
+    for (int i=0; i<20; i++) {
         myPoint *apoint =[AVObject objectWithClassName:@"myPoint"];
-        [apoint setObject:[NSString stringWithFormat:@"这是一条测试数据%d!+++++++",i] forKey:@"dist"];
+        [apoint setObject:[NSString stringWithFormat:@"这是一个麻痹%d!+++++++",i] forKey:@"dist"];
         NSData *imageData = UIImageJPEGRepresentation([UIImage imageNamed:@"account_highlight"], 1);
         AVFile *file = [AVFile fileWithName:@"img.jpg" data:imageData];
         [apoint setObject:file forKey:@"img"];
-    [LeanNetWork ObjcSaveInBackground:^{
-        NSLog(@"%d success",i);
-        
-    } faliue:^(NSString *errorMessage) {
-        NSLog(@"%@",errorMessage);
-    } WithObjc:apoint];
+        [LeanNetWork ObjcSaveInBackground:^{
+            NSLog(@"%d success",i);
+            
+        } faliue:^(NSString *errorMessage) {
+            NSLog(@"%@",errorMessage);
+        } WithObjc:apoint];
     }
+}
 
+
++ (NSArray<AVObject *>*)getObjc
+{
+    AVQuery *query = [AVQuery queryWithClassName:@"myPoint"];
+    __block NSArray<AVObject *> * nearByPoint;
+    [query whereKey:@"dist" containsString:@"麻痹"];
+    query.limit = 10;
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (error) {
+            DTLog(@"%@",error.localizedDescription);
+        } else {
+             nearByPoint = objects;
+        }
+    }];
+    return nearByPoint;
 }
 
 @end

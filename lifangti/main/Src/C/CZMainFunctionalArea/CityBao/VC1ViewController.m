@@ -17,9 +17,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    dispatch_async(dispatch_get_global_queue(0, 0), ^{ //something
-            [LeanNetWork testV];
+//    dispatch_async(dispatch_get_global_queue(0, 0), ^{ //something
+//            [LeanNetWork testV];
+//    });
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [LeanNetWork getObjc];
     });
+    
     self.view.backgroundColor=[UIColor greenColor];
     // Do any additional setup after loading the view from its nib.
 }

@@ -12,5 +12,9 @@
 +(void)ObjcSaveInBackground:(void (^)())success faliue:(void (^)(NSString *errorMessage))faliure WithObjc:(AVObject*)objc;
 
 +(void)FileSavewInBackGround:(void (^)())success faliue:(void (^)(NSString *errorMessage))faliure WithObjc:(AVObject*)objc;
+
 +(void)testV;
+
++ (NSArray<AVObject *>*)getObjc;
+
 @end
