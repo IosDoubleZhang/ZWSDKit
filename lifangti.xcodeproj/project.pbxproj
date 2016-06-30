@@ -45,6 +45,10 @@
 		2EA1E13B1D1BCF1D00378E8B /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1E1391D1BCF1D00378E8B /* MBProgressHUD.m */; };
 		2EA1E13E1D1BE7CC00378E8B /* UtilityLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1E13D1D1BE7CC00378E8B /* UtilityLanguage.m */; };
 		2EA1E1401D1CEB8E00378E8B /* pop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EA1E13F1D1CEB8E00378E8B /* pop.framework */; };
+		2EB921271D2588E1004D19EE /* NSTimer+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB921201D2588E1004D19EE /* NSTimer+Addition.m */; };
+		2EB921281D2588E1004D19EE /* ZSScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB921221D2588E1004D19EE /* ZSScrollView.m */; };
+		2EB921291D2588E1004D19EE /* ZSUIScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB921241D2588E1004D19EE /* ZSUIScrollView.m */; };
+		2EB9212A1D2588E1004D19EE /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB921261D2588E1004D19EE /* BaseViewController.m */; };
 		2ED0BF431D23A56D0078BEFE /* TheCube.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED0BF421D23A56D0078BEFE /* TheCube.m */; };
 		2ED0BF461D23A9C90078BEFE /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED0BF451D23A9C90078BEFE /* Comment.m */; };
 		2ED0BF491D23B8D10078BEFE /* CubeStar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED0BF481D23B8D10078BEFE /* CubeStar.m */; };
@@ -156,6 +160,14 @@
 		2EA1E13C1D1BE7CC00378E8B /* UtilityLanguage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityLanguage.h; sourceTree = "<group>"; };
 		2EA1E13D1D1BE7CC00378E8B /* UtilityLanguage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilityLanguage.m; sourceTree = "<group>"; };
 		2EA1E13F1D1CEB8E00378E8B /* pop.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = pop.framework; path = "../Library/Developer/Xcode/DerivedData/lifangti-ewniunirtgffzghhcpebqkcveetz/Build/Products/Debug-iphonesimulator/pop/pop.framework"; sourceTree = "<group>"; };
+		2EB9211F1D2588E1004D19EE /* NSTimer+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Addition.h"; sourceTree = "<group>"; };
+		2EB921201D2588E1004D19EE /* NSTimer+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Addition.m"; sourceTree = "<group>"; };
+		2EB921211D2588E1004D19EE /* ZSScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSScrollView.h; sourceTree = "<group>"; };
+		2EB921221D2588E1004D19EE /* ZSScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSScrollView.m; sourceTree = "<group>"; };
+		2EB921231D2588E1004D19EE /* ZSUIScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSUIScrollView.h; sourceTree = "<group>"; };
+		2EB921241D2588E1004D19EE /* ZSUIScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSUIScrollView.m; sourceTree = "<group>"; };
+		2EB921251D2588E1004D19EE /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		2EB921261D2588E1004D19EE /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		2ED0BF411D23A56D0078BEFE /* TheCube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheCube.h; sourceTree = "<group>"; };
 		2ED0BF421D23A56D0078BEFE /* TheCube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheCube.m; sourceTree = "<group>"; };
 		2ED0BF441D23A9C90078BEFE /* Comment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comment.h; sourceTree = "<group>"; };
@@ -490,12 +502,36 @@
 			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
+		2EB9211D1D2588E1004D19EE /* BaseUi */ = {
+			isa = PBXGroup;
+			children = (
+				2EB9211E1D2588E1004D19EE /* BaseView */,
+				2EB921251D2588E1004D19EE /* BaseViewController.h */,
+				2EB921261D2588E1004D19EE /* BaseViewController.m */,
+			);
+			path = BaseUi;
+			sourceTree = "<group>";
+		};
+		2EB9211E1D2588E1004D19EE /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				2EB9211F1D2588E1004D19EE /* NSTimer+Addition.h */,
+				2EB921201D2588E1004D19EE /* NSTimer+Addition.m */,
+				2EB921211D2588E1004D19EE /* ZSScrollView.h */,
+				2EB921221D2588E1004D19EE /* ZSScrollView.m */,
+				2EB921231D2588E1004D19EE /* ZSUIScrollView.h */,
+				2EB921241D2588E1004D19EE /* ZSUIScrollView.m */,
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
 		2EFDEA141D0DC0400088F25F /* main */ = {
 			isa = PBXGroup;
 			children = (
 				2EFDEA151D0DC0400088F25F /* AppDelegate */,
 				2E1DB6E91D184C3200F73FE6 /* 3Party */,
 				2EFDEA1A1D0DC0400088F25F /* Src */,
+				2EB9211D1D2588E1004D19EE /* BaseUi */,
 				2EFDEA1E1D0DC0400088F25F /* Tools */,
 			);
 			path = main;
@@ -868,16 +904,19 @@
 				2E55B48C1D219BFC006B28D6 /* LeanNetWork.m in Sources */,
 				2EEE54941D17D7960070B625 /* UtilityForData.m in Sources */,
 				2EEE547B1D17CAE60070B625 /* UtilityForUI.m in Sources */,
+				2EB921291D2588E1004D19EE /* ZSUIScrollView.m in Sources */,
 				2EA1E0D81D194DFB00378E8B /* ShowButtonView.m in Sources */,
 				2EA1E0D21D194DFB00378E8B /* VC1ViewController.m in Sources */,
 				2EEE54841D17CB250070B625 /* UtilityForString.m in Sources */,
 				2E55B4881D219836006B28D6 /* myPoint.m in Sources */,
 				2EA1E13B1D1BCF1D00378E8B /* MBProgressHUD.m in Sources */,
 				2EEE54871D17CB3B0070B625 /* UtilityForValue.m in Sources */,
+				2EB921271D2588E1004D19EE /* NSTimer+Addition.m in Sources */,
 				2EA1E0D51D194DFB00378E8B /* VC4ViewController.m in Sources */,
 				2EEE54911D17D59F0070B625 /* UtilityForTime.m in Sources */,
 				2ED0BF461D23A9C90078BEFE /* Comment.m in Sources */,
 				2EA1E13A1D1BCF1D00378E8B /* MBProgressHUD+Add.m in Sources */,
+				2EB9212A1D2588E1004D19EE /* BaseViewController.m in Sources */,
 				2EEE54811D17CB150070B625 /* UtilityForLocation.m in Sources */,
 				2EA1E0D41D194DFB00378E8B /* VC3ViewController.m in Sources */,
 				2EA1E0D01D194DFB00378E8B /* VC2ViewController.m in Sources */,
@@ -888,6 +927,7 @@
 				2EA1E12D1D1BCE0700378E8B /* ZzsAsiNetworkHandler.m in Sources */,
 				2ED0BF431D23A56D0078BEFE /* TheCube.m in Sources */,
 				2EA1E0DC1D19511800378E8B /* UtilityPopManager.m in Sources */,
+				2EB921281D2588E1004D19EE /* ZSScrollView.m in Sources */,
 				2ED0BF491D23B8D10078BEFE /* CubeStar.m in Sources */,
 				2EEE547E1D17CAEF0070B625 /* UtilityForClass.m in Sources */,
 				2ED0BF4C1D23DA670078BEFE /* LeanNetBase.m in Sources */,
