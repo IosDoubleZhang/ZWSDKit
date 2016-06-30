@@ -92,22 +92,20 @@
 //}
 +(void)testV
 {
-<<<<<<< 944db02c79af8b5198b083bb0d91b9b6c0ec3e88
-    for (int i=0; i<20; i++) {
-        myPoint *apoint =[AVObject objectWithClassName:@"myPoint"];
-        [apoint setObject:[NSString stringWithFormat:@"这是一个麻痹%d!+++++++",i] forKey:@"dist"];
-        NSData *imageData = UIImageJPEGRepresentation([UIImage imageNamed:@"account_highlight"], 1);
-        AVFile *file = [AVFile fileWithName:@"img.jpg" data:imageData];
-        [apoint setObject:file forKey:@"img"];
-        [LeanNetWork ObjcSaveInBackground:^{
-            NSLog(@"%d success",i);
-            
-        } faliue:^(NSString *errorMessage) {
-            NSLog(@"%@",errorMessage);
-        } WithObjc:apoint];
-    }
-}
-=======
+//    for (int i=0; i<20; i++) {
+//        myPoint *apoint =[AVObject objectWithClassName:@"myPoint"];
+//        [apoint setObject:[NSString stringWithFormat:@"这是一个麻痹%d!+++++++",i] forKey:@"dist"];
+//        NSData *imageData = UIImageJPEGRepresentation([UIImage imageNamed:@"account_highlight"], 1);
+//        AVFile *file = [AVFile fileWithName:@"img.jpg" data:imageData];
+//        [apoint setObject:file forKey:@"img"];
+//        [LeanNetWork ObjcSaveInBackground:^{
+//            NSLog(@"%d success",i);
+//            
+//        } faliue:^(NSString *errorMessage) {
+//            NSLog(@"%@",errorMessage);
+//        } WithObjc:apoint];
+//    }
+
     myPoint *apoint =[myPoint objectWithClassName:@"myPoint"];
     [apoint setObject:[NSString stringWithFormat:@"2222222222222222222这是一条测试数据!+++++++"] forKey:@"dist"];
     NSData *imageData = UIImageJPEGRepresentation([UIImage imageNamed:@"account_normal"], 1);
@@ -131,7 +129,7 @@
     } faliue:^(NSString *errorMessage) {
         
     } WithObjc:arr];
->>>>>>> 关系结构模型
+}
 
 
 + (NSArray<AVObject *>*)getObjc
