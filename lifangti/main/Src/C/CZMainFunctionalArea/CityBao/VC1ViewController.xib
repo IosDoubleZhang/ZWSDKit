@@ -14,7 +14,24 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXg-FR-WtO">
+                    <rect key="frame" x="258" y="270" width="85" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="85" id="BTx-Ku-cgP"/>
+                        <constraint firstAttribute="height" constant="60" id="Z4a-js-gge"/>
+                    </constraints>
+                    <state key="normal" title="退出"/>
+                    <connections>
+                        <action selector="loginOut:" destination="-1" eventType="touchUpInside" id="htO-1d-1nc"/>
+                    </connections>
+                </button>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="hXg-FR-WtO" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9GE-tG-Ae7"/>
+                <constraint firstItem="hXg-FR-WtO" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="CHB-hJ-gRQ"/>
+            </constraints>
         </view>
     </objects>
 </document>

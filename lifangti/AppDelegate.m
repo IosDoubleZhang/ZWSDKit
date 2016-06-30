@@ -39,6 +39,7 @@
     _Bar=[someFountionTabbar new];
     self.window.rootViewController=_Bar;
 }
+
 -(void)SetLogView
 {
     _Log=[LogAndRegViewController new];
