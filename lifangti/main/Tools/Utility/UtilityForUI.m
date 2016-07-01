@@ -29,4 +29,10 @@
     [Sender setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@",SelectedImg]] forState:UIControlStateSelected];
     return Sender;
 }
++(UIView*)CreatView:(NSString *)ViewName
+{
+    return [[[NSBundle mainBundle]loadNibNamed:ViewName owner:nil options:nil] lastObject];
+    
+    
+}
 @end

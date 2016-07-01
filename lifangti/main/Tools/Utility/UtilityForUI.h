@@ -13,4 +13,6 @@
 +(void)ButtonSelected:(void (^)())selected Unselected:(void (^)())Unselected  withSender:(UIButton *)sender;
 ///设置按钮的图片
 +(UIButton*)SetImgButton:(NSString *)Img andButtonSelected:(NSString *)SelectedImg ForSender:(UIButton *)Sender;
+///xib创建VIew
++(UIView *)CreatView:(NSString *)ViewName;
 @end
