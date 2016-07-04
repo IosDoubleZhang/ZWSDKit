@@ -11,6 +11,7 @@
                 <outlet property="CZHongSeFlag" destination="mL6-n1-UnY" id="WKA-wI-6fz"/>
                 <outlet property="CZTieZi" destination="NPd-eJ-dOS" id="Sj2-tv-9pS"/>
                 <outlet property="CzMainView" destination="kGI-c1-Kcw" id="Y0s-Lu-BDX"/>
+                <outlet property="GuanZhu" destination="Iv7-eA-bOx" id="4QL-OT-wUk"/>
                 <outlet property="TieZIBnt" destination="yFj-Ij-zE4" id="Mxw-Ue-Gbf"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -63,7 +64,7 @@
                                 <constraint firstAttribute="width" secondItem="ET7-qv-eBP" secondAttribute="height" multiplier="45:17" id="xde-9U-uka"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <color key="tintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <state key="normal" title="关注">
                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
@@ -80,7 +81,7 @@
                                 <constraint firstAttribute="width" constant="60" id="nxX-Nh-fIW"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                            <color key="tintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <state key="normal" title="添加用户">
                                 <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
@@ -111,7 +112,7 @@
                                 <constraint firstAttribute="width" secondItem="xKq-TR-FPP" secondAttribute="height" multiplier="45:17" id="j8b-sg-MNh"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <color key="tintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <state key="normal" title="红包">
                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
@@ -126,7 +127,7 @@
                                 <constraint firstAttribute="width" secondItem="yFj-Ij-zE4" secondAttribute="height" multiplier="45:17" id="GR3-iZ-rWw"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <color key="tintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <state key="normal" title="帖子">
                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </state>

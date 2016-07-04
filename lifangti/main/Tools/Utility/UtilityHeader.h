@@ -25,6 +25,11 @@
 #define _S_Height [[UIScreen mainScreen] bounds].size.height
 #define RGB(r, g, b) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:1.0]
 #define RGB2(r, g, b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+#define ViewCenterPoint  CGPointMake(_S_Width/2, _S_Height/2)
+#define PS_W 414.000000
+#define PS_H 736.000000
+#define AUTO_H(a) (a/PS_H)*_S_Height
+#define AUTO_W(a) (a/PS_W)*_S_Width
 
 #ifdef DEBUG
 #   define DTLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ## __VA_ARGS__);
@@ -43,8 +48,9 @@ typedef void (^DictionaryBlock) (NSDictionary *parse);
 typedef void (^DataBlock)       (NSData *parse);
 typedef void (^IdObjcBlock)     (id parse);
 typedef void (^ImageBlock)      (UIImage *parse);
-typedef void (^BoolBlock)       (BOOL parse);
-
+//typedef void (^BoolBlock)       (BOOL parse);
+//typedef void (^FloatBlock)      (double parse);
+//typedef void (^IntBlock)        (NSInteger parse);
 
 
 

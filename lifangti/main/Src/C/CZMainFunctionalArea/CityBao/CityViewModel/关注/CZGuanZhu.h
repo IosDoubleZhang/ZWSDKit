@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CZGuanZhu : UIView
+@interface CZGuanZhu : UIView<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *GuanZhuTable;
 
+@property(nonatomic,strong)StringBlock Index;
 @end

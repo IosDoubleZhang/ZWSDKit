@@ -39,7 +39,7 @@
                         <constraints>
                             <constraint firstAttribute="width" secondItem="lcb-aI-DAx" secondAttribute="height" multiplier="170:21" id="c33-JD-Blk"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -59,6 +59,7 @@
                         </constraints>
                     </imageView>
                 </subviews>
+                <color key="backgroundColor" red="0.85641571969999997" green="0.85641571969999997" blue="0.85641571969999997" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
                     <constraint firstItem="uTd-wg-FvG" firstAttribute="width" secondItem="yV1-dY-c1Q" secondAttribute="width" id="0he-No-uPo"/>
                     <constraint firstAttribute="bottom" secondItem="cT5-gl-F3R" secondAttribute="bottom" constant="10.5" id="2z3-gq-XIN"/>

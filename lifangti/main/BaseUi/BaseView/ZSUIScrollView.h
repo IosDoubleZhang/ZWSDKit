@@ -16,6 +16,6 @@
 ///基本属性设置
 -(void)SetAttributeTanhuang:(BOOL)bounces FenYe:(BOOL)pagingEnabled YunXUHuaDOng:(BOOL)scrollEnabled HengHangJinDUTiao:(BOOL)showsHorizontalScrollIndicator ShuHangJinDuTiao:(BOOL)showsVerticalScrollIndicator  delegate:(id)delegate;
 ///滑动系数
-//@property(nonatomic ,assign)FloatBlock PageFlage;
+@property(nonatomic ,strong)StringBlock PageFlage;
 
 @end

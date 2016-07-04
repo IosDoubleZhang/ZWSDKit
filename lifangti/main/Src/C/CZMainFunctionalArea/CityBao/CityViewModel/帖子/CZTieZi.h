@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CZTieZi : UIView
+@interface CZTieZi : UIView<UITableViewDataSource,UITableViewDelegate>
 @property (strong, nonatomic) IBOutlet UITableView *CZTieZITable;
 
 @end
