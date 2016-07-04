@@ -27,8 +27,6 @@
 		2E55B48C1D219BFC006B28D6 /* LeanNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E55B48B1D219BFC006B28D6 /* LeanNetWork.m */; };
 		2EA1E0D01D194DFB00378E8B /* VC2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1E0BA1D194DFB00378E8B /* VC2ViewController.m */; };
 		2EA1E0D11D194DFB00378E8B /* VC2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EA1E0BB1D194DFB00378E8B /* VC2ViewController.xib */; };
-		2EA1E0D21D194DFB00378E8B /* VC1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1E0BE1D194DFB00378E8B /* VC1ViewController.m */; };
-		2EA1E0D31D194DFB00378E8B /* VC1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EA1E0BF1D194DFB00378E8B /* VC1ViewController.xib */; };
 		2EA1E0D41D194DFB00378E8B /* VC3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1E0C21D194DFB00378E8B /* VC3ViewController.m */; };
 		2EA1E0D51D194DFB00378E8B /* VC4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1E0C51D194DFB00378E8B /* VC4ViewController.m */; };
 		2EA1E0D61D194DFB00378E8B /* VC4ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EA1E0C61D194DFB00378E8B /* VC4ViewController.xib */; };
@@ -125,9 +123,6 @@
 		2EA1E0B91D194DFB00378E8B /* VC2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VC2ViewController.h; sourceTree = "<group>"; };
 		2EA1E0BA1D194DFB00378E8B /* VC2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VC2ViewController.m; sourceTree = "<group>"; };
 		2EA1E0BB1D194DFB00378E8B /* VC2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VC2ViewController.xib; sourceTree = "<group>"; };
-		2EA1E0BD1D194DFB00378E8B /* VC1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VC1ViewController.h; sourceTree = "<group>"; };
-		2EA1E0BE1D194DFB00378E8B /* VC1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VC1ViewController.m; sourceTree = "<group>"; };
-		2EA1E0BF1D194DFB00378E8B /* VC1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VC1ViewController.xib; sourceTree = "<group>"; };
 		2EA1E0C11D194DFB00378E8B /* VC3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VC3ViewController.h; sourceTree = "<group>"; };
 		2EA1E0C21D194DFB00378E8B /* VC3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VC3ViewController.m; sourceTree = "<group>"; };
 		2EA1E0C41D194DFB00378E8B /* VC4ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VC4ViewController.h; sourceTree = "<group>"; };
@@ -389,7 +384,6 @@
 			isa = PBXGroup;
 			children = (
 				2EA1E0B81D194DFB00378E8B /* City-Wide */,
-				2EA1E0BC1D194DFB00378E8B /* CityBao */,
 				2EA1E0C01D194DFB00378E8B /* Message */,
 				2EA1E0C31D194DFB00378E8B /* PersonalCenter */,
 				2ED0BF4D1D23E1BE0078BEFE /* LogAndRegViewController.h */,
@@ -407,16 +401,6 @@
 				2EA1E0BB1D194DFB00378E8B /* VC2ViewController.xib */,
 			);
 			path = "City-Wide";
-			sourceTree = "<group>";
-		};
-		2EA1E0BC1D194DFB00378E8B /* CityBao */ = {
-			isa = PBXGroup;
-			children = (
-				2EA1E0BD1D194DFB00378E8B /* VC1ViewController.h */,
-				2EA1E0BE1D194DFB00378E8B /* VC1ViewController.m */,
-				2EA1E0BF1D194DFB00378E8B /* VC1ViewController.xib */,
-			);
-			path = CityBao;
 			sourceTree = "<group>";
 		};
 		2EA1E0C01D194DFB00378E8B /* Message */ = {
@@ -771,7 +755,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2ED0BF511D23E1BE0078BEFE /* LogAndRegViewController.xib in Resources */,
-				2EA1E0D31D194DFB00378E8B /* VC1ViewController.xib in Resources */,
 				2E1DB7001D184C8000F73FE6 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 				2EA1E0D91D194DFB00378E8B /* ShowButtonView.xib in Resources */,
 				2EA1E0D61D194DFB00378E8B /* VC4ViewController.xib in Resources */,
@@ -906,7 +889,6 @@
 				2EEE547B1D17CAE60070B625 /* UtilityForUI.m in Sources */,
 				2EB921291D2588E1004D19EE /* ZSUIScrollView.m in Sources */,
 				2EA1E0D81D194DFB00378E8B /* ShowButtonView.m in Sources */,
-				2EA1E0D21D194DFB00378E8B /* VC1ViewController.m in Sources */,
 				2EEE54841D17CB250070B625 /* UtilityForString.m in Sources */,
 				2E55B4881D219836006B28D6 /* myPoint.m in Sources */,
 				2EA1E13B1D1BCF1D00378E8B /* MBProgressHUD.m in Sources */,

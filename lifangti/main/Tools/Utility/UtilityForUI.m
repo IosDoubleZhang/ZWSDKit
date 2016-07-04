@@ -35,4 +35,12 @@
     
     
 }
++(UIView *)FindView:(NSInteger)tag FromView:(UIView *)view
+{
+    return (UIView*)[view viewWithTag:tag];
+}
++(void)Zhuce:(id )Tab Regiest:(NSString *)NIb WithId:(NSString *)ID
+{
+    [Tab  registerNib:[UINib nibWithNibName:NIb bundle:nil] forCellReuseIdentifier:ID];
+}
 @end

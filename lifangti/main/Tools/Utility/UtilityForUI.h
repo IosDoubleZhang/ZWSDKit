@@ -15,4 +15,9 @@
 +(UIButton*)SetImgButton:(NSString *)Img andButtonSelected:(NSString *)SelectedImg ForSender:(UIButton *)Sender;
 ///xib创建VIew
 +(UIView *)CreatView:(NSString *)ViewName;
+///tag 找view
++(UIView *)FindView:(NSInteger)tag FromView:(UIView *)view;
+//注册cell
++(void)Zhuce:(id )Tab Regiest:(NSString *)NIb WithId:(NSString*)ID;
+
 @end
