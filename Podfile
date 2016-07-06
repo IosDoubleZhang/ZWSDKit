@@ -7,7 +7,8 @@ target 'lifangti' do
   pod 'RongCloudIMKit'
   pod 'AVOSCloud'
   pod 'UMengSocialCOM', '~> 5.2.1'
-  pod 'AMap3DMap' #3D地图SDK
-  pod 'AMapSearch' #搜索服务SDK
+  pod 'AMap3DMap’,’~>4.0.3’
+  pod 'AMapSearch'
 #  pod 'MBProgressHUD', '~> 0.9.2'
+  pod 'YYKit'
 end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E0640E31D2CAAD2008722D0 /* YYKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E0640E21D2CAAD2008722D0 /* YYKit.framework */; };
 		2E1DB6FE1D184C8000F73FE6 /* libSocialQQ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E1DB6EB1D184C8000F73FE6 /* libSocialQQ.a */; };
 		2E1DB6FF1D184C8000F73FE6 /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E1DB6EC1D184C8000F73FE6 /* TencentOpenAPI.framework */; };
 		2E1DB7001D184C8000F73FE6 /* TencentOpenApi_IOS_Bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2E1DB6ED1D184C8000F73FE6 /* TencentOpenApi_IOS_Bundle.bundle */; };
@@ -114,6 +115,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E0640E21D2CAAD2008722D0 /* YYKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YYKit.framework; path = "Pods/../build/Debug-iphoneos/YYKit/YYKit.framework"; sourceTree = "<group>"; };
 		2E1DB6EB1D184C8000F73FE6 /* libSocialQQ.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialQQ.a; sourceTree = "<group>"; };
 		2E1DB6EC1D184C8000F73FE6 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
 		2E1DB6ED1D184C8000F73FE6 /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
@@ -276,6 +278,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E0640E31D2CAAD2008722D0 /* YYKit.framework in Frameworks */,
 				2EA1E1401D1CEB8E00378E8B /* pop.framework in Frameworks */,
 				2EA1E0DE1D1A8A6B00378E8B /* SceneKit.framework in Frameworks */,
 				2E1DB7061D184C8000F73FE6 /* libWeChatSDK.a in Frameworks */,
@@ -786,6 +789,7 @@
 		3315DE298122009412A7C7CA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2E0640E21D2CAAD2008722D0 /* YYKit.framework */,
 				2EA1E13F1D1CEB8E00378E8B /* pop.framework */,
 				2EA1E0DD1D1A8A6B00378E8B /* SceneKit.framework */,
 				D82261099910394FF02CF8E0 /* Pods_lifangti.framework */,
@@ -809,7 +813,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E2436E21D0C4EA300F33AC1 /* Build configuration list for PBXNativeTarget "lifangti" */;
 			buildPhases = (
-				66909D1684B90625E587FD63 /* 📦 Check Pods Manifest.lock */,
+				66909D1684B90625E587FD63 /* [CP] Check Pods Manifest.lock */,
 				6A61CD519C66426CB2DA12D6 /* [CP] Check Pods Manifest.lock */,
 				2E2436AE1D0C4EA300F33AC1 /* Sources */,
 				2E2436AF1D0C4EA300F33AC1 /* Frameworks */,
@@ -976,14 +980,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-lifangti/Pods-lifangti-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		66909D1684B90625E587FD63 /* 📦 Check Pods Manifest.lock */ = {
+		66909D1684B90625E587FD63 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1244,6 +1248,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/lifangti/main/3Party/TencentOpenAPI",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/YYKit",
 				);
 				GCC_PREFIX_HEADER = lifangti/Utility.pch;
 				INFOPLIST_FILE = lifangti/Info.plist;
@@ -1273,6 +1278,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/lifangti/main/3Party/TencentOpenAPI",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/YYKit",
 				);
 				GCC_PREFIX_HEADER = lifangti/Utility.pch;
 				INFOPLIST_FILE = lifangti/Info.plist;

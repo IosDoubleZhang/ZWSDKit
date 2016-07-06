@@ -50,7 +50,7 @@ typedef void (^IdObjcBlock)     (id parse);
 typedef void (^ImageBlock)      (UIImage *parse);
 //typedef void (^BoolBlock)       (BOOL parse);
 //typedef void (^FloatBlock)      (double parse);
-//typedef void (^IntBlock)        (NSInteger parse);
+typedef void (^IntBlock)        (NSInteger parse);
 
 
 

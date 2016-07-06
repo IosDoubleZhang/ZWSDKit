@@ -21,18 +21,37 @@
     [Clound StartClound];
     [UtilityForUM StartUm];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    if ([AVUser currentUser]) {
-        [self SetRootBar];
-    }
-    else{
-        [self SetLogView];
-    }
+    [self LogFlag];
+    [self AddLoginManger];
     [self.window makeKeyAndVisible];
     return YES;
 //    [UtilityForUM CommonShare:@"11" Url:@"11" Img:nil];
     
     // Override point for customization after application launch.
     return YES;
+}
+-(void)AddLoginManger
+{
+    [[AVUser currentUser] addObserver:self forKeyPath:@"objectId" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:nil];
+ 
+}
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
+    
+    if ([object isKindOfClass:[AVUser class]]) {
+        //取到name属性的旧值
+        NSLog(@"EEEEEEEEEEERRRRRRRRAAAAAAARRRRRRRAAAAA");
+    }
+}
+-(void)LogFlag
+{
+    if ([AVUser currentUser]) {
+        [self SetRootBar];
+    }
+    else{
+        [self SetLogView];
+    }
+
 }
 -(void)SetRootBar
 {

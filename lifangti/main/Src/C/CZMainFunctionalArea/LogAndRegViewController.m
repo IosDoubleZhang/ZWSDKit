@@ -12,6 +12,7 @@
 
 #import "LogAndRegViewController.h"
 #import "AppDelegate.h"
+
 @interface LogAndRegViewController ()
 
 @end
@@ -23,9 +24,12 @@
     __weak IBOutlet UITextField *Password;
 }
 - (IBAction)regAngLog:(UIButton *)sender {
-    AVUser *user = [AVUser user];
+   AVUser  *user = [AVUser user];
     user.username =username.text;// 设置用户名
     user.password =Password.text;//
+    [user setObject:@"sssss" forKey:@"nickname"];
+    [user setObject:@"14" forKey:@"age"];
+    
     [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (succeeded) {
             [AVUser logInWithUsernameInBackground:username.text password:Password.text block:^(AVUser *user, NSError *error) {

@@ -13,6 +13,7 @@
 #import "ZSScrollView.h"
 #import "CZTuiJIanTableViewCell.h"
 #import "CZGuanZhu.h"
+
 @interface VC1ViewController ()
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *CZHongSeFlag;
 @property (weak, nonatomic) IBOutlet ZSUIScrollView *CzMainView;
@@ -105,5 +106,10 @@
  // Pass the selected object to the new view controller.
  }
  */
+- (IBAction)Lout:(UIButton *)sender {
+    [AVUser logOut];  //清除缓存用户对象
+    
+//     AVUser*currentUser = [AVUser currentUser];
+}
 
 @end

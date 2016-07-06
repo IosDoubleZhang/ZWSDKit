@@ -19,30 +19,35 @@ PODS:
   - AMapFoundation (1.1.0)
   - AMapSearch (4.1.0):
     - AMapFoundation (~> 1.0)
-  - AVOSCloud (3.3.3)
+  - AVOSCloud (3.3.5)
   - pop (1.0.9)
-  - RongCloudIMKit (2.6.3)
+  - RongCloudIMKit (2.6.5)
   - UMengSocialCOM (5.2.1)
+  - YYKit (1.0.7):
+    - YYKit/no-arc (= 1.0.7)
+  - YYKit/no-arc (1.0.7)
 
 DEPENDENCIES:
   - AFNetworking
-  - AMap3DMap
+  - AMap3DMap (~> 4.0.3)
   - AMapSearch
   - AVOSCloud
   - pop
   - RongCloudIMKit
   - UMengSocialCOM (~> 5.2.1)
+  - YYKit
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   AMap3DMap: 8619d67fe7b3bbe45abf74b3434eb9ab20220507
   AMapFoundation: 15db20567e6512422a086a01b42a88b145bc2500
   AMapSearch: cb4722480d2d4331a032d43bd1070ed0fa55dac9
-  AVOSCloud: dcd8a24c219971400146fe09638d218cfc8bb7f1
+  AVOSCloud: 1fe170768bee7e05bc3ea86e38d5bddb105cb957
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
-  RongCloudIMKit: bf16a77298dcc52d6e7c8a41ac7ecc394e552abc
+  RongCloudIMKit: f9a8dfea996b9eb301c2d3bbd0374b420bf6da21
   UMengSocialCOM: 074c135ce349aa4c8848d3fb8458757bcb6ffb67
+  YYKit: 843d1b26e20b82c695790c9a89907eaa1e99907f
 
-PODFILE CHECKSUM: 2e1f5ce9217771d7955b0cf4cf7b0c9d8845359b
+PODFILE CHECKSUM: a8e3ed5697ee6eb451d537c2ab77a32be6e752c3
 
-COCOAPODS: 1.0.0
+COCOAPODS: 1.0.1

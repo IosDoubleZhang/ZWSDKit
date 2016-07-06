@@ -8,6 +8,7 @@
 
 #import "Clound.h"
 #import "LeanClounModelHeader.h"
+
 @implementation Clound
 +(void)StartClound{
     [AVOSCloud setApplicationId:@"e4CoV3hV13lSwblThKUKH9v8-gzGzoHsz"
@@ -18,6 +19,9 @@
     [TheCube registerSubclass];
     [Comment registerSubclass];
     [CubeStar registerSubclass];
+   
+    
+   
 }
 
 @end
