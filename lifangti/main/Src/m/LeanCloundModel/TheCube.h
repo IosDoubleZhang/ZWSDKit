@@ -12,10 +12,11 @@
 @property (nonatomic,copy)  NSString *      title;
 @property (nonatomic,copy)  NSString *      content;
 @property (nonatomic,copy)  AVUser *        user;
-@property (nonatomic,strong)NSMutableArray *images;
-@property (nonatomic,strong)NSString *      species;
-@property (nonatomic,strong)AVGeoPoint*     loaction;
-@property (nonatomic,strong)AVRelation *    comment;
-@property (nonatomic,strong)AVRelation *    star;
+@property (nonatomic,copy)NSMutableArray *images;
+@property (nonatomic,copy)AVFile         *image;
+@property (nonatomic,copy)NSString *      species;
+@property (nonatomic,copy)AVGeoPoint*     loaction;
+@property (nonatomic,copy)AVRelation *    comment;
+@property (nonatomic,copy)AVRelation *    star;
 
 @end

@@ -43,6 +43,7 @@
 ///block
 typedef void (^ArrayBlock)      (NSArray *parse);
 typedef void (^StringBlock)     (NSString *parse);
+typedef void (^errorBlock)      (NSError *parse);
 typedef void (^VoidBlock)       ();
 typedef void (^DictionaryBlock) (NSDictionary *parse);
 typedef void (^DataBlock)       (NSData *parse);

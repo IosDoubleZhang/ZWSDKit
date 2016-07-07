@@ -9,5 +9,9 @@
 #import "CubeImg.h"
 
 @implementation CubeImg
+@dynamic user,cube,img;
 
++ (NSString *)parseClassName {
+    return @"CubeImg";
+}
 @end
