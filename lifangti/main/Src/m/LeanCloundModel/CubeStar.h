@@ -9,6 +9,6 @@
 #import <AVOSCloud/AVOSCloud.h>
 #import "TheCube.h"
 @interface CubeStar : AVObject<AVSubclassing>
-@property (nonatomic,copy)  AVUser *        user;
-@property (nonatomic,copy)  TheCube *       cube;
+@property (nonatomic,strong)  AVUser *        user;
+@property (nonatomic,strong)  TheCube *       cube;
 @end

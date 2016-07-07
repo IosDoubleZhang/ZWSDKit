@@ -9,7 +9,7 @@
 //
 
 #import "VC2ViewController.h"
-
+#import "TestAddViewController.h"
 @interface VC2ViewController ()
 
 @end
@@ -24,6 +24,13 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)text:(id)sender {
+
+    TestAddViewController*ac=[TestAddViewController new];
+    [ac setHidesBottomBarWhenPushed:YES];
+    [self.navigationController pushViewController:ac animated:YES];
+//    [ac setHidesBottomBarWhenPushed:NO];
 }
 
 /*

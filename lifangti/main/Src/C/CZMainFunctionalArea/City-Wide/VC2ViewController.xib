@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10116"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VC2ViewController">
@@ -19,10 +19,23 @@
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="srm-Zq-es7">
+                    <rect key="frame" x="100" y="100" width="46" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="d7H-Ql-B0b"/>
+                        <constraint firstAttribute="width" constant="46" id="wdH-pr-967"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="text:" destination="-1" eventType="touchUpInside" id="mUQ-Pe-8P9"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="QwT-AS-qvZ" secondAttribute="trailing" id="ADv-45-GhJ"/>
+                <constraint firstItem="srm-Zq-es7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="SDG-vb-VfU"/>
+                <constraint firstItem="srm-Zq-es7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="100" id="VSP-CR-CNg"/>
                 <constraint firstItem="QwT-AS-qvZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="c5c-iF-DfG"/>
                 <constraint firstItem="QwT-AS-qvZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vXU-8l-bJs"/>
                 <constraint firstAttribute="bottom" secondItem="QwT-AS-qvZ" secondAttribute="bottom" id="ves-zF-8qS"/>

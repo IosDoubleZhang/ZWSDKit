@@ -10,6 +10,9 @@
 #import "BaseCell.h"
 #import "LTMorphingLabel-Swift.h"
 @interface CubeTableViewCell :BaseCell
+@property(nonatomic,strong)TheCube *cube;
+
+@property(nonatomic,weak )NSString *Atitle;
 @property (weak, nonatomic) IBOutlet UILabel *city;
 @property (weak, nonatomic) IBOutlet UILabel *title;
 @property (weak, nonatomic) IBOutlet UIImageView *icon;
@@ -17,7 +20,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *date;
 @property (weak, nonatomic) IBOutlet UILabel *locationName;
 @property (weak, nonatomic) IBOutlet UIImageView *infoImg;
-@property(nonatomic,weak )NSString *Atitle;
 -(void)LoadData;
 - (void)clear;
 @end

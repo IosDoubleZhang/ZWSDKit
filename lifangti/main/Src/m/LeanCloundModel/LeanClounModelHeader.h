@@ -11,7 +11,7 @@
 #import "TheCube.h"
 #import "Comment.h"
 #import "CubeStar.h"
-
+#import "CubeImg.h"
 @interface LeanClounModelHeader : NSObject
 
 @end

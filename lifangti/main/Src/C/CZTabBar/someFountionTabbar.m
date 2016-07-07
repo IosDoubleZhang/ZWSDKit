@@ -56,17 +56,17 @@
     //让imageView接收点击事件
     iv.userInteractionEnabled = YES;
     //删除现有的tabBar
-    CGRect rect = self.tabBar.frame;
-    [self.tabBar removeFromSuperview];
+//    CGRect rect = self.tabBar.frame;
+//    [self.tabBar removeFromSuperview];
     //移除TabBarController自带的下部的条
-    
     //测试添加自己的视图
     UIView *myView = [[UIView alloc] init];
-    myView.frame = rect;
+    myView.frame = CGRectMake(0, 0,_S_Width , 49);
     myView.backgroundColor = [UIColor clearColor];
-    [self.view addSubview:myView];
-    
-    
+    [self.tabBar addSubview:myView];
+//   [self.tabBar setClipsToBounds:YES];
+    [[UITabBar appearance] setBackgroundImage:[[UIImage alloc] init]];
+    [[UITabBar appearance] setShadowImage:[[UIImage alloc] init]];
     //title数组
     //    NSArray *titleArr = [NSArray arrayWithObjects:@"登录",@"随机数",@"3个按钮",@"设置",@"2", nil];
     

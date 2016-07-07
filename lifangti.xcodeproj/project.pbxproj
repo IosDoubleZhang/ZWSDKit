@@ -24,6 +24,8 @@
 		2E2436C81D0C4EA300F33AC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E2436C61D0C4EA300F33AC1 /* LaunchScreen.storyboard */; };
 		2E2436D31D0C4EA300F33AC1 /* lifangtiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2436D21D0C4EA300F33AC1 /* lifangtiTests.m */; };
 		2E2436DE1D0C4EA300F33AC1 /* lifangtiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2436DD1D0C4EA300F33AC1 /* lifangtiUITests.m */; };
+		2E3389B41D2E588300346D06 /* TestAddViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E3389B11D2E588300346D06 /* TestAddViewController.xib */; };
+		2E3389B51D2E588300346D06 /* TestAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3389B21D2E588300346D06 /* TestAddViewController.m */; };
 		2E39F6971D2A5DC300214B56 /* CZGuanZhu.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E39F67B1D2A5DC300214B56 /* CZGuanZhu.m */; };
 		2E39F6981D2A5DC300214B56 /* CZGuanZhu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E39F67C1D2A5DC300214B56 /* CZGuanZhu.xib */; };
 		2E39F6991D2A5DC300214B56 /* CZGuanZhuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E39F67E1D2A5DC300214B56 /* CZGuanZhuTableViewCell.m */; };
@@ -156,6 +158,9 @@
 		2E2436D91D0C4EA300F33AC1 /* lifangtiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lifangtiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E2436DD1D0C4EA300F33AC1 /* lifangtiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lifangtiUITests.m; sourceTree = "<group>"; };
 		2E2436DF1D0C4EA300F33AC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E3389B11D2E588300346D06 /* TestAddViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TestAddViewController.xib; path = PersonalCenter/TestAddViewController.xib; sourceTree = "<group>"; };
+		2E3389B21D2E588300346D06 /* TestAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestAddViewController.m; path = PersonalCenter/TestAddViewController.m; sourceTree = "<group>"; };
+		2E3389B31D2E588300346D06 /* TestAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestAddViewController.h; path = PersonalCenter/TestAddViewController.h; sourceTree = "<group>"; };
 		2E39F67A1D2A5DC300214B56 /* CZGuanZhu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZGuanZhu.h; sourceTree = "<group>"; };
 		2E39F67B1D2A5DC300214B56 /* CZGuanZhu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZGuanZhu.m; sourceTree = "<group>"; };
 		2E39F67C1D2A5DC300214B56 /* CZGuanZhu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CZGuanZhu.xib; sourceTree = "<group>"; };
@@ -576,6 +581,9 @@
 				2ED0BF4D1D23E1BE0078BEFE /* LogAndRegViewController.h */,
 				2ED0BF4E1D23E1BE0078BEFE /* LogAndRegViewController.m */,
 				2ED0BF4F1D23E1BE0078BEFE /* LogAndRegViewController.xib */,
+				2E3389B11D2E588300346D06 /* TestAddViewController.xib */,
+				2E3389B21D2E588300346D06 /* TestAddViewController.m */,
+				2E3389B31D2E588300346D06 /* TestAddViewController.h */,
 			);
 			path = CZMainFunctionalArea;
 			sourceTree = "<group>";
@@ -989,6 +997,7 @@
 				2E39F69E1D2A5DC300214B56 /* CZTieZi.xib in Resources */,
 				2E1DB7031D184C8000F73FE6 /* ios-social-sdk-shake.html in Resources */,
 				2E39F6B71D2A5F4B00214B56 /* a5.jpg in Resources */,
+				2E3389B41D2E588300346D06 /* TestAddViewController.xib in Resources */,
 				2E39F6B31D2A5F4B00214B56 /* a1.jpg in Resources */,
 				2EEA749A1D2D084A001E189A /* CubeView.xib in Resources */,
 				2E39F6B61D2A5F4B00214B56 /* a4.jpg in Resources */,
@@ -1122,6 +1131,7 @@
 				2EEE54941D17D7960070B625 /* UtilityForData.m in Sources */,
 				2EEE547B1D17CAE60070B625 /* UtilityForUI.m in Sources */,
 				2EB921291D2588E1004D19EE /* ZSUIScrollView.m in Sources */,
+				2E3389B51D2E588300346D06 /* TestAddViewController.m in Sources */,
 				2EA1E0D81D194DFB00378E8B /* ShowButtonView.m in Sources */,
 				2E39F6A61D2A5DC300214B56 /* VC1ViewController.m in Sources */,
 				2EEE54841D17CB250070B625 /* UtilityForString.m in Sources */,

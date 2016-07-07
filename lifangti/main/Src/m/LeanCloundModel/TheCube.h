@@ -9,14 +9,14 @@
 #import <AVOSCloud/AVOSCloud.h>
 @class Comment;
 @interface TheCube : AVObject<AVSubclassing>
-@property (nonatomic,copy)  NSString *      title;
-@property (nonatomic,copy)  NSString *      content;
-@property (nonatomic,copy)  AVUser *        user;
-@property (nonatomic,copy)NSMutableArray *images;
-@property (nonatomic,copy)AVFile         *image;
-@property (nonatomic,copy)NSString *      species;
-@property (nonatomic,copy)AVGeoPoint*     loaction;
-@property (nonatomic,copy)AVRelation *    comment;
-@property (nonatomic,copy)AVRelation *    star;
+@property (nonatomic,strong)NSString *      title;
+@property (nonatomic,strong)NSString *      content;
+@property (nonatomic,strong)AVUser *        user;
+@property (nonatomic,strong)NSMutableArray *images;
+@property (nonatomic,strong)AVFile         *image;
+@property (nonatomic,strong)NSString *      species;
+@property (nonatomic,strong)AVGeoPoint*     loaction;
+@property (nonatomic,strong)AVRelation *    comment;
+@property (nonatomic,strong)AVRelation *    star;
 
 @end

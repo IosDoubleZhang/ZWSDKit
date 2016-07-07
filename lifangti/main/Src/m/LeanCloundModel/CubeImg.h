@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface CubeImg  : AVObject<AVSubclassing>
-@property (nonatomic,copy)  AVUser *        user;
-@property (nonatomic,copy)  TheCube *       cube;
-@property (nonatomic,copy)  AVFile *        img;
+@property (nonatomic,strong)  AVUser *        user;
+@property (nonatomic,strong)  TheCube *       cube;
+@property (nonatomic,strong)  AVFile *        img;
 @end

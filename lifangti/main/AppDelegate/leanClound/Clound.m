@@ -19,8 +19,7 @@
     [TheCube registerSubclass];
     [Comment registerSubclass];
     [CubeStar registerSubclass];
-   
-    
+    [CubeImg registerSubclass];
    
 }
 

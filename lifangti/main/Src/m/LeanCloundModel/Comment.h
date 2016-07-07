@@ -9,7 +9,7 @@
 #import <AVOSCloud/AVOSCloud.h>
 @class TheCube;
 @interface Comment : AVObject<AVSubclassing>
-@property (nonatomic,copy)  AVUser *        user;
-@property (nonatomic,copy)  TheCube *       cube;
-@property (nonatomic,copy)  NSString *      content;
+@property (nonatomic,strong)  AVUser *        user;
+@property (nonatomic,strong)  TheCube *       cube;
+@property (nonatomic,strong)  NSString *      content;
 @end

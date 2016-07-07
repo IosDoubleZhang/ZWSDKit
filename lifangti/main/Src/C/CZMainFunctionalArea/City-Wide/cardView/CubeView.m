@@ -17,6 +17,7 @@
     int _yesToLoad;
     NSMutableArray *needLoadArr;
     BOOL scrollToToping;
+    NSMutableArray *_dataarr;
 }
 /*
 // Only override drawRect: if you perform custom drawing.
@@ -37,17 +38,26 @@
     _CubeTable.rowHeight=UITableViewAutomaticDimension;
     com=200;
     [_CubeTable reloadData];
-    _arr=@[@"111111111111111111",@"222222222222222222",@"333333333333333",@"4444444444444444",@"55555555555555",@"666666666666666",@"7777777777777777",@"88888888888888888",@"9999999999999999",@"000000000000000"];
+    
+ [LeanNetBase GetCubeSuccess:^(NSArray *parse) {
+    _dataarr=[NSMutableArray arrayWithArray:parse];
+    [_CubeTable reloadData];
+
+} AndError:^(NSString *parse) {
+    
+}];
+
     
     // Drawing code
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return com;
+    return _dataarr.count;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     CubeTableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:@"cubeCell" forIndexPath:indexPath];
+    
     [self drawCell:cell withIndexPath:indexPath];
     return cell;
 }
@@ -58,7 +68,7 @@
 - (void)drawCell:(CubeTableViewCell *)cell withIndexPath:(NSIndexPath *)indexPath{
 
     [cell clear];
-    cell.Atitle = [NSString stringWithFormat:@"%@",[_arr objectAtIndex:indexPath.row%10]];;
+    cell.cube = [_dataarr objectAtIndex:indexPath.row];
     
     if (needLoadArr.count>0&&[needLoadArr indexOfObject:indexPath]==NSNotFound) {
         [cell clear];
@@ -83,7 +93,7 @@
         NSMutableArray *arr = [NSMutableArray arrayWithArray:temp];
         if (velocity.y<0) {
             NSIndexPath *indexPath = [temp lastObject];
-            if (indexPath.row+3<com) {
+            if (indexPath.row+3<_dataarr.count) {
                 [arr addObject:[NSIndexPath indexPathForRow:indexPath.row+1 inSection:0]];
                 [arr addObject:[NSIndexPath indexPathForRow:indexPath.row+2 inSection:0]];
                 [arr addObject:[NSIndexPath indexPathForRow:indexPath.row+3 inSection:0]];
