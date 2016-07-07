@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <pop/POP.h>
 @interface UtilityPopManager : NSObject
 
 ///旋转  例子: M_PI_2/2lifangtiTests Group

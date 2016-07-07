@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>LTMorphingLabel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-lifangti.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,7 +32,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>056F6D3BC52E51B6FC5C03C8C8A47A3D</key>
+		<key>0DCBD6C869DCC15AF62D43471CB4592C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -37,12 +42,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C7D2E1957BA519F53E5739AA2BDEF103</key>
+		<key>2A6FB286884A543C870F881282F971DD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FB371C43BDA952112433DC84C9C54443</key>
+		<key>44E5B920AAB68AF61236854476BA8F81</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EF56C32D7F67ABC2EE00E441A308736C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

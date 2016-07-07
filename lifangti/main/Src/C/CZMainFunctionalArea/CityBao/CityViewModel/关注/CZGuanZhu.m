@@ -13,6 +13,7 @@
 
 #import "CZGuanZhu.h"
 #import "CZGuanZhuTableViewCell.h"
+
 @implementation CZGuanZhu
 
 /*
@@ -49,6 +50,21 @@
         _Index([NSString stringWithFormat:@"%ld",(long)indexPath.row]);
     }
 }
+//- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+//    CGFloat viewHeight = scrollView.height + scrollView.contentInset.top;
+//    for (CZGuanZhuTableViewCell *cell in [self.GuanZhuTable visibleCells]) {
+//        CGFloat y = cell.centerY - scrollView.contentOffset.y;
+//        CGFloat p = y - viewHeight / 2;
+//        CGFloat scale = cos(p / viewHeight * 0.8) * 0.95;
+//        if (kiOS8Later) {
+//            [UIView animateWithDuration:0.15 delay:0 options:UIViewAnimationOptionCurveEaseInOut | UIViewAnimationOptionAllowUserInteraction | UIViewAnimationOptionBeginFromCurrentState animations:^{
+//                cell.transform = CGAffineTransformMakeScale(scale, scale);
+//            } completion:NULL];
+//        } else {
+//            cell.transform = CGAffineTransformMakeScale(scale, scale);
+//        }
+//    }
+//}
 //-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 //{
 //    return 175;

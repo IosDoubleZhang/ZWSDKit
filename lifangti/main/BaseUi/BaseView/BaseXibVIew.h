@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface BaseXibVIew : UIView
+@property (strong, nonatomic) IBOutlet UIView *View;
 
 @end

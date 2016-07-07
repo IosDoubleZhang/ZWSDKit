@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface CubeTableViewCell : UITableViewCell
-
+#import "BaseCell.h"
+#import "LTMorphingLabel-Swift.h"
+@interface CubeTableViewCell :BaseCell
+@property (weak, nonatomic) IBOutlet UILabel *city;
+@property (weak, nonatomic) IBOutlet UILabel *title;
+@property (weak, nonatomic) IBOutlet UIImageView *icon;
+@property (weak, nonatomic) IBOutlet UILabel *nickname;
+@property (weak, nonatomic) IBOutlet UILabel *date;
+@property (weak, nonatomic) IBOutlet UILabel *locationName;
+@property (weak, nonatomic) IBOutlet UIImageView *infoImg;
+@property(nonatomic,weak )NSString *Atitle;
+-(void)LoadData;
+- (void)clear;
 @end

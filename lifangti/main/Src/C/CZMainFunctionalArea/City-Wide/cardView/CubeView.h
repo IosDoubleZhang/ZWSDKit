@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseXibVIew.h"
+#import "BaseTable.h"
+@interface CubeView : BaseXibVIew<UITableViewDelegate,UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet BaseTable *CubeTable;
 
-@interface CubeView : UIView
 
 @end

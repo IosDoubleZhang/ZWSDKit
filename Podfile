@@ -11,4 +11,5 @@ target 'lifangti' do
   pod 'AMapSearch'
 #  pod 'MBProgressHUD', '~> 0.9.2'
   pod 'YYKit'
+  pod 'LTMorphingLabel'
 end

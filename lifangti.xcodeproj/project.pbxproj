@@ -84,6 +84,14 @@
 		2ED0BF4C1D23DA670078BEFE /* LeanNetBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED0BF4B1D23DA670078BEFE /* LeanNetBase.m */; };
 		2ED0BF501D23E1BE0078BEFE /* LogAndRegViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED0BF4E1D23E1BE0078BEFE /* LogAndRegViewController.m */; };
 		2ED0BF511D23E1BE0078BEFE /* LogAndRegViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ED0BF4F1D23E1BE0078BEFE /* LogAndRegViewController.xib */; };
+		2EEA74981D2D083D001E189A /* CubeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEA74971D2D083D001E189A /* CubeView.m */; };
+		2EEA749A1D2D084A001E189A /* CubeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EEA74991D2D084A001E189A /* CubeView.xib */; };
+		2EEA749D1D2D09ED001E189A /* BaseXibVIew.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEA749C1D2D09ED001E189A /* BaseXibVIew.m */; };
+		2EEA749F1D2D0A3F001E189A /* BaseXibVIew.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EEA749E1D2D0A3F001E189A /* BaseXibVIew.xib */; };
+		2EEA74A31D2D1432001E189A /* CubeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEA74A11D2D1432001E189A /* CubeTableViewCell.m */; };
+		2EEA74A41D2D1432001E189A /* CubeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EEA74A21D2D1432001E189A /* CubeTableViewCell.xib */; };
+		2EEA74A71D2D72D8001E189A /* BaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEA74A61D2D72D8001E189A /* BaseCell.m */; };
+		2EEA74AA1D2DFEDC001E189A /* BaseTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEA74A91D2DFEDC001E189A /* BaseTable.m */; };
 		2EEE54781D17CAC40070B625 /* UtilityForUM.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEE54771D17CAC40070B625 /* UtilityForUM.m */; };
 		2EEE547B1D17CAE60070B625 /* UtilityForUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEE547A1D17CAE60070B625 /* UtilityForUI.m */; };
 		2EEE547E1D17CAEF0070B625 /* UtilityForClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEE547D1D17CAEF0070B625 /* UtilityForClass.m */; };
@@ -246,6 +254,19 @@
 		2ED0BF4D1D23E1BE0078BEFE /* LogAndRegViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogAndRegViewController.h; sourceTree = "<group>"; };
 		2ED0BF4E1D23E1BE0078BEFE /* LogAndRegViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogAndRegViewController.m; sourceTree = "<group>"; };
 		2ED0BF4F1D23E1BE0078BEFE /* LogAndRegViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogAndRegViewController.xib; sourceTree = "<group>"; };
+		2EEA74961D2D083D001E189A /* CubeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CubeView.h; sourceTree = "<group>"; };
+		2EEA74971D2D083D001E189A /* CubeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CubeView.m; sourceTree = "<group>"; };
+		2EEA74991D2D084A001E189A /* CubeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CubeView.xib; sourceTree = "<group>"; };
+		2EEA749B1D2D09ED001E189A /* BaseXibVIew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseXibVIew.h; sourceTree = "<group>"; };
+		2EEA749C1D2D09ED001E189A /* BaseXibVIew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseXibVIew.m; sourceTree = "<group>"; };
+		2EEA749E1D2D0A3F001E189A /* BaseXibVIew.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseXibVIew.xib; sourceTree = "<group>"; };
+		2EEA74A01D2D1432001E189A /* CubeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CubeTableViewCell.h; sourceTree = "<group>"; };
+		2EEA74A11D2D1432001E189A /* CubeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CubeTableViewCell.m; sourceTree = "<group>"; };
+		2EEA74A21D2D1432001E189A /* CubeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CubeTableViewCell.xib; sourceTree = "<group>"; };
+		2EEA74A51D2D72D8001E189A /* BaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCell.h; sourceTree = "<group>"; };
+		2EEA74A61D2D72D8001E189A /* BaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCell.m; sourceTree = "<group>"; };
+		2EEA74A81D2DFEDC001E189A /* BaseTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTable.h; sourceTree = "<group>"; };
+		2EEA74A91D2DFEDC001E189A /* BaseTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTable.m; sourceTree = "<group>"; };
 		2EEE54761D17CAC40070B625 /* UtilityForUM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityForUM.h; sourceTree = "<group>"; };
 		2EEE54771D17CAC40070B625 /* UtilityForUM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilityForUM.m; sourceTree = "<group>"; };
 		2EEE54791D17CAE60070B625 /* UtilityForUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityForUI.h; sourceTree = "<group>"; };
@@ -557,6 +578,7 @@
 		2EA1E0B81D194DFB00378E8B /* City-Wide */ = {
 			isa = PBXGroup;
 			children = (
+				2EEA74951D2D07C4001E189A /* cardView */,
 				2EA1E0B91D194DFB00378E8B /* VC2ViewController.h */,
 				2EA1E0BA1D194DFB00378E8B /* VC2ViewController.m */,
 				2EA1E0BB1D194DFB00378E8B /* VC2ViewController.xib */,
@@ -666,8 +688,28 @@
 				2EB921221D2588E1004D19EE /* ZSScrollView.m */,
 				2EB921231D2588E1004D19EE /* ZSUIScrollView.h */,
 				2EB921241D2588E1004D19EE /* ZSUIScrollView.m */,
+				2EEA749B1D2D09ED001E189A /* BaseXibVIew.h */,
+				2EEA749C1D2D09ED001E189A /* BaseXibVIew.m */,
+				2EEA749E1D2D0A3F001E189A /* BaseXibVIew.xib */,
+				2EEA74A51D2D72D8001E189A /* BaseCell.h */,
+				2EEA74A61D2D72D8001E189A /* BaseCell.m */,
+				2EEA74A81D2DFEDC001E189A /* BaseTable.h */,
+				2EEA74A91D2DFEDC001E189A /* BaseTable.m */,
 			);
 			path = BaseView;
+			sourceTree = "<group>";
+		};
+		2EEA74951D2D07C4001E189A /* cardView */ = {
+			isa = PBXGroup;
+			children = (
+				2EEA74961D2D083D001E189A /* CubeView.h */,
+				2EEA74991D2D084A001E189A /* CubeView.xib */,
+				2EEA74971D2D083D001E189A /* CubeView.m */,
+				2EEA74A01D2D1432001E189A /* CubeTableViewCell.h */,
+				2EEA74A11D2D1432001E189A /* CubeTableViewCell.m */,
+				2EEA74A21D2D1432001E189A /* CubeTableViewCell.xib */,
+			);
+			path = cardView;
 			sourceTree = "<group>";
 		};
 		2EFDEA141D0DC0400088F25F /* main */ = {
@@ -924,12 +966,14 @@
 				2E39F6C11D2A5FB400214B56 /* 3.jpeg in Resources */,
 				2EA1E0D61D194DFB00378E8B /* VC4ViewController.xib in Resources */,
 				2E39F6B51D2A5F4B00214B56 /* a3.jpg in Resources */,
+				2EEA74A41D2D1432001E189A /* CubeTableViewCell.xib in Resources */,
 				2E39F6C21D2A5FB400214B56 /* 4.jpeg in Resources */,
 				2E39F6B21D2A5F4B00214B56 /* 2.jpg in Resources */,
 				2E2436C81D0C4EA300F33AC1 /* LaunchScreen.storyboard in Resources */,
 				2E39F6B41D2A5F4B00214B56 /* a2.jpg in Resources */,
 				2E39F69C1D2A5DC300214B56 /* CZCardTableViewCell.xib in Resources */,
 				2E39F6BA1D2A5F4B00214B56 /* u3.jpg in Resources */,
+				2EEA749F1D2D0A3F001E189A /* BaseXibVIew.xib in Resources */,
 				2E39F6981D2A5DC300214B56 /* CZGuanZhu.xib in Resources */,
 				2E39F6B91D2A5F4B00214B56 /* u1.jpg in Resources */,
 				2E39F6A41D2A5DC300214B56 /* ZSViewCell.xib in Resources */,
@@ -941,6 +985,7 @@
 				2E1DB7031D184C8000F73FE6 /* ios-social-sdk-shake.html in Resources */,
 				2E39F6B71D2A5F4B00214B56 /* a5.jpg in Resources */,
 				2E39F6B31D2A5F4B00214B56 /* a1.jpg in Resources */,
+				2EEA749A1D2D084A001E189A /* CubeView.xib in Resources */,
 				2E39F6B61D2A5F4B00214B56 /* a4.jpg in Resources */,
 				2E39F6B81D2A5F4B00214B56 /* a6.jpg in Resources */,
 				2E39F6A01D2A5DC300214B56 /* CZTuiJIanTableViewCell.xib in Resources */,
@@ -1077,11 +1122,13 @@
 				2EEE54841D17CB250070B625 /* UtilityForString.m in Sources */,
 				2E55B4881D219836006B28D6 /* myPoint.m in Sources */,
 				2E39F6A51D2A5DC300214B56 /* CZHongBao.m in Sources */,
+				2EEA74981D2D083D001E189A /* CubeView.m in Sources */,
 				2EA1E13B1D1BCF1D00378E8B /* MBProgressHUD.m in Sources */,
 				2EEE54871D17CB3B0070B625 /* UtilityForValue.m in Sources */,
 				2EB921271D2588E1004D19EE /* NSTimer+Addition.m in Sources */,
 				2EA1E0D51D194DFB00378E8B /* VC4ViewController.m in Sources */,
 				2EEE54911D17D59F0070B625 /* UtilityForTime.m in Sources */,
+				2EEA74AA1D2DFEDC001E189A /* BaseTable.m in Sources */,
 				2E39F69D1D2A5DC300214B56 /* CZTieZi.m in Sources */,
 				2ED0BF461D23A9C90078BEFE /* Comment.m in Sources */,
 				2EA1E13A1D1BCF1D00378E8B /* MBProgressHUD+Add.m in Sources */,
@@ -1091,7 +1138,9 @@
 				2EA1E0D01D194DFB00378E8B /* VC2ViewController.m in Sources */,
 				2E2436BA1D0C4EA300F33AC1 /* AppDelegate.m in Sources */,
 				2EA1E1301D1BCE0700378E8B /* ZzsUploadParam.m in Sources */,
+				2EEA74A31D2D1432001E189A /* CubeTableViewCell.m in Sources */,
 				2E39F6A11D2A5DC300214B56 /* RFLayout.m in Sources */,
+				2EEA74A71D2D72D8001E189A /* BaseCell.m in Sources */,
 				2EA1E13E1D1BE7CC00378E8B /* UtilityLanguage.m in Sources */,
 				2EEE548B1D17D46C0070B625 /* Utility.m in Sources */,
 				2E39F69B1D2A5DC300214B56 /* CZCardTableViewCell.m in Sources */,
@@ -1105,6 +1154,7 @@
 				2E2436B71D0C4EA300F33AC1 /* main.m in Sources */,
 				2EA1E12F1D1BCE0700378E8B /* ZzsNetworkManager.m in Sources */,
 				2ED0BF501D23E1BE0078BEFE /* LogAndRegViewController.m in Sources */,
+				2EEA749D1D2D09ED001E189A /* BaseXibVIew.m in Sources */,
 				2E2436C31D0C4EA300F33AC1 /* lifangti.xcdatamodeld in Sources */,
 				2E39F6A31D2A5DC300214B56 /* ZSViewCell.m in Sources */,
 				2E39F6971D2A5DC300214B56 /* CZGuanZhu.m in Sources */,

@@ -20,6 +20,7 @@ PODS:
   - AMapSearch (4.1.0):
     - AMapFoundation (~> 1.0)
   - AVOSCloud (3.3.5)
+  - LTMorphingLabel (0.2.0)
   - pop (1.0.9)
   - RongCloudIMKit (2.6.5)
   - UMengSocialCOM (5.2.1)
@@ -32,6 +33,7 @@ DEPENDENCIES:
   - AMap3DMap (~> 4.0.3)
   - AMapSearch
   - AVOSCloud
+  - LTMorphingLabel
   - pop
   - RongCloudIMKit
   - UMengSocialCOM (~> 5.2.1)
@@ -43,11 +45,12 @@ SPEC CHECKSUMS:
   AMapFoundation: 15db20567e6512422a086a01b42a88b145bc2500
   AMapSearch: cb4722480d2d4331a032d43bd1070ed0fa55dac9
   AVOSCloud: 1fe170768bee7e05bc3ea86e38d5bddb105cb957
+  LTMorphingLabel: 490aa8e079f9247c7f3130f7d4b1be1d66677377
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   RongCloudIMKit: f9a8dfea996b9eb301c2d3bbd0374b420bf6da21
   UMengSocialCOM: 074c135ce349aa4c8848d3fb8458757bcb6ffb67
   YYKit: 843d1b26e20b82c695790c9a89907eaa1e99907f
 
-PODFILE CHECKSUM: a8e3ed5697ee6eb451d537c2ab77a32be6e752c3
+PODFILE CHECKSUM: 529536a493305013a27f242434d062e65b8678c4
 
 COCOAPODS: 1.0.1

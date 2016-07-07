@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BaseTable : UITableView
+@interface BaseTable : UITableView<UITableViewDelegate>
 
 @end
