@@ -20,6 +20,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *date;
 @property (weak, nonatomic) IBOutlet UILabel *locationName;
 @property (weak, nonatomic) IBOutlet UIImageView *infoImg;
+
+@property (nonatomic,strong) VoidBlock IconBlock;
 -(void)LoadData;
 - (void)clear;
 @end

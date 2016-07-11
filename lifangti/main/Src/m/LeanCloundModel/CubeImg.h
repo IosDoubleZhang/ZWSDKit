@@ -9,7 +9,11 @@
 #import <Foundation/Foundation.h>
 
 @interface CubeImg  : AVObject<AVSubclassing>
-@property (nonatomic,strong)  AVUser *        user;
-@property (nonatomic,strong)  TheCube *       cube;
-@property (nonatomic,strong)  AVFile *        img;
+@property (nonatomic,strong)  AVUser    *      user;
+@property (nonatomic,strong)  TheCube   *      cube;
+@property (nonatomic,strong)  AVFile    *      img;
+@property (nonatomic,strong)  NSString  *      story;
+@property (nonatomic,strong)AVGeoPoint*     loaction;
+@property (nonatomic,assign)NSString*       city;
+@property (nonatomic,assign)NSString*       adress;
 @end

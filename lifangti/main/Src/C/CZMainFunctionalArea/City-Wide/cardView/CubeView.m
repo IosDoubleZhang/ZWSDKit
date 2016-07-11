@@ -13,8 +13,6 @@
 {
     NSInteger com;
     NSArray *_arr;
-    double _moveLeng;
-    int _yesToLoad;
     NSMutableArray *needLoadArr;
     BOOL scrollToToping;
     NSMutableArray *_dataarr;
@@ -57,6 +55,7 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     CubeTableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:@"cubeCell" forIndexPath:indexPath];
+
     
     [self drawCell:cell withIndexPath:indexPath];
     return cell;
@@ -66,7 +65,7 @@
     [_CubeTable reloadData];
 }
 - (void)drawCell:(CubeTableViewCell *)cell withIndexPath:(NSIndexPath *)indexPath{
-
+  __weak typeof(cell) wcell = cell;
     [cell clear];
     cell.cube = [_dataarr objectAtIndex:indexPath.row];
     
@@ -78,6 +77,28 @@
         return;
     }
     [cell LoadData];
+    
+  
+    wcell.IconBlock=^{
+        Comment *acom=[Comment object];
+        acom.content=@"111111111111111111";
+        acom.user=[AVUser currentUser];
+        NSLog(@"%@",cell.cube.title);
+        
+        
+        [LeanNetBase addAComment:acom toCube:cell.cube Success:^{
+            NSLog(@"---------success-------");
+            AVQuery *query = [cell.cube.comment query];
+            [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+                NSLog(@"0---------0-----%@",objects);
+                [_CubeTable reloadData];
+            }];
+        } AndError:^(NSString *parse) {
+            
+        }];
+        [[YYImageCache sharedCache].memoryCache removeAllObjects];
+        [[YYImageCache sharedCache].diskCache removeAllObjectsWithBlock:^{}];
+    };
 }
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
     [needLoadArr removeAllObjects];
@@ -144,7 +165,6 @@
     if (self.CubeTable.visibleCells&&self.CubeTable.visibleCells.count>0) {
         for (id temp in [self.CubeTable.visibleCells copy]) {
             CubeTableViewCell *cell = (CubeTableViewCell *)temp;
-            NSLog(@"%@",cell.Atitle);
             [cell LoadData];
         }
     }

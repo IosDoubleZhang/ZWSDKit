@@ -47,17 +47,27 @@
 - (IBAction)ssave:(UIButton *)sender {
     TheCube *acube=[TheCube object];
     acube.title=_f1.text;
-    acube.content=_f2.text;
+    acube.story=_f2.text;
     acube.user=[AVUser currentUser];
     acube.image=[AVFile fileWithName:@"img.jpg" data:  UIImageJPEGRepresentation(_i1.image, 1)];
-    
+    CubeImg *aimg=[CubeImg object];
+    aimg.img=acube.image;
+    aimg.story=acube.story;
+    aimg.city=_f2.text;
     [LeanNetWork ObjcSaveInBackground:^{
-        NSLog(@"success");
-        
-        [self.navigationController popViewControllerAnimated:YES];
+        AVRelation *ar=[acube relationForKey:@"img"];
+        [ar  addObject:aimg];
+        [LeanNetWork ObjcSaveInBackground:^{
+            NSLog(@"success");
+            
+            [self.navigationController popViewControllerAnimated:YES];
+        } faliue:^(NSString *errorMessage) {
+            
+        } WithObjc:acube];
     } faliue:^(NSString *errorMessage) {
         
-    } WithObjc:acube];
+    } WithObjc:aimg];
+ 
     
     
     

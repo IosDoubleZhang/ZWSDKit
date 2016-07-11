@@ -1239,6 +1239,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: 张 兆帅 (HLEG54CQ2L)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -1261,6 +1262,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "eff7229a-a375-4a26-9d3a-c86a9eadfada";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -1283,6 +1285,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: 张 兆帅 (HLEG54CQ2L)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -1298,6 +1301,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "eff7229a-a375-4a26-9d3a-c86a9eadfada";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1308,7 +1312,7 @@
 			baseConfigurationReference = B06C6F065D288EC7D65576B8 /* Pods-lifangti.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: 张 兆帅 (HLEG54CQ2L)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1327,9 +1331,9 @@
 					"$(PROJECT_DIR)/lifangti/main/3Party/UMSocial_Shake_Sdk",
 					"$(PROJECT_DIR)/lifangti/main/3Party/Wechat",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.shangshu.lifangti;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lifangti.shangshu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "eff7229a-a375-4a26-9d3a-c86a9eadfada";
 			};
 			name = Debug;
 		};
@@ -1338,7 +1342,7 @@
 			baseConfigurationReference = FBAB8ED2F453F78769A4B028 /* Pods-lifangti.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: 张 兆帅 (HLEG54CQ2L)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1357,9 +1361,9 @@
 					"$(PROJECT_DIR)/lifangti/main/3Party/UMSocial_Shake_Sdk",
 					"$(PROJECT_DIR)/lifangti/main/3Party/Wechat",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.shangshu.lifangti;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lifangti.shangshu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "eff7229a-a375-4a26-9d3a-c86a9eadfada";
 			};
 			name = Release;
 		};

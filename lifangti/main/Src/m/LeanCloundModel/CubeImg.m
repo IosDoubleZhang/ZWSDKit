@@ -9,7 +9,7 @@
 #import "CubeImg.h"
 
 @implementation CubeImg
-@dynamic user,cube,img;
+@dynamic user,cube,img,story,loaction,city,adress;
 
 + (NSString *)parseClassName {
     return @"CubeImg";

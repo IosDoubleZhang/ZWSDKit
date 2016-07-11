@@ -39,13 +39,17 @@
 }
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
+    
     NSLog(@"%lf",scrollView.contentOffset.x-_moveLeng);
+    
+    
     if (_yesToLoad==1) {
         
     }
     else{
         NSLog(@"快速滑动");
     }
+    
     _yesToLoad=0;
 }
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView

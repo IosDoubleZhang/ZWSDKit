@@ -30,7 +30,7 @@
     AVQuery *query = [AVQuery queryWithClassName:@"TheCube"];
     [query orderByDescending:@"createdAt"];
     query.cachePolicy = kAVCachePolicyNetworkElseCache;
-    
+
     //设置缓存有效期
     query.maxCacheAge = 24*3600;
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {

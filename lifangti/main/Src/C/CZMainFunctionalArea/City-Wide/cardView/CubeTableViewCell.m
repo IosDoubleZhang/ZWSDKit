@@ -30,7 +30,7 @@
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
+
 
     // Configure the view for the selected state
 }
@@ -39,26 +39,37 @@
     if (drawed) {
         return;
     }
+
+//    [self huifu];
     drawed = YES;
     _title.text=_cube.title;
-    _locationName.text=_cube.content;
+    _locationName.text=_cube.story;
     [_infoImg setImageWithURL:[NSURL URLWithString:_cube.image.url]
                        placeholder:nil
                            options:YYWebImageOptionProgressiveBlur | YYWebImageOptionShowNetworkActivity | YYWebImageOptionSetImageWithFadeAnimation
-                          progress:^(NSInteger receivedSize, NSInteger expectedSize) {
-                           
+                          progress:^(NSInteger receivedSize, NSInteger expectedSize) {x
                           } transform:nil
                         completion:^(UIImage *image, NSURL *url, YYWebImageFromType from, YYWebImageStage stage, NSError *error) {
                             if (stage == YYWebImageStageFinished) {
                                
                             }
                         }];
+//    [_cube.image getDataInBackgroundWithBlock:^(NSData *data, NSError *error) {
+//        // data 就是文件的数据流
+//        _infoImg.image=[UIImage imageWithData:data];
+//    } progressBlock:^(NSInteger percentDone) {
+//        //下载的进度数据，percentDone 介于 0 和 100。
+//    }];
+//    _infoImg.image=[UIImage imageNamed:@"a1.jpg"];
+//    [_cube.image getThumbnail:YES width:900 height:900 withBlock:^(UIImage *image, NSError *error) {
+//        
+//        _infoImg.image=image;
+//    }];
 }
 - (void)clear{
     if (!drawed) {
         return;
     }
-
     _infoImg.image = [UIImage imageNamed:@"a4.jpg"];
     _title.text=@"";
     drawed = NO;
@@ -66,41 +77,40 @@
 - (void)setHighlighted:(BOOL)highlighted animated:(BOOL)animated
 {
     [super setHighlighted:highlighted animated:animated];
-    if (self.highlighted) {
-        POPBasicAnimation *scaleAnimation = [POPBasicAnimation animationWithPropertyNamed:kPOPViewScaleXY];
-        scaleAnimation.duration = 10;
-        scaleAnimation.toValue = [NSValue valueWithCGPoint:CGPointMake(0.8, 0.8)];
-        [self pop_addAnimation:scaleAnimation forKey:@"scaleAnimation"];
-          } else {
-        POPSpringAnimation *scaleAnimation = [POPSpringAnimation animationWithPropertyNamed:kPOPViewScaleXY];
-        scaleAnimation.toValue = [NSValue valueWithCGPoint:CGPointMake(1, 1          )];
-        scaleAnimation.velocity = [NSValue valueWithCGPoint:CGPointMake(6,6)];
-        scaleAnimation.springBounciness = 15.f;
-        [self.infoImg pop_addAnimation:scaleAnimation forKey:@"scaleAnimation"];
-      
-    }
+//    [self bodong];
 }
+-(void)huifu
+{
+    POPBasicAnimation *scaleAnimation = [POPBasicAnimation animationWithPropertyNamed:kPOPViewScaleXY];
+    scaleAnimation.duration = 10;
+    scaleAnimation.toValue = [NSValue valueWithCGPoint:CGPointMake(1, 1)];
+    [self pop_addAnimation:scaleAnimation forKey:@"scaleAnimation"];
+}
+-(void)bodong
+{
+    
+        if (self.highlighted) {
+            POPBasicAnimation *scaleAnimation = [POPBasicAnimation animationWithPropertyNamed:kPOPViewScaleXY];
+            scaleAnimation.duration = 10;
+            scaleAnimation.toValue = [NSValue valueWithCGPoint:CGPointMake(1, 1)];
+            [self pop_addAnimation:scaleAnimation forKey:@"scaleAnimation"];
+              } else {
+            POPSpringAnimation *scaleAnimation = [POPSpringAnimation animationWithPropertyNamed:kPOPViewScaleXY];
+            scaleAnimation.toValue = [NSValue valueWithCGPoint:CGPointMake(1, 1)];
+            scaleAnimation.velocity = [NSValue valueWithCGPoint:CGPointMake(8,8)];
+            scaleAnimation.springBounciness = 15.f;
+            [self pop_addAnimation:scaleAnimation forKey:@"scaleAnimation"];
+          
+        }
 
-
+}
 - (IBAction)iconAction:(UIButton *)sender {
     
-    Comment *acom=[Comment object];
-    acom.content=@"111111111111111111";
-    acom.user=[AVUser currentUser];
-    NSLog(@"%@",_cube.title);
+    if (_IconBlock) {
+        _IconBlock();
+    }
     
-
-    [LeanNetBase addAComment:acom toCube:_cube Success:^{
-        NSLog(@"---------success-------");
-        AVQuery *query = [_cube.comment query];
-        [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-            NSLog(@"0---------0-----%@",objects);
-            
-        }];
-    } AndError:^(NSString *parse) {
-        
-    }];
-    
+//    [AVFile clearAllCachedFiles];
 }
 
 @end
