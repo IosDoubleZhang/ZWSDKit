@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "BaseCell.h"
-#import "LTMorphingLabel-Swift.h"
+
 @interface CubeTableViewCell :BaseCell
 @property(nonatomic,strong)TheCube *cube;
 

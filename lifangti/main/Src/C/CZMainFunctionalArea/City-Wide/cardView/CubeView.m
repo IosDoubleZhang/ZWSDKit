@@ -9,6 +9,7 @@
 
 #import "CubeView.h"
 #import "CubeTableViewCell.h"
+#import "cubeViewController.h"
 @implementation CubeView
 {
     NSInteger com;
@@ -96,8 +97,7 @@
         } AndError:^(NSString *parse) {
             
         }];
-        [[YYImageCache sharedCache].memoryCache removeAllObjects];
-        [[YYImageCache sharedCache].diskCache removeAllObjectsWithBlock:^{}];
+    
     };
 }
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
@@ -168,6 +168,19 @@
             [cell LoadData];
         }
     }
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+//     cell.cube = [_dataarr objectAtIndex:indexPath.row];
+    CubeTableViewCell*cell=  [tableView cellForRowAtIndexPath:indexPath];
+    cubeViewController *cube=[cubeViewController new];
+    cube.cube=cell.cube;
+    cube.img=cell.infoImg.image;
+    if (_cubeBlock) {
+        _cubeBlock(cube);
+    }
+    
+    
 }
 //- (void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView
 //{

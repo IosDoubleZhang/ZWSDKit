@@ -42,4 +42,21 @@
         }
     }];
 }
+
++(void)addAcube:(TheCube *)cube andimg:(CubeImg *)img success:(VoidBlock)success anderror:(VoidBlock)error
+{
+    [LeanNetWork ObjcSaveInBackground:^{
+        AVRelation *ar=[cube relationForKey:@"img"];
+        [ar  addObject:img];
+        [LeanNetWork ObjcSaveInBackground:^{
+            success();
+        } faliue:^(NSString *errorMessage) {
+            error();
+        } WithObjc:cube];
+    } faliue:^(NSString *errorMessage) {
+        error();
+    } WithObjc:img];
+    
+    
+}
 @end

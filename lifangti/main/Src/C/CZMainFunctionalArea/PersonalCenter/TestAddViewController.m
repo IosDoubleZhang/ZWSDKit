@@ -54,19 +54,12 @@
     aimg.img=acube.image;
     aimg.story=acube.story;
     aimg.city=_f2.text;
-    [LeanNetWork ObjcSaveInBackground:^{
-        AVRelation *ar=[acube relationForKey:@"img"];
-        [ar  addObject:aimg];
-        [LeanNetWork ObjcSaveInBackground:^{
-            NSLog(@"success");
-            
-            [self.navigationController popViewControllerAnimated:YES];
-        } faliue:^(NSString *errorMessage) {
-            
-        } WithObjc:acube];
-    } faliue:^(NSString *errorMessage) {
+
+    [LeanNetBase addAcube:acube andimg:aimg success:^{
+         [self.navigationController popViewControllerAnimated:YES];
+    } anderror:^{
         
-    } WithObjc:aimg];
+    }];
  
     
     

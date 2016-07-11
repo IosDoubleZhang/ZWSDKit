@@ -9,8 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "BaseXibVIew.h"
 #import "BaseTable.h"
+@class cubeViewController;
 @interface CubeView : BaseXibVIew<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet BaseTable *CubeTable;
 
-
+typedef void (^cubeViewControllerBlock)      (cubeViewController *parse);
+@property(nonatomic,strong)cubeViewControllerBlock cubeBlock;
 @end

@@ -13,6 +13,7 @@
 @property (nonatomic,strong)  TheCube   *      cube;
 @property (nonatomic,strong)  AVFile    *      img;
 @property (nonatomic,strong)  NSString  *      story;
+@property (nonatomic,strong)  NSString  *      title;
 @property (nonatomic,strong)AVGeoPoint*     loaction;
 @property (nonatomic,assign)NSString*       city;
 @property (nonatomic,assign)NSString*       adress;

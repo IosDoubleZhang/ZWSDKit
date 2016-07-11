@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "CubeView.h"
 @interface VC2ViewController : BaseViewController
 
 @end

@@ -40,14 +40,13 @@
         return;
     }
 
-//    [self huifu];
     drawed = YES;
     _title.text=_cube.title;
     _locationName.text=_cube.story;
     [_infoImg setImageWithURL:[NSURL URLWithString:_cube.image.url]
                        placeholder:nil
                            options:YYWebImageOptionProgressiveBlur | YYWebImageOptionShowNetworkActivity | YYWebImageOptionSetImageWithFadeAnimation
-                          progress:^(NSInteger receivedSize, NSInteger expectedSize) {x
+                          progress:^(NSInteger receivedSize, NSInteger expectedSize) {
                           } transform:nil
                         completion:^(UIImage *image, NSURL *url, YYWebImageFromType from, YYWebImageStage stage, NSError *error) {
                             if (stage == YYWebImageStageFinished) {

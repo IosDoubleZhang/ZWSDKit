@@ -19,4 +19,9 @@
     });
     return sharedUtilityInstance;
 }
++(void)ClearImg
+{
+    [[YYImageCache sharedCache].memoryCache removeAllObjects];
+    [[YYImageCache sharedCache].diskCache removeAllObjectsWithBlock:^{}];
+}
 @end

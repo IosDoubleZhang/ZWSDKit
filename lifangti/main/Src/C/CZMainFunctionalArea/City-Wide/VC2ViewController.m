@@ -9,8 +9,10 @@
 //
 
 #import "VC2ViewController.h"
+#import "cubeViewController.h"
 #import "TestAddViewController.h"
 @interface VC2ViewController ()
+@property (weak, nonatomic) IBOutlet CubeView *cubeView;
 
 @end
 
@@ -18,7 +20,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    __weak typeof(self) wesf=self;
+    _cubeView.cubeBlock=^(cubeViewController *parse){
+        parse.hidesBottomBarWhenPushed=YES;
+        [wesf.navigationController pushViewController:parse animated:YES];
+         parse.hidesBottomBarWhenPushed=NO;
+    };    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning {

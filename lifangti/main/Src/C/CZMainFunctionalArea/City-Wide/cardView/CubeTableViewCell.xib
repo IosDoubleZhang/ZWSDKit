@@ -25,7 +25,7 @@
                             <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
                         </userDefinedRuntimeAttributes>
                     </imageView>
-                    <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="a1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="yLI-eP-xeK">
+                    <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="a1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="yLI-eP-xeK">
                         <rect key="frame" x="23" y="281" width="35" height="35"/>
                         <constraints>
                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="35" id="1cq-go-s7g"/>
@@ -118,7 +118,7 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06J-sz-kyh">
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06J-sz-kyh">
                         <rect key="frame" x="23" y="281" width="35" height="35"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="35" id="iCn-rX-qoK"/>
