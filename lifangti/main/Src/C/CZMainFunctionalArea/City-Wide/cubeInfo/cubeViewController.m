@@ -14,6 +14,7 @@
 #import "AcubeView.h"
 @interface cubeViewController ()
 @property (weak, nonatomic) IBOutlet AcubeView *CubeView;
+@property (weak, nonatomic) IBOutlet UIButton *black;
 
 @end
 
@@ -22,11 +23,26 @@
 {
     [self HidenNarBar];
 }
+- (IBAction)pop:(UIButton *)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+-(void)setBack
+{
+    CGRect f1=_black.frame;
+    CGRect f2=CGRectMake(f1.origin.x, 0, f1.size.width, 0);
+    _black.frame=f2;
+    [UtilityPopManager initailzerAnimationWithToPostion:f1  formPostion:f2 atView:_black beginTime:0.4];
+}
+-(void)viewDidLayoutSubviews
+{
+    [super viewDidLayoutSubviews ];
+        [self setBack];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     _CubeView.cube=_cube;
-    
     _CubeView.Img.image =_img;
+
     // Do any additional setup after loading the view from its nib.
 }
 

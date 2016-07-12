@@ -19,6 +19,7 @@
     
     __weak IBOutlet UIView *v2;
     __weak IBOutlet UIView *v1;
+    __weak IBOutlet NSLayoutConstraint *Titlong;
     CGRect f1;
     CGRect f2;
 }
@@ -32,7 +33,11 @@
 -(void)reloadView{
     [self SetLTMorphingLabel:_info Text:_cube.story Withtype:9];
     [self SetLTMorphingLabel:_title Text:_cube.title Withtype:9];
-    [self SetLTMorphingLabel:_titleNumber Text:@"第一章" Withtype:9];
+    [self SetLTMorphingLabel:_titleNumber Text:@"第一百五十七章" Withtype:9];
+    CGSize size = [_titleNumber sizeThatFits:CGSizeMake(MAXFLOAT, MAXFLOAT)];
+    NSLog(@"%f",size.width);
+    Titlong.constant=size.width+15;
+    [self layoutIfNeeded];
 }
 - (void)drawRect:(CGRect)rect {
     _info.delegate=self;

@@ -17,10 +17,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="srm-Zq-es7">
-                    <rect key="frame" x="100" y="100" width="46" height="30"/>
+                    <rect key="frame" x="8" y="100" width="92" height="137"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="30" id="d7H-Ql-B0b"/>
-                        <constraint firstAttribute="width" constant="46" id="wdH-pr-967"/>
+                        <constraint firstAttribute="height" constant="137" id="d7H-Ql-B0b"/>
+                        <constraint firstAttribute="width" constant="92" id="wdH-pr-967"/>
                     </constraints>
                     <state key="normal" title="Button"/>
                     <connections>
@@ -36,7 +36,7 @@
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="QwT-AS-qvZ" secondAttribute="trailing" id="ADv-45-GhJ"/>
                 <constraint firstItem="srm-Zq-es7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="SDG-vb-VfU"/>
-                <constraint firstItem="srm-Zq-es7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="100" id="VSP-CR-CNg"/>
+                <constraint firstItem="srm-Zq-es7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="VSP-CR-CNg"/>
                 <constraint firstItem="QwT-AS-qvZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="c5c-iF-DfG"/>
                 <constraint firstItem="QwT-AS-qvZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vXU-8l-bJs"/>
                 <constraint firstAttribute="bottom" secondItem="QwT-AS-qvZ" secondAttribute="bottom" id="ves-zF-8qS"/>
