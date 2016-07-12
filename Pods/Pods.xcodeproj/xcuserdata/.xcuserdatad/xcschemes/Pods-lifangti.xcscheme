@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '4A2236A1D8F3C4D02E48C0E3A8FE0396'
+               BlueprintIdentifier = '44E5B920AAB68AF61236854476BA8F81'
                BlueprintName = 'Pods-lifangti'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods-lifangti.framework'>
