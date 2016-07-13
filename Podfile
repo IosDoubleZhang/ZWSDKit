@@ -12,4 +12,5 @@ target 'lifangti' do
 #  pod 'MBProgressHUD', '~> 0.9.2'
   pod 'YYKit'
   pod 'LTMorphingLabel'
+  pod 'MPIMotionKit'
 end

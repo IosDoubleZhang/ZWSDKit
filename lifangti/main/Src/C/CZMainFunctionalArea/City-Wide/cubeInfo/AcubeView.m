@@ -20,8 +20,11 @@
     __weak IBOutlet UIView *v2;
     __weak IBOutlet UIView *v1;
     __weak IBOutlet NSLayoutConstraint *Titlong;
+    __weak IBOutlet UIButton *dianzan;
     CGRect f1;
     CGRect f2;
+    __weak IBOutlet UIButton *zhuijia;
+    __weak IBOutlet UIButton *pinglun;
 }
 /*
  // Only override drawRect: if you perform custom drawing.
@@ -30,6 +33,7 @@
  // Drawing code
  }
  */
+
 -(void)reloadView{
     [self SetLTMorphingLabel:_info Text:_cube.story Withtype:9];
     [self SetLTMorphingLabel:_title Text:_cube.title Withtype:9];
@@ -77,6 +81,14 @@
     la.morphingEffect=type;
     
 }
+- (IBAction)dianzan:(UIButton *)sender {
+}
+- (IBAction)pinglun:(UIButton *)sender {
+}
+- (IBAction)zhuijia:(UIButton *)sender {
+}
+
+
 //-(NSString *)shupai:(NSString *)string
 //{
 //    NSMutableString *str=[NSMutableString new];

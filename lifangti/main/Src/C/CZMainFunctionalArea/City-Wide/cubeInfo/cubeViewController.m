@@ -36,13 +36,13 @@
 -(void)viewDidLayoutSubviews
 {
     [super viewDidLayoutSubviews ];
-        [self setBack];
+    [self setBack];
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
     _CubeView.cube=_cube;
-    _CubeView.Img.image =_img;
-
+    [_CubeView.Img setImage: _img];
+    self.automaticallyAdjustsScrollViewInsets = NO;
     // Do any additional setup after loading the view from its nib.
 }
 
