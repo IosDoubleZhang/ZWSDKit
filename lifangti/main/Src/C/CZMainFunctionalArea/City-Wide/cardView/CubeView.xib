@@ -17,7 +17,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Lac-1l-WfD">
-                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TKA-G8-d0s">
@@ -34,11 +34,11 @@
             </subviews>
             <constraints>
                 <constraint firstItem="TKA-G8-d0s" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="18" id="5mM-ME-Eor"/>
-                <constraint firstItem="Lac-1l-WfD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Id4-8i-1FF"/>
+                <constraint firstAttribute="trailing" secondItem="Lac-1l-WfD" secondAttribute="trailing" id="RHZ-Q8-tbq"/>
                 <constraint firstAttribute="bottom" secondItem="TKA-G8-d0s" secondAttribute="bottom" constant="171" id="UQv-er-aGV"/>
-                <constraint firstItem="Lac-1l-WfD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ZJq-LH-KmY"/>
-                <constraint firstAttribute="bottom" secondItem="Lac-1l-WfD" secondAttribute="bottom" id="ltU-BV-xj6"/>
-                <constraint firstAttribute="trailing" secondItem="Lac-1l-WfD" secondAttribute="trailing" id="uWX-gt-wXA"/>
+                <constraint firstItem="Lac-1l-WfD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="W83-5z-dzV"/>
+                <constraint firstAttribute="bottom" secondItem="Lac-1l-WfD" secondAttribute="bottom" id="X2W-ic-vEu"/>
+                <constraint firstItem="Lac-1l-WfD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="64" id="bDW-v6-1Do"/>
             </constraints>
         </view>
     </objects>

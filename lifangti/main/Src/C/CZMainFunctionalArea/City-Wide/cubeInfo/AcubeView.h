@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "BaseXibVIew.h"
 #import "LTMorphingLabel-Swift.h"
-
+#import "CoreMotionView.h"
 @interface AcubeView : BaseXibVIew<LTMorphingLabelDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *Img;
 @property (weak, nonatomic) IBOutlet LTMorphingLabel *info;

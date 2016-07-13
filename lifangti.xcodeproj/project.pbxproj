@@ -16,7 +16,7 @@
 		2E1DB7031D184C8000F73FE6 /* ios-social-sdk-shake.html in Resources */ = {isa = PBXBuildFile; fileRef = 2E1DB6F41D184C8000F73FE6 /* ios-social-sdk-shake.html */; };
 		2E1DB7041D184C8000F73FE6 /* libUMSocial_Sdk_Shake_1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E1DB6F51D184C8000F73FE6 /* libUMSocial_Sdk_Shake_1.0.a */; };
 		2E1DB7051D184C8000F73FE6 /* libSocialWechat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E1DB6F81D184C8000F73FE6 /* libSocialWechat.a */; };
-		2E1DB7061D184C8000F73FE6 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E1DB6F91D184C8000F73FE6 /* libWeChatSDK.a */; };
+		2E1DB7061D184C8000F73FE6 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E1DB6F91D184C8000F73FE6 /* libWeChatSDK.a */; settings = {ATTRIBUTES = (Required, ); }; };
 		2E2436B71D0C4EA300F33AC1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2436B61D0C4EA300F33AC1 /* main.m */; };
 		2E2436BA1D0C4EA300F33AC1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2436B91D0C4EA300F33AC1 /* AppDelegate.m */; };
 		2E2436C31D0C4EA300F33AC1 /* lifangti.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2E2436C11D0C4EA300F33AC1 /* lifangti.xcdatamodeld */; };
@@ -80,6 +80,8 @@
 		2EB560351D33703800B39615 /* cubeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EB560331D33703800B39615 /* cubeViewController.xib */; };
 		2EB560381D33713500B39615 /* AcubeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB560371D33713500B39615 /* AcubeView.m */; };
 		2EB5603A1D3371F600B39615 /* AcubeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EB560391D3371F600B39615 /* AcubeView.xib */; };
+		2EB560411D34DAE400B39615 /* CoreMotionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB560401D34DAE400B39615 /* CoreMotionView.m */; };
+		2EB560431D34DB3900B39615 /* CoreMotionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EB560421D34DB3900B39615 /* CoreMotionView.xib */; };
 		2EB921271D2588E1004D19EE /* NSTimer+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB921201D2588E1004D19EE /* NSTimer+Addition.m */; };
 		2EB921281D2588E1004D19EE /* ZSScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB921221D2588E1004D19EE /* ZSScrollView.m */; };
 		2EB921291D2588E1004D19EE /* ZSUIScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB921241D2588E1004D19EE /* ZSUIScrollView.m */; };
@@ -108,6 +110,7 @@
 		2EEE548B1D17D46C0070B625 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEE548A1D17D46C0070B625 /* Utility.m */; };
 		2EEE54911D17D59F0070B625 /* UtilityForTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEE54901D17D59F0070B625 /* UtilityForTime.m */; };
 		2EEE54941D17D7960070B625 /* UtilityForData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEE54931D17D7960070B625 /* UtilityForData.m */; };
+		2EF38E7E1D3632610045857D /* LTMorphingLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EF38E7D1D3632610045857D /* LTMorphingLabel.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		2EFDEA201D0DC0400088F25F /* Clound.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFDEA181D0DC0400088F25F /* Clound.m */; };
 		B97FDB276C22DFD7BF4B6950 /* Pods_lifangti.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D82261099910394FF02CF8E0 /* Pods_lifangti.framework */; };
 /* End PBXBuildFile section */
@@ -251,6 +254,9 @@
 		2EB560361D33713500B39615 /* AcubeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcubeView.h; sourceTree = "<group>"; };
 		2EB560371D33713500B39615 /* AcubeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AcubeView.m; sourceTree = "<group>"; };
 		2EB560391D3371F600B39615 /* AcubeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AcubeView.xib; sourceTree = "<group>"; };
+		2EB5603F1D34DAE400B39615 /* CoreMotionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreMotionView.h; path = ../cardView/CoreMotionView.h; sourceTree = "<group>"; };
+		2EB560401D34DAE400B39615 /* CoreMotionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoreMotionView.m; path = ../cardView/CoreMotionView.m; sourceTree = "<group>"; };
+		2EB560421D34DB3900B39615 /* CoreMotionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CoreMotionView.xib; path = ../cardView/CoreMotionView.xib; sourceTree = "<group>"; };
 		2EB9211F1D2588E1004D19EE /* NSTimer+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Addition.h"; sourceTree = "<group>"; };
 		2EB921201D2588E1004D19EE /* NSTimer+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Addition.m"; sourceTree = "<group>"; };
 		2EB921211D2588E1004D19EE /* ZSScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSScrollView.h; sourceTree = "<group>"; };
@@ -305,6 +311,7 @@
 		2EEE54901D17D59F0070B625 /* UtilityForTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilityForTime.m; sourceTree = "<group>"; };
 		2EEE54921D17D7960070B625 /* UtilityForData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityForData.h; sourceTree = "<group>"; };
 		2EEE54931D17D7960070B625 /* UtilityForData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilityForData.m; sourceTree = "<group>"; };
+		2EF38E7D1D3632610045857D /* LTMorphingLabel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LTMorphingLabel.framework; path = "../Library/Developer/Xcode/DerivedData/lifangti-ewniunirtgffzghhcpebqkcveetz/Build/Products/Debug-iphoneos/LTMorphingLabel/LTMorphingLabel.framework"; sourceTree = "<group>"; };
 		2EFDEA171D0DC0400088F25F /* Clound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Clound.h; sourceTree = "<group>"; };
 		2EFDEA181D0DC0400088F25F /* Clound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Clound.m; sourceTree = "<group>"; };
 		B06C6F065D288EC7D65576B8 /* Pods-lifangti.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lifangti.debug.xcconfig"; path = "Pods/Target Support Files/Pods-lifangti/Pods-lifangti.debug.xcconfig"; sourceTree = "<group>"; };
@@ -317,6 +324,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EF38E7E1D3632610045857D /* LTMorphingLabel.framework in Frameworks */,
 				2E0640E31D2CAAD2008722D0 /* YYKit.framework in Frameworks */,
 				2EA1E1401D1CEB8E00378E8B /* pop.framework in Frameworks */,
 				2EA1E0DE1D1A8A6B00378E8B /* SceneKit.framework in Frameworks */,
@@ -726,6 +734,9 @@
 		2ED714DA1D33510400576095 /* cubeInfo */ = {
 			isa = PBXGroup;
 			children = (
+				2EB5603F1D34DAE400B39615 /* CoreMotionView.h */,
+				2EB560401D34DAE400B39615 /* CoreMotionView.m */,
+				2EB560421D34DB3900B39615 /* CoreMotionView.xib */,
 				2EB560311D33703800B39615 /* cubeViewController.h */,
 				2EB560321D33703800B39615 /* cubeViewController.m */,
 				2EB560331D33703800B39615 /* cubeViewController.xib */,
@@ -868,6 +879,7 @@
 		3315DE298122009412A7C7CA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2EF38E7D1D3632610045857D /* LTMorphingLabel.framework */,
 				2E0640E21D2CAAD2008722D0 /* YYKit.framework */,
 				2EA1E13F1D1CEB8E00378E8B /* pop.framework */,
 				2EA1E0DD1D1A8A6B00378E8B /* SceneKit.framework */,
@@ -997,6 +1009,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E39F6BC1D2A5F5400214B56 /* u2.jpg in Resources */,
+				2EB560431D34DB3900B39615 /* CoreMotionView.xib in Resources */,
 				2E39F69A1D2A5DC300214B56 /* CZGuanZhuTableViewCell.xib in Resources */,
 				2ED0BF511D23E1BE0078BEFE /* LogAndRegViewController.xib in Resources */,
 				2E1DB7001D184C8000F73FE6 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
@@ -1185,6 +1198,7 @@
 				2EEE54871D17CB3B0070B625 /* UtilityForValue.m in Sources */,
 				2EB921271D2588E1004D19EE /* NSTimer+Addition.m in Sources */,
 				2EA1E0D51D194DFB00378E8B /* VC4ViewController.m in Sources */,
+				2EB560411D34DAE400B39615 /* CoreMotionView.m in Sources */,
 				2EEE54911D17D59F0070B625 /* UtilityForTime.m in Sources */,
 				2EEA74AA1D2DFEDC001E189A /* BaseTable.m in Sources */,
 				2E39F69D1D2A5DC300214B56 /* CZTieZi.m in Sources */,
@@ -1283,7 +1297,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: 张 兆帅 (HLEG54CQ2L)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -1306,7 +1320,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "280bda5b-cf35-4d5f-b9ee-6b9798cba0ff";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -1329,7 +1343,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: 张 兆帅 (HLEG54CQ2L)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -1345,7 +1359,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "280bda5b-cf35-4d5f-b9ee-6b9798cba0ff";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1356,7 +1370,7 @@
 			baseConfigurationReference = B06C6F065D288EC7D65576B8 /* Pods-lifangti.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: 张 兆帅 (HLEG54CQ2L)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1375,9 +1389,9 @@
 					"$(PROJECT_DIR)/lifangti/main/3Party/UMSocial_Shake_Sdk",
 					"$(PROJECT_DIR)/lifangti/main/3Party/Wechat",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = comlifangtishangshu;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lifangti.shangshu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "280bda5b-cf35-4d5f-b9ee-6b9798cba0ff";
 			};
 			name = Debug;
 		};
@@ -1386,7 +1400,7 @@
 			baseConfigurationReference = FBAB8ED2F453F78769A4B028 /* Pods-lifangti.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: 张 兆帅 (HLEG54CQ2L)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1405,9 +1419,9 @@
 					"$(PROJECT_DIR)/lifangti/main/3Party/UMSocial_Shake_Sdk",
 					"$(PROJECT_DIR)/lifangti/main/3Party/Wechat",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = comlifangtishangshu;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lifangti.shangshu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "280bda5b-cf35-4d5f-b9ee-6b9798cba0ff";
 			};
 			name = Release;
 		};

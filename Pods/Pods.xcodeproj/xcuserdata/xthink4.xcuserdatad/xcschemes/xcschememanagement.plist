@@ -14,6 +14,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MPIMotionKit-MPIMotionKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MPIMotionKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-lifangti.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -42,17 +52,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2A6FB286884A543C870F881282F971DD</key>
+		<key>2A2B457D8E6E7CBE4966A464A8AA5D89</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>44E5B920AAB68AF61236854476BA8F81</key>
+		<key>6E19FBFFDE0F461DDF8D3547604048FB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EF56C32D7F67ABC2EE00E441A308736C</key>
+		<key>980DA2DFF9021959A1EB0E7402119F56</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AB729BB892E7E025092AD0866A3D1284</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B1344A7D88C057DD2CE2012504BAD6BB</key>
 		<dict>
 			<key>primary</key>
 			<true/>

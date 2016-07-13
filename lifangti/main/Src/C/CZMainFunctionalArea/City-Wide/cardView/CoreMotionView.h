@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface CoreMotionView : UIView
-
+#import "BaseXibVIew.h"
+@interface CoreMotionView : BaseXibVIew
+@property (weak, nonatomic) IBOutlet UIScrollView *imgsView;
+//@property (weak, nonatomic) IBOutlet UIImageView *img;
+@property (strong, nonatomic) UIImageView *img;
+-(void)img:(UIImage *)img;
 @end
