@@ -10,4 +10,5 @@
 #import "CubeView.h"
 @interface VC2ViewController : BaseViewController
 
+@property (weak, nonatomic) IBOutlet UIImageView *ss;
 @end

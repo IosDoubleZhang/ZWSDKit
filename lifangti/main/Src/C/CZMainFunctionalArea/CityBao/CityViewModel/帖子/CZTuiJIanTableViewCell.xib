@@ -13,23 +13,23 @@
             <rect key="frame" x="0.0" y="0.0" width="321" height="322"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="321" height="321.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="321" height="322"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1003" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="a6.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="alU-hl-crQ">
-                        <rect key="frame" x="215" y="70" width="105.5" height="116.5"/>
+                        <rect key="frame" x="215" y="70" width="106" height="117"/>
                     </imageView>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="a4.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="YwY-zy-dLg">
-                        <rect key="frame" x="0.0" y="70" width="105.5" height="116.5"/>
+                        <rect key="frame" x="0.0" y="70" width="106" height="117"/>
                     </imageView>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="a3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="nUL-NP-Kx1">
-                        <rect key="frame" x="0.0" y="187" width="105.5" height="116.5"/>
+                        <rect key="frame" x="0.0" y="187" width="106" height="117"/>
                     </imageView>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1006" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="a2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="nwd-C8-RIB">
-                        <rect key="frame" x="215" y="187" width="105.5" height="116.5"/>
+                        <rect key="frame" x="215" y="187" width="106" height="117"/>
                     </imageView>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1005" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="a1.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="n5w-NO-ef6">
-                        <rect key="frame" x="107" y="187" width="106" height="116.5"/>
+                        <rect key="frame" x="107" y="187" width="106" height="117"/>
                     </imageView>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="u1.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="3ao-fy-yRF">
                         <rect key="frame" x="0.0" y="0.0" width="321" height="70"/>
@@ -49,12 +49,12 @@
                         </constraints>
                         <blurEffect style="light"/>
                     </visualEffectView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="流浪邂逅的一缕阳光" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7oP-7H-50Z">
-                        <rect key="frame" x="8" y="26.5" width="305" height="19.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="流浪邂逅的一缕阳光" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7oP-7H-50Z">
+                        <rect key="frame" x="8" y="27" width="305" height="19"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="帖子:20321" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BTU-pW-gVe">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="帖子:20321" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BTU-pW-gVe">
                         <rect key="frame" x="8" y="46" width="305" height="16"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="BTU-pW-gVe" secondAttribute="height" multiplier="305:16" id="cyb-Lr-ARd"/>
@@ -64,7 +64,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="a5.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="gAJ-IT-bSj">
-                        <rect key="frame" x="107" y="70" width="106" height="116.5"/>
+                        <rect key="frame" x="107" y="70" width="106" height="117"/>
                     </imageView>
                 </subviews>
                 <color key="backgroundColor" red="0.85641571969696961" green="0.85641571969696961" blue="0.85641571969696961" alpha="1" colorSpace="calibratedRGB"/>

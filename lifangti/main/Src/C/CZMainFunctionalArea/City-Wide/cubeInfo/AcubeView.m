@@ -37,7 +37,7 @@
 -(void)reloadView{
     [self SetLTMorphingLabel:_info Text:_cube.story Withtype:9];
     [self SetLTMorphingLabel:_title Text:_cube.title Withtype:9];
-    [self SetLTMorphingLabel:_titleNumber Text:@"第一百五十七章" Withtype:9];
+    [self SetLTMorphingLabel:_titleNumber Text:@"icon-github" Withtype:9];
     CGSize size = [_titleNumber sizeThatFits:CGSizeMake(MAXFLOAT, MAXFLOAT)];
     NSLog(@"%f",size.width);
     Titlong.constant=size.width+15;
@@ -56,8 +56,8 @@
         }
         
     });
-
-
+    
+    
 }
 -(void)setInto{
     f1=v1.frame;
@@ -72,20 +72,55 @@
     if (!type||type>8) {
         type=arc4random()%7;
     }
-    
-   
-        la.text=str;
+    la.text=str;
 
-   
-    
     la.morphingEffect=type;
     
 }
 - (IBAction)dianzan:(UIButton *)sender {
+    CubeStar *astar=[CubeStar object];
+    astar.cube=_cube;
+    astar.user=[AVUser currentUser];
+    [LeanNetBase addStar:_cube andStar:astar success:^{
+        
+    } anderror:^(NSString *parse) {
+        NSLog(@"%@",parse);
+    }];
+    
 }
 - (IBAction)pinglun:(UIButton *)sender {
+    Comment *acom=[Comment object];
+    acom.content=@"111111111111111111";
+    acom.user=[AVUser currentUser];
+    NSLog(@"%@",_cube.title);
+    
+    
+    [LeanNetBase addAComment:acom toCube:_cube Success:^{
+        NSLog(@"---------success-------");
+        AVQuery *query = [_cube.comment query];
+        [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+            NSLog(@"0---------0-----%@",objects);
+            
+        }];
+    } AndError:^(NSString *parse) {
+        
+    }];
+    
 }
 - (IBAction)zhuijia:(UIButton *)sender {
+
+
+    _cube.image=[AVFile fileWithName:@"img.jpg" data:  UIImageJPEGRepresentation([UIImage imageNamed:@"1.jpg"], 1)];
+    CubeImg *aimg=[CubeImg object];
+    aimg.img=_cube.image;
+    aimg.story=@"fasfasdasdfdsfsdfdsfsdfsad";
+    aimg.city=@"sdfdsafsa";
+    
+    [LeanNetBase addAcube:_cube andimg:aimg success:^{
+        NSLog(@"success");
+    } anderror:^{
+        
+    }];
 }
 
 
@@ -97,10 +132,10 @@
 //        NSString *s = [string substringWithRange:NSMakeRange(i, 1)];
 //        NSLog(@"%@",s);
 //    [str stringByAppendingString:[NSString stringWithFormat:@"%@\n",s]];
-//        
+//
 //    }
 //    NSLog(@"%@",str);
-//    
+//
 //    return str;
 //}
 #pragma mark LTMorphingLabelDelegate

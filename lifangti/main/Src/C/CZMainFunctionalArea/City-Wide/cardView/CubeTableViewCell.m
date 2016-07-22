@@ -42,7 +42,9 @@
     }
 
     drawed = YES;
-    _title.text=_cube.title;
+    _title.text=NSLocalizedString(@"fa-chrome", nil);
+    _title.font= [UIFont fontWithName:@"FontAwesome" size:20.0];
+    
     _locationName.text=_cube.story;
     [_infoImg setImageWithURL:[NSURL URLWithString:_cube.image.url]
                        placeholder:nil

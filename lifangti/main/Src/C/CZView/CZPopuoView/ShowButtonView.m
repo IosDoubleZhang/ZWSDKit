@@ -79,9 +79,8 @@
 {
 //     __weak typeof(self) wself = self;
  
-        buttonView.layer.zPosition=100;
+    buttonView.layer.zPosition=100;
     buttonView.frame=CGRectMake(0, 0, _S_Width, _S_Height);
-//
     AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
     NSLog(@"%lf",buttonView.post_nest.frame.size.width);
     
