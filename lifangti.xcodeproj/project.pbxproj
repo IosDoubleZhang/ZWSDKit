@@ -930,7 +930,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E2436E21D0C4EA300F33AC1 /* Build configuration list for PBXNativeTarget "lifangti" */;
 			buildPhases = (
-				F52385B6EAE146ED68746577 /* 📦 Check Pods Manifest.lock */,
+				F52385B6EAE146ED68746577 /* [CP] Check Pods Manifest.lock */,
 				66909D1684B90625E587FD63 /* [CP] Check Pods Manifest.lock */,
 				6A61CD519C66426CB2DA12D6 /* [CP] Check Pods Manifest.lock */,
 				2E2436AE1D0C4EA300F33AC1 /* Sources */,
@@ -1182,14 +1182,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-lifangti/Pods-lifangti-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F52385B6EAE146ED68746577 /* 📦 Check Pods Manifest.lock */ = {
+		F52385B6EAE146ED68746577 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
