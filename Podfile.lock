@@ -20,7 +20,11 @@ PODS:
   - AMapSearch (4.1.0):
     - AMapFoundation (~> 1.0)
   - AVOSCloud (3.3.5)
+<<<<<<< HEAD
   - LTMorphingLabel (0.2.1)
+=======
+  - LTMorphingLabel (0.2.0)
+>>>>>>> aac9adf68b40bac05f4bc8d326719268592e9a91
   - MPIMotionKit (0.1.0.1)
   - pop (1.0.9)
   - RongCloudIMKit (2.6.7)
@@ -47,7 +51,11 @@ SPEC CHECKSUMS:
   AMapFoundation: 15db20567e6512422a086a01b42a88b145bc2500
   AMapSearch: cb4722480d2d4331a032d43bd1070ed0fa55dac9
   AVOSCloud: 1fe170768bee7e05bc3ea86e38d5bddb105cb957
+<<<<<<< HEAD
   LTMorphingLabel: 1858358ea38ef4d548e1f58b648b0d08ec3a62ed
+=======
+  LTMorphingLabel: 490aa8e079f9247c7f3130f7d4b1be1d66677377
+>>>>>>> aac9adf68b40bac05f4bc8d326719268592e9a91
   MPIMotionKit: 5bdf906ad6e2302c176e64057b81c8296a7bf2b7
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   RongCloudIMKit: bf5e835bd9a2ecd7c12a64919a0dbf0bb4038755
