@@ -8,6 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VC2ViewController">
             <connections>
                 <outlet property="cubeView" destination="QwT-AS-qvZ" id="BvE-tR-XSg"/>
+                <outlet property="ss" destination="evu-PU-vQb" id="LV6-eE-xZZ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -16,7 +17,15 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="srm-Zq-es7">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="evu-PU-vQb">
+                    <rect key="frame" x="0.0" y="100" width="49" height="53"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="53" id="2Sz-X0-K0T"/>
+                        <constraint firstAttribute="width" constant="49" id="7Tp-3v-2Mi"/>
+                    </constraints>
+                </imageView>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="srm-Zq-es7">
                     <rect key="frame" x="8" y="100" width="92" height="137"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="137" id="d7H-Ql-B0b"/>
@@ -34,13 +43,21 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="evu-PU-vQb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9ic-bm-OsS"/>
                 <constraint firstAttribute="trailing" secondItem="QwT-AS-qvZ" secondAttribute="trailing" id="ADv-45-GhJ"/>
+                <constraint firstItem="evu-PU-vQb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Oon-4D-9C5"/>
                 <constraint firstItem="srm-Zq-es7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="SDG-vb-VfU"/>
                 <constraint firstItem="srm-Zq-es7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="VSP-CR-CNg"/>
                 <constraint firstItem="QwT-AS-qvZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="c5c-iF-DfG"/>
                 <constraint firstItem="QwT-AS-qvZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vXU-8l-bJs"/>
                 <constraint firstAttribute="bottom" secondItem="QwT-AS-qvZ" secondAttribute="bottom" id="ves-zF-8qS"/>
+                <constraint firstItem="evu-PU-vQb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="zXr-Ir-vpQ"/>
             </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Oon-4D-9C5"/>
+                </mask>
+            </variation>
         </view>
     </objects>
 </document>

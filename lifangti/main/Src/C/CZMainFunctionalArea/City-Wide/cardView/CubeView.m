@@ -81,23 +81,7 @@
     
   
     wcell.IconBlock=^{
-        Comment *acom=[Comment object];
-        acom.content=@"111111111111111111";
-        acom.user=[AVUser currentUser];
-        NSLog(@"%@",cell.cube.title);
-        
-        
-        [LeanNetBase addAComment:acom toCube:cell.cube Success:^{
-            NSLog(@"---------success-------");
-            AVQuery *query = [cell.cube.comment query];
-            [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-                NSLog(@"0---------0-----%@",objects);
-                [_CubeTable reloadData];
-            }];
-        } AndError:^(NSString *parse) {
-            
-        }];
-    
+       NSLog(@"头像");
     };
 }
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{

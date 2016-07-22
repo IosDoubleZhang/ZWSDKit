@@ -114,12 +114,12 @@
                             <exclude reference="OW7-Sr-gN8"/>
                         </mask>
                         <mask key="constraints">
-                            <exclude reference="YhC-pl-YxO"/>
-                            <exclude reference="9D0-uJ-gEM"/>
-                            <exclude reference="x7I-OP-Yyk"/>
                             <exclude reference="6Py-jG-LKU"/>
                             <exclude reference="AnA-OR-gqa"/>
                             <exclude reference="NlZ-0Y-D1f"/>
+                            <exclude reference="YhC-pl-YxO"/>
+                            <exclude reference="9D0-uJ-gEM"/>
+                            <exclude reference="x7I-OP-Yyk"/>
                         </mask>
                     </variation>
                     <variation key="widthClass=compact">
@@ -129,12 +129,12 @@
                             <include reference="OW7-Sr-gN8"/>
                         </mask>
                         <mask key="constraints">
-                            <include reference="YhC-pl-YxO"/>
-                            <include reference="9D0-uJ-gEM"/>
-                            <include reference="x7I-OP-Yyk"/>
                             <include reference="6Py-jG-LKU"/>
                             <include reference="AnA-OR-gqa"/>
                             <include reference="NlZ-0Y-D1f"/>
+                            <include reference="YhC-pl-YxO"/>
+                            <include reference="9D0-uJ-gEM"/>
+                            <include reference="x7I-OP-Yyk"/>
                         </mask>
                     </variation>
                 </view>

@@ -42,6 +42,7 @@
     [super viewDidLoad];
     _CubeView.cube=_cube;
     [_CubeView.Img setImage: _img];
+    
     self.automaticallyAdjustsScrollViewInsets = NO;
     // Do any additional setup after loading the view from its nib.
 }

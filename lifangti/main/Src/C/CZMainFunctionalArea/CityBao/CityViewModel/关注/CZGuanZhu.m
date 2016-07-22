@@ -31,7 +31,6 @@
     _GuanZhuTable.estimatedRowHeight = 44.0f;
     _GuanZhuTable.rowHeight = UITableViewAutomaticDimension;
     
-    
     // Drawing code
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

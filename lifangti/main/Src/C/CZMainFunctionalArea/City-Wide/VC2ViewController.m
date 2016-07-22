@@ -11,6 +11,8 @@
 #import "VC2ViewController.h"
 #import "cubeViewController.h"
 #import "TestAddViewController.h"
+#import "NSString+FontAwesome.h"
+#import "UIImage+FontAwesome.h"
 @interface VC2ViewController ()
 @property (weak, nonatomic) IBOutlet CubeView *cubeView;
 
@@ -20,6 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _ss.image=[UIImage imageWithIcon:@"fa-ge" backgroundColor:[UIColor clearColor] iconColor:RGB(34, 42, 24) andSize:CGSizeMake(49,49)];
     __weak typeof(self) wesf=self;
     _cubeView.cubeBlock=^(cubeViewController *parse){
         parse.hidesBottomBarWhenPushed=YES;

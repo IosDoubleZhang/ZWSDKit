@@ -25,7 +25,53 @@
     } faliue:^(NSString *errorMessage) {
               Error(errorMessage);
     } WithObjc:Comment];
-}+(void)GetCubeSuccess:(ArrayBlock )success AndError :(StringBlock )Error
+    
+    
+}
++(void)AbleStar:(TheCube *)cube andStar:(CubeStar *)Star success:(VoidBlock)success anderror:(StringBlock)fa
+{
+    AVQuery *priorityQuery = [AVQuery queryWithClassName:@"CubeStar"];
+    [priorityQuery whereKey:@"cube" equalTo:Star.cube];
+    
+    AVQuery *statusQuery = [AVQuery queryWithClassName:@"CubeStar"];
+    [statusQuery whereKey:@"user" equalTo:Star.user];
+    
+    AVQuery *query = [AVQuery andQueryWithSubqueries:[NSArray arrayWithObjects:statusQuery,priorityQuery,nil]];
+    
+    [query findObjectsInBackgroundWithBlock:^(NSArray *results, NSError *error) {
+        if (error) {
+            fa(error.localizedDescription);
+        }
+        else{
+            if (results.count==0) {
+                success();
+            }
+            else{
+                fa([NSString stringWithFormat:@"点过赞了"]);
+            }
+        }
+    }];
+
+}
++(void)addStar:(TheCube *)cube andStar:(CubeStar *)Star success:(VoidBlock)success anderror:(StringBlock)fa
+{
+    [LeanNetBase AbleStar:cube  andStar:Star success:^{
+        [LeanNetWork ObjcSaveInBackground:^{
+            AVRelation *ar=[cube relationForKey:@"star"];
+            [ar  addObject:Star];
+            [LeanNetWork ObjcSaveInBackground:^{
+                success();
+            } faliue:^(NSString *errorMessage) {
+                fa(errorMessage);
+            } WithObjc:cube];
+        } faliue:^(NSString *errorMessage) {
+            fa(errorMessage);
+        } WithObjc:Star];
+    } anderror:^(NSString *parse) {
+        fa(parse);
+    }];
+}
++(void)GetCubeSuccess:(ArrayBlock )success AndError :(StringBlock )Error
 {
     AVQuery *query = [AVQuery queryWithClassName:@"TheCube"];
     [query orderByDescending:@"createdAt"];
