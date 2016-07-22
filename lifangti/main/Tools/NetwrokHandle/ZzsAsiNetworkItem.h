@@ -64,14 +64,14 @@
  *  @return ZzsAsiNetworkItem对象
  */
 - (ZzsAsiNetworkItem *)initWithtype:(ZzsAsiNetWorkType)networkType
-                               url:(NSString *)url
-                            params:(NSDictionary *)params
-                          delegate:(id)delegate
-                            target:(id)target
-                            action:(SEL)action
-                         hashValue:(NSUInteger)hashValue
-                           showHUD:(BOOL)showHUD
-                      successBlock:(ZzsAsiSuccessBlock)successBlock
-                      failureBlock:(ZzsAsiFailureBlock)failureBlock;
+                                url:(NSString *)url
+                             params:(NSDictionary *)params
+                           delegate:(id)delegate
+                             target:(id)target
+                             action:(SEL)action
+                          hashValue:(NSUInteger)hashValue
+                            showHUD:(BOOL)showHUD
+                       successBlock:(ZzsAsiSuccessBlock)successBlock
+                       failureBlock:(ZzsAsiFailureBlock)failureBlock WithHeader:(BOOL)HaveHeader;
 
 @end

@@ -15,5 +15,7 @@
 @property(nonatomic,retain)CLLocation *Userlocation;
 ///当前语言
 @property(nonatomic,strong)NSString * NowUsedLanguage;
+///用户token
+@property(nonatomic,strong)NSString *token;
 +(void)ClearImg;
 @end

@@ -10,6 +10,7 @@
 #import "ZzsAsiNetworkHandler.h"
 #import "ZzsUploadParam.h"
 #import "MBProgressHUD+Add.h"
+#import "AFNetWorking.h"
 @implementation ZzsNetworkManager
 + (instancetype)allocWithZone:(struct _NSZone *)zone
 {
@@ -47,10 +48,10 @@
                 delegate:(id)delegate
             successBlock:(ZzsAsiSuccessBlock)successBlock
             failureBlock:(ZzsAsiFailureBlock)failureBlock
-                 showHUD:(BOOL)showHUD
+                 showHUD:(BOOL)showHUD WithHeader:(BOOL)HaveHeader
 {
     NSMutableDictionary *mutableDict = [NSMutableDictionary dictionaryWithDictionary:params];
-    [[ZzsAsiNetworkHandler sharedInstance] conURL:url networkType:ZzsAsiNetWorkGET params:mutableDict delegate:delegate showHUD:showHUD target:target action:action successBlock:successBlock failureBlock:failureBlock];
+    [[ZzsAsiNetworkHandler sharedInstance] conURL:url networkType:ZzsAsiNetWorkGET params:mutableDict delegate:delegate showHUD:showHUD target:target action:action successBlock:successBlock failureBlock:failureBlock WithHeader:HaveHeader];
 }
 /**
  *   GET请求通过Block 回调结果
@@ -65,9 +66,9 @@
                   params:(NSDictionary*)params
             successBlock:(ZzsAsiSuccessBlock)successBlock
             failureBlock:(ZzsAsiFailureBlock)failureBlock
-                 showHUD:(BOOL)showHUD
+                 showHUD:(BOOL)showHUD WithHeader:(BOOL)HaveHeader
 {
-    [self getRequstWithURL:url params:params target:nil action:nil delegate:nil successBlock:successBlock failureBlock:failureBlock showHUD:showHUD];
+    [self getRequstWithURL:url params:params target:nil action:nil delegate:nil successBlock:successBlock failureBlock:failureBlock showHUD:showHUD WithHeader:HaveHeader];
 }
 /**
  *   GET请求通过代理回调
@@ -80,9 +81,9 @@
 + (void)getRequstWithURL:(NSString*)url
                   params:(NSDictionary*)params
                 delegate:(id<ZzsAsiNetworkDelegate>)delegate
-                 showHUD:(BOOL)showHUD
+                 showHUD:(BOOL)showHUD  WithHeader:(BOOL)HaveHeader
 {
-    [self getRequstWithURL:url params:params target:nil action:nil delegate:delegate successBlock:nil failureBlock:nil showHUD:showHUD];
+    [self getRequstWithURL:url params:params target:nil action:nil delegate:delegate successBlock:nil failureBlock:nil showHUD:showHUD WithHeader:HaveHeader];
 }
 
 /**
@@ -98,9 +99,9 @@
                   params:(NSDictionary*)params
                   target:(id)target
                   action:(SEL)action
-                 showHUD:(BOOL)showHUD
+                 showHUD:(BOOL)showHUD  WithHeader:(BOOL)HaveHeader
 {
-    [self getRequstWithURL:url params:params target:target action:action delegate:nil successBlock:nil failureBlock:nil showHUD:showHUD];
+    [self getRequstWithURL:url params:params target:target action:action delegate:nil successBlock:nil failureBlock:nil showHUD:showHUD WithHeader:HaveHeader];
 }
 
 #pragma mark - POST请求的三种回调方法
@@ -123,10 +124,10 @@
                   delegate:(id<ZzsAsiNetworkDelegate>)delegate
               successBlock:(ZzsAsiSuccessBlock)successBlock
               failureBlock:(ZzsAsiFailureBlock)failureBlock
-                   showHUD:(BOOL)showHUD
+                   showHUD:(BOOL)showHUD  WithHeader:(BOOL)HaveHeader
 {
     NSMutableDictionary *mutableDict = [NSMutableDictionary dictionaryWithDictionary:params];
-    [[ZzsAsiNetworkHandler sharedInstance] conURL:url networkType:ZzsAsiNetWorkPOST params:mutableDict delegate:delegate showHUD:showHUD target:target action:action successBlock:successBlock failureBlock:failureBlock];
+    [[ZzsAsiNetworkHandler sharedInstance] conURL:url networkType:ZzsAsiNetWorkPOST params:mutableDict delegate:delegate showHUD:showHUD target:target action:action successBlock:successBlock failureBlock:failureBlock WithHeader:HaveHeader];
 }
 /**
  *   通过 Block回调结果
@@ -141,9 +142,9 @@
                     params:(NSDictionary*)params
               successBlock:(ZzsAsiSuccessBlock)successBlock
               failureBlock:(ZzsAsiFailureBlock)failureBlock
-                   showHUD:(BOOL)showHUD
+                   showHUD:(BOOL)showHUD  WithHeader:(BOOL)HaveHeader
 {
-    [self postReqeustWithURL:url params:params target:nil action:nil delegate:nil successBlock:successBlock failureBlock:failureBlock showHUD:showHUD];
+    [self postReqeustWithURL:url params:params target:nil action:nil delegate:nil successBlock:successBlock failureBlock:failureBlock showHUD:showHUD WithHeader:HaveHeader];
 }
 /**
  *   post请求通过代理回调
@@ -156,9 +157,9 @@
 + (void)postReqeustWithURL:(NSString*)url
                     params:(NSDictionary*)params
                   delegate:(id<ZzsAsiNetworkDelegate>)delegate
-                   showHUD:(BOOL)showHUD;
+                   showHUD:(BOOL)showHUD  WithHeader:(BOOL)HaveHeader;
 {
-    [self postReqeustWithURL:url params:params target:nil action:nil delegate:delegate successBlock:nil failureBlock:nil showHUD:showHUD];
+    [self postReqeustWithURL:url params:params target:nil action:nil delegate:delegate successBlock:nil failureBlock:nil showHUD:showHUD WithHeader:HaveHeader];
 }
 /**
  *   post 请求通过 target 回调结果
@@ -172,9 +173,9 @@
                     params:(NSDictionary*)params
                     target:(id)target
                     action:(SEL)action
-                   showHUD:(BOOL)showHUD
+                   showHUD:(BOOL)showHUD WithHeader:(BOOL)HaveHeader
 {
-    [self postReqeustWithURL:url params:params target:target action:action delegate:nil successBlock:nil failureBlock:nil showHUD:showHUD];
+    [self postReqeustWithURL:url params:params target:target action:action delegate:nil successBlock:nil failureBlock:nil showHUD:showHUD WithHeader:HaveHeader];
 }
 
 /**

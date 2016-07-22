@@ -10,6 +10,7 @@
 #import "AFNetworking.h"
 #import "MBProgressHUD+Add.h"
 #import "ZzsAsiNetworkDefine.h"
+#import "Utility.h"
 @interface ZzsAsiNetworkItem ()
 
 @end
@@ -41,7 +42,7 @@
                          hashValue:(NSUInteger)hashValue
                            showHUD:(BOOL)showHUD
                       successBlock:(ZzsAsiSuccessBlock)successBlock
-                      failureBlock:(ZzsAsiFailureBlock)failureBlock
+                       failureBlock:(ZzsAsiFailureBlock)failureBlock WithHeader:(BOOL)HaveHeader
 {
     if (self = [super init])
     {
@@ -62,12 +63,18 @@
         //        manager.responseSerializer.acceptableContentTypes =  [NSSet setWithObject:@"text/html"];
         manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json",@"text/json", nil];
         manager.responseSerializer = [AFJSONResponseSerializer serializer];
+        if(HaveHeader)
+        {
+        [manager.requestSerializer setValue:[Utility sharedUtility].token forHTTPHeaderField:@"token"];
+        }
         //        AFJSONResponseSerializer *jsonSer =(AFJSONResponseSerializer*) manager.responseSerializer;
         //        jsonSer.removesKeysWithNullValues = YES;
         //        [manager.requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Accept"];
         if (networkType==ZzsAsiNetWorkGET)
         {
-            [manager GET:url parameters:params success:^(NSURLSessionDataTask * _Nonnull task, id responseObject) {
+            [manager GET:url parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
+                
+            } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
                 [MBProgressHUD hideAllHUDsForView:nil animated:YES];
                 if (successBlock) {
                     successBlock(responseObject);
@@ -77,9 +84,9 @@
                 }
                 [weakSelf performSelector:@selector(finishedRequest: didFaild:) withObject:responseObject withObject:nil];
                 [weakSelf removewItem];
-            } failure:^(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error) {
+            } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
                 [MBProgressHUD hideAllHUDsForView:nil animated:YES];
-//                DTLog(@"---error==%@\n",error.localizedDescription);
+                //                DTLog(@"---error==%@\n",error.localizedDescription);
                 if (failureBlock) {
                     failureBlock(error);
                 }
@@ -88,12 +95,16 @@
                 }
                 [weakSelf performSelector:@selector(finishedRequest: didFaild:) withObject:nil withObject:error];
                 [weakSelf removewItem];
+                
             }];
+   
             
         }else{
-            [manager POST:url parameters:params success:^(NSURLSessionDataTask * _Nonnull task, id responseObject) {
+            [manager POST:url parameters:params progress:^(NSProgress * _Nonnull uploadProgress) {
+                
+            } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
                 [MBProgressHUD hideHUDForView:nil animated:YES];
-//                DTLog(@"\n\n----请求的返回结果 %@\n",responseObject);
+                //                DTLog(@"\n\n----请求的返回结果 %@\n",responseObject);
                 if (successBlock) {
                     successBlock(responseObject);
                 }
@@ -102,9 +113,9 @@
                 }
                 [weakSelf performSelector:@selector(finishedRequest: didFaild:) withObject:responseObject withObject:nil];
                 [weakSelf removewItem];
-            } failure:^(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error) {
+            } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
                 [MBProgressHUD hideAllHUDsForView:nil animated:YES];
-//                DTLog(@"---error==%@\n",error.localizedDescription);
+                //                DTLog(@"---error==%@\n",error.localizedDescription);
                 if (failureBlock) {
                     failureBlock(error);
                 }
@@ -114,7 +125,7 @@
                 [weakSelf performSelector:@selector(finishedRequest: didFaild:) withObject:nil withObject:error];
                 [weakSelf removewItem];
             }];
-        }
+                  }
     }
     return self;
 }

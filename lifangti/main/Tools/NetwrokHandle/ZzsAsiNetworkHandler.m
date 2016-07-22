@@ -55,7 +55,7 @@
                      target:(id)target
                      action:(SEL)action
                successBlock:(ZzsAsiSuccessBlock)successBlock
-               failureBlock:(ZzsAsiFailureBlock)failureBlock
+                failureBlock:(ZzsAsiFailureBlock)failureBlock WithHeader:(BOOL)HaveHeader
 {
     if (self.networkError == YES) {
         SHOW_ALERT(@"网络连接断开,请检查网络!");
@@ -66,7 +66,7 @@
     }
     /// 如果有一些公共处理，可以写在这里
     NSUInteger hashValue = [delegate hash];
-    self.netWorkItem = [[ZzsAsiNetworkItem alloc]initWithtype:networkType url:url params:params delegate:delegate target:target action:action hashValue:hashValue showHUD:showHUD successBlock:successBlock failureBlock:failureBlock];
+    self.netWorkItem = [[ZzsAsiNetworkItem alloc]initWithtype:networkType url:url params:params delegate:delegate target:target action:action hashValue:hashValue showHUD:showHUD successBlock:successBlock failureBlock:failureBlock WithHeader:HaveHeader];
     self.netWorkItem.delegate = self;
     [self.items addObject:self.netWorkItem];
     return self.netWorkItem;

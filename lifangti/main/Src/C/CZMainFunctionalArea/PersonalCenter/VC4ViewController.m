@@ -13,7 +13,7 @@
 //
 
 #import "VC4ViewController.h"
-
+#import "HttpLinkClass.h"
 @interface VC4ViewController ()
 
 @end
@@ -22,11 +22,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    [HttpLinkClass PostLogin:^(Log *parse) {
+  
+        [Utility sharedUtility].token=parse.token;
+        [HttpLinkClass GetUser:^(NSDictionary *parse) {
+            NSLog(@"now Log User is %@",parse);
+        } andError:^(NSString *parse) {
+            
+        }];
+    } andError:^(NSString *parse) {
+        
+    } With:@{@"account":@"chenwei",
+             @"password":@"123456"}];
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+    
     // Dispose of any resources that can be recreated.
 }
 

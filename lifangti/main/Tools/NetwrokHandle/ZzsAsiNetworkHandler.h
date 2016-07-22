@@ -52,14 +52,14 @@
  *  @return 根据网络请求的委托delegate而生成的唯一标示
  */
 - (ZzsAsiNetworkItem*)conURL:(NSString *)url
-         networkType:(ZzsAsiNetWorkType)networkType
-              params:(NSMutableDictionary *)params
-            delegate:(id)delegate
-             showHUD:(BOOL)showHUD
-              target:(id)target
-              action:(SEL)action
-        successBlock:(ZzsAsiSuccessBlock)successBlock
-        failureBlock:(ZzsAsiFailureBlock)failureBlock;
+                 networkType:(ZzsAsiNetWorkType)networkType
+                      params:(NSMutableDictionary *)params
+                    delegate:(id)delegate
+                     showHUD:(BOOL)showHUD
+                      target:(id)target
+                      action:(SEL)action
+                successBlock:(ZzsAsiSuccessBlock)successBlock
+                failureBlock:(ZzsAsiFailureBlock)failureBlock WithHeader:(BOOL)HaveHeader;
 /**
  *   监听网络状态的变化
  */

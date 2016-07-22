@@ -31,7 +31,7 @@
                   params:(NSDictionary*)paramsDict
             successBlock:(ZzsAsiSuccessBlock)successBlock
             failureBlock:(ZzsAsiFailureBlock)failureBlock
-                 showHUD:(BOOL)showHUD;
+                 showHUD:(BOOL)showHUD  WithHeader:(BOOL)HaveHeader;
 /**
  *   GET请求通过代理回调
  *
@@ -43,7 +43,7 @@
 + (void)getRequstWithURL:(NSString*)url
                   params:(NSDictionary*)paramsDict
                 delegate:(id<ZzsAsiNetworkDelegate>)delegate
-                 showHUD:(BOOL)showHUD;
+                 showHUD:(BOOL)showHUD  WithHeader:(BOOL)HaveHeader;
 /**
  *   get 请求通过 taget 回调方法
  *
@@ -57,7 +57,7 @@
                   params:(NSDictionary*)paramsDict
                   target:(id)target
                   action:(SEL)action
-                 showHUD:(BOOL)showHUD;
+                 showHUD:(BOOL)showHUD  WithHeader:(BOOL)HaveHeader;
 
 #pragma mark - 发送 POST 请求的方法
 /**
@@ -73,7 +73,7 @@
                     params:(NSDictionary*)paramsDict
               successBlock:(ZzsAsiSuccessBlock)successBlock
               failureBlock:(ZzsAsiFailureBlock)failureBlock
-                   showHUD:(BOOL)showHUD;
+                   showHUD:(BOOL)showHUD  WithHeader:(BOOL)HaveHeader;
 /**
  *   post请求通过代理回调
  *
@@ -85,7 +85,7 @@
 + (void)postReqeustWithURL:(NSString*)url
                     params:(NSDictionary*)paramsDict
                   delegate:(id<ZzsAsiNetworkDelegate>)delegate
-                   showHUD:(BOOL)showHUD;
+                   showHUD:(BOOL)showHUD  WithHeader:(BOOL)HaveHeader;
 /**
  *   post 请求通过 target 回调结果
  *
@@ -98,7 +98,7 @@
                     params:(NSDictionary*)paramsDict
                     target:(id)target
                     action:(SEL)action
-                   showHUD:(BOOL)showHUD;
+                   showHUD:(BOOL)showHUD  WithHeader:(BOOL)HaveHeader;
 /**
  *  上传文件
  *

@@ -74,10 +74,6 @@
 		2EA1E0D91D194DFB00378E8B /* ShowButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EA1E0CF1D194DFB00378E8B /* ShowButtonView.xib */; };
 		2EA1E0DC1D19511800378E8B /* UtilityPopManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1E0DB1D19511800378E8B /* UtilityPopManager.m */; };
 		2EA1E0DE1D1A8A6B00378E8B /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EA1E0DD1D1A8A6B00378E8B /* SceneKit.framework */; };
-		2EA1E12D1D1BCE0700378E8B /* ZzsAsiNetworkHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1E1241D1BCE0700378E8B /* ZzsAsiNetworkHandler.m */; };
-		2EA1E12E1D1BCE0700378E8B /* ZzsAsiNetworkItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1E1261D1BCE0700378E8B /* ZzsAsiNetworkItem.m */; };
-		2EA1E12F1D1BCE0700378E8B /* ZzsNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1E1291D1BCE0700378E8B /* ZzsNetworkManager.m */; };
-		2EA1E1301D1BCE0700378E8B /* ZzsUploadParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1E12C1D1BCE0700378E8B /* ZzsUploadParam.m */; };
 		2EA1E13A1D1BCF1D00378E8B /* MBProgressHUD+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1E1371D1BCF1D00378E8B /* MBProgressHUD+Add.m */; };
 		2EA1E13B1D1BCF1D00378E8B /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1E1391D1BCF1D00378E8B /* MBProgressHUD.m */; };
 		2EA1E13E1D1BE7CC00378E8B /* UtilityLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1E13D1D1BE7CC00378E8B /* UtilityLanguage.m */; };
@@ -92,6 +88,12 @@
 		2EB921281D2588E1004D19EE /* ZSScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB921221D2588E1004D19EE /* ZSScrollView.m */; };
 		2EB921291D2588E1004D19EE /* ZSUIScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB921241D2588E1004D19EE /* ZSUIScrollView.m */; };
 		2EB9212A1D2588E1004D19EE /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB921261D2588E1004D19EE /* BaseViewController.m */; };
+		2EC8A5A11D422C86000AC655 /* ZzsAsiNetworkHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC8A5961D422C86000AC655 /* ZzsAsiNetworkHandler.m */; };
+		2EC8A5A21D422C86000AC655 /* ZzsAsiNetworkItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC8A5981D422C86000AC655 /* ZzsAsiNetworkItem.m */; };
+		2EC8A5A31D422C86000AC655 /* ZzsNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC8A59B1D422C86000AC655 /* ZzsNetworkManager.m */; };
+		2EC8A5A41D422C86000AC655 /* ZzsUploadParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC8A59E1D422C86000AC655 /* ZzsUploadParam.m */; };
+		2EC8A5A51D422C86000AC655 /* HttpLinkClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC8A5A01D422C86000AC655 /* HttpLinkClass.m */; };
+		2EC8A5A81D422D24000AC655 /* Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC8A5A71D422D24000AC655 /* Log.m */; };
 		2ED0BF431D23A56D0078BEFE /* TheCube.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED0BF421D23A56D0078BEFE /* TheCube.m */; };
 		2ED0BF461D23A9C90078BEFE /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED0BF451D23A9C90078BEFE /* Comment.m */; };
 		2ED0BF491D23B8D10078BEFE /* CubeStar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED0BF481D23B8D10078BEFE /* CubeStar.m */; };
@@ -245,18 +247,6 @@
 		2EA1E0DA1D19511800378E8B /* UtilityPopManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityPopManager.h; sourceTree = "<group>"; };
 		2EA1E0DB1D19511800378E8B /* UtilityPopManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilityPopManager.m; sourceTree = "<group>"; };
 		2EA1E0DD1D1A8A6B00378E8B /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
-		2EA1E1211D1BCE0700378E8B /* ZzsAsiNetworkDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZzsAsiNetworkDefine.h; sourceTree = "<group>"; };
-		2EA1E1221D1BCE0700378E8B /* ZzsAsiNetworkDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZzsAsiNetworkDelegate.h; sourceTree = "<group>"; };
-		2EA1E1231D1BCE0700378E8B /* ZzsAsiNetworkHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZzsAsiNetworkHandler.h; sourceTree = "<group>"; };
-		2EA1E1241D1BCE0700378E8B /* ZzsAsiNetworkHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZzsAsiNetworkHandler.m; sourceTree = "<group>"; };
-		2EA1E1251D1BCE0700378E8B /* ZzsAsiNetworkItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZzsAsiNetworkItem.h; sourceTree = "<group>"; };
-		2EA1E1261D1BCE0700378E8B /* ZzsAsiNetworkItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZzsAsiNetworkItem.m; sourceTree = "<group>"; };
-		2EA1E1271D1BCE0700378E8B /* ZzsAsiNetworkUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZzsAsiNetworkUrl.h; sourceTree = "<group>"; };
-		2EA1E1281D1BCE0700378E8B /* ZzsNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZzsNetworkManager.h; sourceTree = "<group>"; };
-		2EA1E1291D1BCE0700378E8B /* ZzsNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZzsNetworkManager.m; sourceTree = "<group>"; };
-		2EA1E12A1D1BCE0700378E8B /* ZzsNetwrok.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZzsNetwrok.h; sourceTree = "<group>"; };
-		2EA1E12B1D1BCE0700378E8B /* ZzsUploadParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZzsUploadParam.h; sourceTree = "<group>"; };
-		2EA1E12C1D1BCE0700378E8B /* ZzsUploadParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZzsUploadParam.m; sourceTree = "<group>"; };
 		2EA1E1361D1BCF1D00378E8B /* MBProgressHUD+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Add.h"; sourceTree = "<group>"; };
 		2EA1E1371D1BCF1D00378E8B /* MBProgressHUD+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Add.m"; sourceTree = "<group>"; };
 		2EA1E1381D1BCF1D00378E8B /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
@@ -281,6 +271,22 @@
 		2EB921241D2588E1004D19EE /* ZSUIScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSUIScrollView.m; sourceTree = "<group>"; };
 		2EB921251D2588E1004D19EE /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		2EB921261D2588E1004D19EE /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		2EC8A5931D422C86000AC655 /* ZzsAsiNetworkDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZzsAsiNetworkDefine.h; sourceTree = "<group>"; };
+		2EC8A5941D422C86000AC655 /* ZzsAsiNetworkDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZzsAsiNetworkDelegate.h; sourceTree = "<group>"; };
+		2EC8A5951D422C86000AC655 /* ZzsAsiNetworkHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZzsAsiNetworkHandler.h; sourceTree = "<group>"; };
+		2EC8A5961D422C86000AC655 /* ZzsAsiNetworkHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZzsAsiNetworkHandler.m; sourceTree = "<group>"; };
+		2EC8A5971D422C86000AC655 /* ZzsAsiNetworkItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZzsAsiNetworkItem.h; sourceTree = "<group>"; };
+		2EC8A5981D422C86000AC655 /* ZzsAsiNetworkItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZzsAsiNetworkItem.m; sourceTree = "<group>"; };
+		2EC8A5991D422C86000AC655 /* ZzsAsiNetworkUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZzsAsiNetworkUrl.h; sourceTree = "<group>"; };
+		2EC8A59A1D422C86000AC655 /* ZzsNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZzsNetworkManager.h; sourceTree = "<group>"; };
+		2EC8A59B1D422C86000AC655 /* ZzsNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZzsNetworkManager.m; sourceTree = "<group>"; };
+		2EC8A59C1D422C86000AC655 /* ZzsNetwrok.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZzsNetwrok.h; sourceTree = "<group>"; };
+		2EC8A59D1D422C86000AC655 /* ZzsUploadParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZzsUploadParam.h; sourceTree = "<group>"; };
+		2EC8A59E1D422C86000AC655 /* ZzsUploadParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZzsUploadParam.m; sourceTree = "<group>"; };
+		2EC8A59F1D422C86000AC655 /* HttpLinkClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpLinkClass.h; sourceTree = "<group>"; };
+		2EC8A5A01D422C86000AC655 /* HttpLinkClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpLinkClass.m; sourceTree = "<group>"; };
+		2EC8A5A61D422D24000AC655 /* Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Log.h; sourceTree = "<group>"; };
+		2EC8A5A71D422D24000AC655 /* Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Log.m; sourceTree = "<group>"; };
 		2ED0BF411D23A56D0078BEFE /* TheCube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheCube.h; sourceTree = "<group>"; };
 		2ED0BF421D23A56D0078BEFE /* TheCube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheCube.m; sourceTree = "<group>"; };
 		2ED0BF441D23A9C90078BEFE /* Comment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comment.h; sourceTree = "<group>"; };
@@ -700,18 +706,22 @@
 		2EA1E1201D1BCE0700378E8B /* NetwrokHandle */ = {
 			isa = PBXGroup;
 			children = (
-				2EA1E1211D1BCE0700378E8B /* ZzsAsiNetworkDefine.h */,
-				2EA1E1221D1BCE0700378E8B /* ZzsAsiNetworkDelegate.h */,
-				2EA1E1231D1BCE0700378E8B /* ZzsAsiNetworkHandler.h */,
-				2EA1E1241D1BCE0700378E8B /* ZzsAsiNetworkHandler.m */,
-				2EA1E1251D1BCE0700378E8B /* ZzsAsiNetworkItem.h */,
-				2EA1E1261D1BCE0700378E8B /* ZzsAsiNetworkItem.m */,
-				2EA1E1271D1BCE0700378E8B /* ZzsAsiNetworkUrl.h */,
-				2EA1E1281D1BCE0700378E8B /* ZzsNetworkManager.h */,
-				2EA1E1291D1BCE0700378E8B /* ZzsNetworkManager.m */,
-				2EA1E12A1D1BCE0700378E8B /* ZzsNetwrok.h */,
-				2EA1E12B1D1BCE0700378E8B /* ZzsUploadParam.h */,
-				2EA1E12C1D1BCE0700378E8B /* ZzsUploadParam.m */,
+				2EC8A5A61D422D24000AC655 /* Log.h */,
+				2EC8A5A71D422D24000AC655 /* Log.m */,
+				2EC8A5931D422C86000AC655 /* ZzsAsiNetworkDefine.h */,
+				2EC8A5941D422C86000AC655 /* ZzsAsiNetworkDelegate.h */,
+				2EC8A5951D422C86000AC655 /* ZzsAsiNetworkHandler.h */,
+				2EC8A5961D422C86000AC655 /* ZzsAsiNetworkHandler.m */,
+				2EC8A5971D422C86000AC655 /* ZzsAsiNetworkItem.h */,
+				2EC8A5981D422C86000AC655 /* ZzsAsiNetworkItem.m */,
+				2EC8A5991D422C86000AC655 /* ZzsAsiNetworkUrl.h */,
+				2EC8A59A1D422C86000AC655 /* ZzsNetworkManager.h */,
+				2EC8A59B1D422C86000AC655 /* ZzsNetworkManager.m */,
+				2EC8A59C1D422C86000AC655 /* ZzsNetwrok.h */,
+				2EC8A59D1D422C86000AC655 /* ZzsUploadParam.h */,
+				2EC8A59E1D422C86000AC655 /* ZzsUploadParam.m */,
+				2EC8A59F1D422C86000AC655 /* HttpLinkClass.h */,
+				2EC8A5A01D422C86000AC655 /* HttpLinkClass.m */,
 			);
 			path = NetwrokHandle;
 			sourceTree = "<group>";
@@ -1211,7 +1221,6 @@
 				2EFDEA201D0DC0400088F25F /* Clound.m in Sources */,
 				2E6C3B1B1D4223780060EEBF /* FAImageView.m in Sources */,
 				2E39F6A21D2A5DC300214B56 /* ZSFlowLayout.m in Sources */,
-				2EA1E12E1D1BCE0700378E8B /* ZzsAsiNetworkItem.m in Sources */,
 				2E6C3B1C1D4223780060EEBF /* UIFont+FontAwesome.m in Sources */,
 				2E55B48C1D219BFC006B28D6 /* LeanNetWork.m in Sources */,
 				2EEE54941D17D7960070B625 /* UtilityForData.m in Sources */,
@@ -1226,6 +1235,7 @@
 				2EEA74981D2D083D001E189A /* CubeView.m in Sources */,
 				2E6C3B1D1D4223780060EEBF /* NSString+FontAwesome.m in Sources */,
 				2EA1E13B1D1BCF1D00378E8B /* MBProgressHUD.m in Sources */,
+				2EC8A5A81D422D24000AC655 /* Log.m in Sources */,
 				2EEE54871D17CB3B0070B625 /* UtilityForValue.m in Sources */,
 				2EB921271D2588E1004D19EE /* NSTimer+Addition.m in Sources */,
 				2EA1E0D51D194DFB00378E8B /* VC4ViewController.m in Sources */,
@@ -1242,25 +1252,27 @@
 				2EA1E0D01D194DFB00378E8B /* VC2ViewController.m in Sources */,
 				2E2436BA1D0C4EA300F33AC1 /* AppDelegate.m in Sources */,
 				2EB560341D33703800B39615 /* cubeViewController.m in Sources */,
-				2EA1E1301D1BCE0700378E8B /* ZzsUploadParam.m in Sources */,
 				2EEA74A31D2D1432001E189A /* CubeTableViewCell.m in Sources */,
 				2E39F6A11D2A5DC300214B56 /* RFLayout.m in Sources */,
+				2EC8A5A21D422C86000AC655 /* ZzsAsiNetworkItem.m in Sources */,
 				2EEA74A71D2D72D8001E189A /* BaseCell.m in Sources */,
 				2EA1E13E1D1BE7CC00378E8B /* UtilityLanguage.m in Sources */,
+				2EC8A5A51D422C86000AC655 /* HttpLinkClass.m in Sources */,
 				2EEE548B1D17D46C0070B625 /* Utility.m in Sources */,
 				2E39F69B1D2A5DC300214B56 /* CZCardTableViewCell.m in Sources */,
-				2EA1E12D1D1BCE0700378E8B /* ZzsAsiNetworkHandler.m in Sources */,
 				2ED0BF431D23A56D0078BEFE /* TheCube.m in Sources */,
 				2EA1E0DC1D19511800378E8B /* UtilityPopManager.m in Sources */,
 				2EB921281D2588E1004D19EE /* ZSScrollView.m in Sources */,
 				2ED0BF491D23B8D10078BEFE /* CubeStar.m in Sources */,
 				2EEE547E1D17CAEF0070B625 /* UtilityForClass.m in Sources */,
 				2ED0BF4C1D23DA670078BEFE /* LeanNetBase.m in Sources */,
+				2EC8A5A11D422C86000AC655 /* ZzsAsiNetworkHandler.m in Sources */,
 				2E2436B71D0C4EA300F33AC1 /* main.m in Sources */,
-				2EA1E12F1D1BCE0700378E8B /* ZzsNetworkManager.m in Sources */,
 				2ED0BF501D23E1BE0078BEFE /* LogAndRegViewController.m in Sources */,
 				2EEA749D1D2D09ED001E189A /* BaseXibVIew.m in Sources */,
+				2EC8A5A31D422C86000AC655 /* ZzsNetworkManager.m in Sources */,
 				2E2436C31D0C4EA300F33AC1 /* lifangti.xcdatamodeld in Sources */,
+				2EC8A5A41D422C86000AC655 /* ZzsUploadParam.m in Sources */,
 				2E39F6A31D2A5DC300214B56 /* ZSViewCell.m in Sources */,
 				2E6C3B1E1D4223780060EEBF /* UIImage+FontAwesome.m in Sources */,
 				2E39F6971D2A5DC300214B56 /* CZGuanZhu.m in Sources */,
