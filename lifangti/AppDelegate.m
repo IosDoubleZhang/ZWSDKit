@@ -20,6 +20,7 @@
     //启动LeanCloud 云存储服务
     [Clound StartClound];
     [UtilityForUM StartUm];
+    [UtilityForLocation configureAPIKey];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [self LogFlag];
     [self.window makeKeyAndVisible];

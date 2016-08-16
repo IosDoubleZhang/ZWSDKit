@@ -23,6 +23,10 @@
 -(void)setSelfView
 {
     [[NSBundle mainBundle]loadNibNamed:self.className owner:self options:nil] ;
+//    self.View.frame=self.frame;
+    NSLog(@"%lf",self.frame.size.height);
+    self.View.frame=CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
+    
     [self addSubview:self.View];
 }
 /*

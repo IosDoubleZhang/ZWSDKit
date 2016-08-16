@@ -36,6 +36,7 @@
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>wechat</string>
+		<string>iosamap</string>
 		<string>weixin</string>
 		<string>sinaweibohd</string>
 		<string>sinaweibo</string>
@@ -90,6 +91,8 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>你好</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>FontAwesome.otf</string>

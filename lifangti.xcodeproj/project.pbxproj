@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		2E0640E31D2CAAD2008722D0 /* YYKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E0640E21D2CAAD2008722D0 /* YYKit.framework */; };
+		2E15FEDD1D62ED1100296EAB /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E15FEDB1D62ED1100296EAB /* MapViewController.m */; };
+		2E15FEDE1D62ED1100296EAB /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E15FEDC1D62ED1100296EAB /* MapViewController.xib */; };
+		2E15FEE11D62ED3500296EAB /* ZSMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E15FEE01D62ED3500296EAB /* ZSMapView.m */; };
+		2E15FEE41D62ED5200296EAB /* ZSMapTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E15FEE31D62ED5200296EAB /* ZSMapTableView.m */; };
+		2E15FEE71D62ED7A00296EAB /* ZSMapSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E15FEE61D62ED7A00296EAB /* ZSMapSearchView.m */; };
+		2E15FEE91D62ED8C00296EAB /* ZSMapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E15FEE81D62ED8C00296EAB /* ZSMapView.xib */; };
+		2E15FEEB1D62FCE000296EAB /* chufadi.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E15FEEA1D62FCE000296EAB /* chufadi.png */; };
+		2E15FEED1D63058A00296EAB /* ZSMapTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E15FEEC1D63058A00296EAB /* ZSMapTableView.xib */; };
 		2E1DB6FE1D184C8000F73FE6 /* libSocialQQ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E1DB6EB1D184C8000F73FE6 /* libSocialQQ.a */; };
 		2E1DB6FF1D184C8000F73FE6 /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E1DB6EC1D184C8000F73FE6 /* TencentOpenAPI.framework */; };
 		2E1DB7001D184C8000F73FE6 /* TencentOpenApi_IOS_Bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2E1DB6ED1D184C8000F73FE6 /* TencentOpenApi_IOS_Bundle.bundle */; };
@@ -94,6 +102,8 @@
 		2EC8A5A41D422C86000AC655 /* ZzsUploadParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC8A59E1D422C86000AC655 /* ZzsUploadParam.m */; };
 		2EC8A5A51D422C86000AC655 /* HttpLinkClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC8A5A01D422C86000AC655 /* HttpLinkClass.m */; };
 		2EC8A5A81D422D24000AC655 /* Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC8A5A71D422D24000AC655 /* Log.m */; };
+		2EC8A5AD1D45C729000AC655 /* EaseBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC8A5AC1D45C729000AC655 /* EaseBtn.m */; };
+		2EC8A5AF1D45C73A000AC655 /* EaseBtn.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EC8A5AE1D45C73A000AC655 /* EaseBtn.xib */; };
 		2ED0BF431D23A56D0078BEFE /* TheCube.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED0BF421D23A56D0078BEFE /* TheCube.m */; };
 		2ED0BF461D23A9C90078BEFE /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED0BF451D23A9C90078BEFE /* Comment.m */; };
 		2ED0BF491D23B8D10078BEFE /* CubeStar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED0BF481D23B8D10078BEFE /* CubeStar.m */; };
@@ -142,6 +152,18 @@
 
 /* Begin PBXFileReference section */
 		2E0640E21D2CAAD2008722D0 /* YYKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YYKit.framework; path = "Pods/../build/Debug-iphoneos/YYKit/YYKit.framework"; sourceTree = "<group>"; };
+		2E15FEDA1D62ED1100296EAB /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		2E15FEDB1D62ED1100296EAB /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		2E15FEDC1D62ED1100296EAB /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		2E15FEDF1D62ED3500296EAB /* ZSMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSMapView.h; sourceTree = "<group>"; };
+		2E15FEE01D62ED3500296EAB /* ZSMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSMapView.m; sourceTree = "<group>"; };
+		2E15FEE21D62ED5200296EAB /* ZSMapTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSMapTableView.h; sourceTree = "<group>"; };
+		2E15FEE31D62ED5200296EAB /* ZSMapTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSMapTableView.m; sourceTree = "<group>"; };
+		2E15FEE51D62ED7A00296EAB /* ZSMapSearchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSMapSearchView.h; sourceTree = "<group>"; };
+		2E15FEE61D62ED7A00296EAB /* ZSMapSearchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSMapSearchView.m; sourceTree = "<group>"; };
+		2E15FEE81D62ED8C00296EAB /* ZSMapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZSMapView.xib; sourceTree = "<group>"; };
+		2E15FEEA1D62FCE000296EAB /* chufadi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chufadi.png; sourceTree = "<group>"; };
+		2E15FEEC1D63058A00296EAB /* ZSMapTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZSMapTableView.xib; sourceTree = "<group>"; };
 		2E1DB6EB1D184C8000F73FE6 /* libSocialQQ.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialQQ.a; sourceTree = "<group>"; };
 		2E1DB6EC1D184C8000F73FE6 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
 		2E1DB6ED1D184C8000F73FE6 /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
@@ -287,6 +309,9 @@
 		2EC8A5A01D422C86000AC655 /* HttpLinkClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpLinkClass.m; sourceTree = "<group>"; };
 		2EC8A5A61D422D24000AC655 /* Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Log.h; sourceTree = "<group>"; };
 		2EC8A5A71D422D24000AC655 /* Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Log.m; sourceTree = "<group>"; };
+		2EC8A5AB1D45C729000AC655 /* EaseBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EaseBtn.h; sourceTree = "<group>"; };
+		2EC8A5AC1D45C729000AC655 /* EaseBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EaseBtn.m; sourceTree = "<group>"; };
+		2EC8A5AE1D45C73A000AC655 /* EaseBtn.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EaseBtn.xib; sourceTree = "<group>"; };
 		2ED0BF411D23A56D0078BEFE /* TheCube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheCube.h; sourceTree = "<group>"; };
 		2ED0BF421D23A56D0078BEFE /* TheCube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheCube.m; sourceTree = "<group>"; };
 		2ED0BF441D23A9C90078BEFE /* Comment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comment.h; sourceTree = "<group>"; };
@@ -319,8 +344,8 @@
 		2EEE547A1D17CAE60070B625 /* UtilityForUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilityForUI.m; sourceTree = "<group>"; };
 		2EEE547C1D17CAEF0070B625 /* UtilityForClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityForClass.h; sourceTree = "<group>"; };
 		2EEE547D1D17CAEF0070B625 /* UtilityForClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilityForClass.m; sourceTree = "<group>"; };
-		2EEE547F1D17CB150070B625 /* UtilityForLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityForLocation.h; sourceTree = "<group>"; };
-		2EEE54801D17CB150070B625 /* UtilityForLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilityForLocation.m; sourceTree = "<group>"; };
+		2EEE547F1D17CB150070B625 /* UtilityForLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UtilityForLocation.h; path = ../Tools/Utility/UtilityForLocation.h; sourceTree = "<group>"; };
+		2EEE54801D17CB150070B625 /* UtilityForLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UtilityForLocation.m; path = ../Tools/Utility/UtilityForLocation.m; sourceTree = "<group>"; };
 		2EEE54821D17CB250070B625 /* UtilityForString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityForString.h; sourceTree = "<group>"; };
 		2EEE54831D17CB250070B625 /* UtilityForString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilityForString.m; sourceTree = "<group>"; };
 		2EEE54851D17CB3B0070B625 /* UtilityForValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityForValue.h; sourceTree = "<group>"; };
@@ -377,6 +402,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E15FED91D62ED0100296EAB /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				2E15FEEA1D62FCE000296EAB /* chufadi.png */,
+				2EEE547F1D17CB150070B625 /* UtilityForLocation.h */,
+				2EEE54801D17CB150070B625 /* UtilityForLocation.m */,
+				2E15FEDA1D62ED1100296EAB /* MapViewController.h */,
+				2E15FEDB1D62ED1100296EAB /* MapViewController.m */,
+				2E15FEDC1D62ED1100296EAB /* MapViewController.xib */,
+				2E15FEDF1D62ED3500296EAB /* ZSMapView.h */,
+				2E15FEE01D62ED3500296EAB /* ZSMapView.m */,
+				2E15FEE81D62ED8C00296EAB /* ZSMapView.xib */,
+				2E15FEE21D62ED5200296EAB /* ZSMapTableView.h */,
+				2E15FEE31D62ED5200296EAB /* ZSMapTableView.m */,
+				2E15FEEC1D63058A00296EAB /* ZSMapTableView.xib */,
+				2E15FEE51D62ED7A00296EAB /* ZSMapSearchView.h */,
+				2E15FEE61D62ED7A00296EAB /* ZSMapSearchView.m */,
+			);
+			path = MapView;
+			sourceTree = "<group>";
+		};
 		2E1DB6E91D184C3200F73FE6 /* 3Party */ = {
 			isa = PBXGroup;
 			children = (
@@ -743,6 +789,9 @@
 				2EB9211E1D2588E1004D19EE /* BaseView */,
 				2EB921251D2588E1004D19EE /* BaseViewController.h */,
 				2EB921261D2588E1004D19EE /* BaseViewController.m */,
+				2EC8A5AB1D45C729000AC655 /* EaseBtn.h */,
+				2EC8A5AC1D45C729000AC655 /* EaseBtn.m */,
+				2EC8A5AE1D45C73A000AC655 /* EaseBtn.xib */,
 			);
 			path = BaseUi;
 			sourceTree = "<group>";
@@ -799,6 +848,7 @@
 		2EFDEA141D0DC0400088F25F /* main */ = {
 			isa = PBXGroup;
 			children = (
+				2E15FED91D62ED0100296EAB /* MapView */,
 				2EFDEA151D0DC0400088F25F /* AppDelegate */,
 				2E1DB6E91D184C3200F73FE6 /* 3Party */,
 				2EFDEA1A1D0DC0400088F25F /* Src */,
@@ -894,8 +944,6 @@
 				2EEE547A1D17CAE60070B625 /* UtilityForUI.m */,
 				2EEE547C1D17CAEF0070B625 /* UtilityForClass.h */,
 				2EEE547D1D17CAEF0070B625 /* UtilityForClass.m */,
-				2EEE547F1D17CB150070B625 /* UtilityForLocation.h */,
-				2EEE54801D17CB150070B625 /* UtilityForLocation.m */,
 				2EEE54821D17CB250070B625 /* UtilityForString.h */,
 				2EEE54831D17CB250070B625 /* UtilityForString.m */,
 				2EEE548F1D17D59F0070B625 /* UtilityForTime.h */,
@@ -1007,7 +1055,7 @@
 				TargetAttributes = {
 					2E2436B11D0C4EA300F33AC1 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = AGJBE62522;
+						DevelopmentTeam = 7898QWFF97;
 					};
 					2E2436CD1D0C4EA300F33AC1 = {
 						CreatedOnToolsVersion = 7.3;
@@ -1047,6 +1095,7 @@
 				2E6C3B121D421E330060EEBF /* fontawesome-webfont.ttf in Resources */,
 				2E6C3B101D421DF00060EEBF /* FontAwesome.otf in Resources */,
 				2E39F6BC1D2A5F5400214B56 /* u2.jpg in Resources */,
+				2E15FEDE1D62ED1100296EAB /* MapViewController.xib in Resources */,
 				2EB560431D34DB3900B39615 /* CoreMotionView.xib in Resources */,
 				2E39F69A1D2A5DC300214B56 /* CZGuanZhuTableViewCell.xib in Resources */,
 				2ED0BF511D23E1BE0078BEFE /* LogAndRegViewController.xib in Resources */,
@@ -1059,8 +1108,12 @@
 				2E39F6C21D2A5FB400214B56 /* 4.jpeg in Resources */,
 				2E39F6B21D2A5F4B00214B56 /* 2.jpg in Resources */,
 				2E2436C81D0C4EA300F33AC1 /* LaunchScreen.storyboard in Resources */,
+				2E15FEEB1D62FCE000296EAB /* chufadi.png in Resources */,
 				2E39F6B41D2A5F4B00214B56 /* a2.jpg in Resources */,
 				2E39F69C1D2A5DC300214B56 /* CZCardTableViewCell.xib in Resources */,
+				2E15FEED1D63058A00296EAB /* ZSMapTableView.xib in Resources */,
+				2EC8A5AF1D45C73A000AC655 /* EaseBtn.xib in Resources */,
+				2E15FEE91D62ED8C00296EAB /* ZSMapView.xib in Resources */,
 				2E39F6BA1D2A5F4B00214B56 /* u3.jpg in Resources */,
 				2EEA749F1D2D0A3F001E189A /* BaseXibVIew.xib in Resources */,
 				2E39F6981D2A5DC300214B56 /* CZGuanZhu.xib in Resources */,
@@ -1218,8 +1271,12 @@
 				2EB560381D33713500B39615 /* AcubeView.m in Sources */,
 				2E39F69F1D2A5DC300214B56 /* CZTuiJIanTableViewCell.m in Sources */,
 				2EA1E0D71D194DFB00378E8B /* someFountionTabbar.m in Sources */,
+				2E15FEE71D62ED7A00296EAB /* ZSMapSearchView.m in Sources */,
 				2EFDEA201D0DC0400088F25F /* Clound.m in Sources */,
 				2E6C3B1B1D4223780060EEBF /* FAImageView.m in Sources */,
+				2E15FEE11D62ED3500296EAB /* ZSMapView.m in Sources */,
+				2EC8A5AD1D45C729000AC655 /* EaseBtn.m in Sources */,
+				2E15FEDD1D62ED1100296EAB /* MapViewController.m in Sources */,
 				2E39F6A21D2A5DC300214B56 /* ZSFlowLayout.m in Sources */,
 				2E6C3B1C1D4223780060EEBF /* UIFont+FontAwesome.m in Sources */,
 				2E55B48C1D219BFC006B28D6 /* LeanNetWork.m in Sources */,
@@ -1230,6 +1287,7 @@
 				2EA1E0D81D194DFB00378E8B /* ShowButtonView.m in Sources */,
 				2E39F6A61D2A5DC300214B56 /* VC1ViewController.m in Sources */,
 				2EEE54841D17CB250070B625 /* UtilityForString.m in Sources */,
+				2E15FEE41D62ED5200296EAB /* ZSMapTableView.m in Sources */,
 				2E55B4881D219836006B28D6 /* myPoint.m in Sources */,
 				2E39F6A51D2A5DC300214B56 /* CZHongBao.m in Sources */,
 				2EEA74981D2D083D001E189A /* CubeView.m in Sources */,
@@ -1433,7 +1491,7 @@
 					"$(PROJECT_DIR)/lifangti/main/3Party/UMSocial_Shake_Sdk",
 					"$(PROJECT_DIR)/lifangti/main/3Party/Wechat",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = comlifangtishangshu;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuwan.xthink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -1463,7 +1521,7 @@
 					"$(PROJECT_DIR)/lifangti/main/3Party/UMSocial_Shake_Sdk",
 					"$(PROJECT_DIR)/lifangti/main/3Party/Wechat",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = comlifangtishangshu;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuwan.xthink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

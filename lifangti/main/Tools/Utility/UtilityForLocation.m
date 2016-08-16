@@ -7,8 +7,10 @@
 //
 
 #import "UtilityForLocation.h"
-
+#import <MAMapKit/MAMapKit.h>
+#import <AMapFoundationKit/AMapFoundationKit.h>
 @implementation UtilityForLocation
+const static NSString *APIKey = @"7dcd660de1ef7633d73f2cb2a45719e7";
 +(double)disWithloactiona:(CLLocation *)dist
 
 {
@@ -45,5 +47,24 @@
             _timer=nil;
         }
     }
+}
++ (void)configureAPIKey
+{
+    if ([APIKey length] == 0)
+    {
+#define kMALogTitle @"提示"
+#define kMALogContent @"apiKey为空，请检查key是否正确设置"
+        
+        NSString *log = [NSString stringWithFormat:@"[MAMapKit] %@", kMALogContent];
+        NSLog(@"%@", log);
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:kMALogTitle message:kMALogContent delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+            
+            [alert show];
+        });
+    }
+    
+    [AMapServices sharedServices].apiKey = (NSString *)APIKey;
 }
 @end

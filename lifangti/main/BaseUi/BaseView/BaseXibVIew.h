@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BaseXibVIew : UIView
+@interface BaseXibVIew : UIControl
 @property (strong, nonatomic) IBOutlet UIView *View;
 
 @end

@@ -38,7 +38,6 @@
     NSDictionary *dict = [unarchiver decodeObjectForKey:key];
     
     
-    DTLog(@"dict = %@", dict);
     return dict;
     
 }

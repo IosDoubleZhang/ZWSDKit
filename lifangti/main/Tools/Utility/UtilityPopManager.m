@@ -40,6 +40,17 @@
     
     [view pop_addAnimation:springAnimation forKey:@"POPSpringAnimationKey"];
 }
++ (void)initailzerAnimationWithToPostion:(CGRect)toRect formPostion:(CGRect)fromRect atView:(UIView *)view beginTime:(CFTimeInterval)beginTime with:(NSInteger )tag {
+    POPBasicAnimation *offscreenAnimation = [POPBasicAnimation animationWithPropertyNamed:kPOPViewFrame];
+    offscreenAnimation.toValue = [NSValue valueWithCGRect:toRect];
+    offscreenAnimation.fromValue = [NSValue valueWithCGRect:fromRect];
+    
+
+    [offscreenAnimation setCompletionBlock:^(POPAnimation *anim, BOOL finished) {
+     
+    }];
+     [view pop_addAnimation:offscreenAnimation forKey:@"offscreenAnimation"];
+}
 +(void)Alpha:(UIView *)view AlphaValue:(double )Alpha beginTime:(CFTimeInterval)beginTime
 {
     POPSpringAnimation *springAnimation = [POPSpringAnimation animation];

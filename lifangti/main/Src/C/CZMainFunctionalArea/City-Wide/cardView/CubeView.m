@@ -32,7 +32,7 @@
     _CubeTable.separatorStyle = UITableViewCellSeparatorStyleNone;
     _CubeTable.dataSource=self;
     _CubeTable.delegate=self;
-  
+
     _CubeTable.estimatedRowHeight = 44.0f;
     _CubeTable.rowHeight=UITableViewAutomaticDimension;
     com=200;
@@ -56,8 +56,6 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     CubeTableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:@"cubeCell" forIndexPath:indexPath];
-
-    
     [self drawCell:cell withIndexPath:indexPath];
     return cell;
 }
@@ -69,6 +67,7 @@
   __weak typeof(cell) wcell = cell;
     [cell clear];
     cell.cube = [_dataarr objectAtIndex:indexPath.row];
+    NSLog(@"%ld",[needLoadArr indexOfObject:indexPath]);
     
     if (needLoadArr.count>0&&[needLoadArr indexOfObject:indexPath]==NSNotFound) {
         [cell clear];
@@ -99,6 +98,7 @@
         if (velocity.y<0) {
             NSIndexPath *indexPath = [temp lastObject];
             if (indexPath.row+3<_dataarr.count) {
+//                NSLog(@"%lf",velocity.y);
                 [arr addObject:[NSIndexPath indexPathForRow:indexPath.row+1 inSection:0]];
                 [arr addObject:[NSIndexPath indexPathForRow:indexPath.row+2 inSection:0]];
                 [arr addObject:[NSIndexPath indexPathForRow:indexPath.row+3 inSection:0]];
@@ -147,9 +147,12 @@
         return;
     }
     if (self.CubeTable.visibleCells&&self.CubeTable.visibleCells.count>0) {
+        NSLog(@"%ld",self.CubeTable.visibleCells.count);
+        
         for (id temp in [self.CubeTable.visibleCells copy]) {
             CubeTableViewCell *cell = (CubeTableViewCell *)temp;
             [cell LoadData];
+            
         }
     }
 }
@@ -166,39 +169,5 @@
     
     
 }
-//- (void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView
-//{
-//    _yesToLoad+=1;
-//}
-//- (void)scrollViewDidScroll:(UIScrollView *)scrollView
-//{
-//    NSLog(@"--------------------%lf",scrollView.contentOffset.y-_moveLeng);
-//    if (_yesToLoad>1) {
-//        NSLog(@"快速滑动");
-//    }
-//    else{
-//      
-//    }
-//    _yesToLoad=0;
-//}
-//- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
-//{
-//    _moveLeng = scrollView.contentOffset.y;
-//}
-//- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-//  CGFloat viewHeight = scrollView.height + scrollView.contentInset.top;
-//    for (CubeTableViewCell *cell in [self.CubeTable visibleCells]) {
-//        CGFloat y = cell.centerY - scrollView.contentOffset.y;
-//        CGFloat p = y - viewHeight / 2;
-//        CGFloat scale = cos(p / viewHeight * 0.8) * 0.95;
-//        if (kiOS8Later) {
-//            [UIView animateWithDuration:0.15 delay:0 options:UIViewAnimationOptionCurveEaseInOut | UIViewAnimationOptionAllowUserInteraction | UIViewAnimationOptionBeginFromCurrentState animations:^{
-//                cell.transform = CGAffineTransformMakeScale(scale, scale);
-//            } completion:NULL];
-//        } else {
-//            cell.transform = CGAffineTransformMakeScale(scale, scale);
-//        }
-//        
-//    }
-//}
+
 @end

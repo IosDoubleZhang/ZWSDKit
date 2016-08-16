@@ -14,6 +14,7 @@
 + (void) rotateLayer:(CALayer *)layer to:(CGFloat)toValue ;
 ///移动 view 从一个位置 到另外的位置 lifangtiTests Group参数 f1 f2 View 动画延迟时间
 +(void)initailzerAnimationWithToPostion:(CGRect)toRect formPostion:(CGRect)fromRect atView:(UIView *)view beginTime:(CFTimeInterval)beginTime ;
++(void)initailzerAnimationWithToPostion:(CGRect)toRect formPostion:(CGRect)fromRect atView:(UIView *)view beginTime:(CFTimeInterval)beginTime with:(NSInteger )tag;
 ///view 隐藏动画
 +(void)Alpha:(UIView *)view AlphaValue:(double )Alpha beginTime:(CFTimeInterval)beginTime;
 @end

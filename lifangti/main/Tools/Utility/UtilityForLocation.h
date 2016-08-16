@@ -13,4 +13,5 @@
 ///两点间距离
 +(double)disWithloactiona:(CLLocation *)dist;
 @property(nonatomic,retain)NSTimer *timer;
++ (void)configureAPIKey;
 @end

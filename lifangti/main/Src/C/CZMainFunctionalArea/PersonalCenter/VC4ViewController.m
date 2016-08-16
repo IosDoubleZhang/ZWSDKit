@@ -14,14 +14,30 @@
 
 #import "VC4ViewController.h"
 #import "HttpLinkClass.h"
+#import "EaseBtn.h"
+#import "ZSMapView.h"
+#import "ZSMapTableView.h"
 @interface VC4ViewController ()
+@property (weak, nonatomic) IBOutlet ZSMapTableView *maptable;
+@property (weak, nonatomic) IBOutlet ZSMapView *map;
+@property (weak, nonatomic) IBOutlet EaseBtn *ESB;
 
 @end
 
 @implementation VC4ViewController
 
+- (IBAction)dd:(id)sender {
+    NSLog(@"11111");
+}
+- (IBAction)check:(EaseBtn *)sender {
+    
+    
+    [sender Start];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.automaticallyAdjustsScrollViewInsets=NO;
     [HttpLinkClass PostLogin:^(Log *parse) {
   
         [Utility sharedUtility].token=parse.token;
@@ -34,7 +50,20 @@
         
     } With:@{@"account":@"chenwei",
              @"password":@"123456"}];
+    [_map  addObserver:self forKeyPath:@"myLocation" options:NSKeyValueObservingOptionOld|NSKeyValueObservingOptionNew context:nil];
     
+}
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
+    NSLog(@"keyPath = %@, class = %@",keyPath,[object class]);
+    
+    NSLog(@"dic = %@",change);
+    [self.maptable POIWithLocation:[change objectForKey:@"new"]];
+}
+- (void)dealloc
+{
+    //取消观察
+    [_map.myLocation removeObserver:self forKeyPath:@"myLocation"];
 }
 
 - (void)didReceiveMemoryWarning {
